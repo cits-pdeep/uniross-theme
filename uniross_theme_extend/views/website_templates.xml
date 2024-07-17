@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!--This template used for set image in header menus-->
+    <template inherit_id="website.submenu" id="website_submenu_inherit_id">
+        <!-- This code has style for vertical align name center with image
+            <a t-att-href="submenu._clean_url()" t-attf-class="#{link_class or ''} #{submenu._is_active() and 'active'}" role="menuitem" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None"
+            style="display: flex; align-items: center;">
+                <img src="http://localhost:8088/web/image/1120" style="margin-right: 10px;"/>
+                <span t-field="submenu.name"/>
+                <span>Single-use<br/>Batteries</span>
+            </a>
+        -->
+        <xpath expr="//li[contains(@t-if, 'submenu.is_visible')]/a/span" position="before">
+            <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+        </xpath>
+        <xpath expr="//li[contains(@t-elif, 'show_dropdown')]/a/span" position="before">
+            <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+        </xpath>
+    </template>
+
+    <!--This template is used for center all menus-->
+    <!--Need to select "Menu - Sales 2" from theme editor.-->
+    <template id="template_header_sales_two" inherit_id="website.template_header_sales_two">
+        <xpath expr="//div[contains(@class, 'o_border_contrast')]/div" position="attributes">
+            <attribute name="class">container d-flex justify-content-center</attribute>
+        </xpath>
+    </template>
+
+    <!--Hide contact us button from the header (Menu - Sales 2)-->
+    <template id="header_call_to_action" inherit_id="website.header_call_to_action">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class">oe_unremovable oe_unmovable s_text_block d-none</attribute>
+        </xpath>
+    </template>
+</odoo>
