@@ -7,9 +7,12 @@
 ##############################################################################
 
 from odoo import fields, models
-
+from markupsafe import Markup
 
 class WebsiteMenu(models.Model):
     _inherit = 'website.menu'
 
     menu_image = fields.Image()
+
+    def set_mega_menu_data(self, content):
+        self.mega_menu_content = Markup(content)

@@ -1,0 +1,17 @@
+/***********[Category page]GRID VIEW STYLE START***********/
+/*hide description*/
+#products_grid.col-lg-9 .oe_subdescription.mb-2.text-muted.small {
+    display: none;
+}
+/***********[Category page]GRID VIEW STYLE END***********/
+
+/***********[Category page]LIST VIEW STYLE END***********/
+/*left align name*/
+#products_grid.o_wsale_layout_list .oe_product h6, #products_grid.o_wsale_layout_list .oe_product .h6 {
+    text-align: left !important;
+}
+/*show description*/
+#products_grid.col-lg-9.o_wsale_layout_list .oe_subdescription.mb-2.text-muted.small {
+    display: block;
+}
+/***********[Category page]LIST VIEW STYLE END***********/

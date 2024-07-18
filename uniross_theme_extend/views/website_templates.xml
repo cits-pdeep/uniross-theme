@@ -33,4 +33,48 @@
             <attribute name="class">oe_unremovable oe_unmovable s_text_block d-none</attribute>
         </xpath>
     </template>
+
+    <!--This template will put name and image of category at top of specific category page-->
+    <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
+        <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
+
+        <xpath expr="//div[@id='oe_structure_website_sale_products_1']" position="after">
+            <section t-if="category" class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image"
+                     data-name="Text - Image"
+                     style="background-image: none;">
+                <div class="container justify-content-between ">
+                    <div class="row"><!-- align-items-center-->
+                        <div class="col-lg-6 o_colored_level pb0 pt0">
+                            <p class="o_default_snippet_text">
+                                <!--Breadcrumb-->
+                                <t t-call="website_sale.products_breadcrumb">
+                                    <t t-set="_classes" t-valuef="d-none d-lg-flex w-100 p-0 small"/>
+                                </t>
+                                <!---->
+                            </p>
+                            <!--<h2 class="o_default_snippet_text"><br/></h2>
+                            <h2 class="o_default_snippet_text"><br/></h2>
+                            <h2 class="o_default_snippet_text"><br/></h2>-->
+                            <h2 class="o_default_snippet_text">
+                                <span t-esc="category.name"/>
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img t-if="category.image_1920" t-att-src="image_data_uri(category.image_1920)"
+                                 class="img img-fluid mx-auto" alt="" loading="lazy" data-mimetype="image/jpeg"
+                                 style="margin-right: 0px !important;width: 350px;"/><!--style="margin-right: auto !important; margin-left: auto !important;"-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+    <!--Center product name in grid-->
+    <template id="products_item" inherit_id="website_sale.products_item">
+        <xpath expr="//h6[contains(@class, 'o_wsale_products_item_title')]" position="attributes">
+            <attribute name="class">o_wsale_products_item_title mb-2 text-center</attribute>
+        </xpath>
+    </template>
+
 </odoo>

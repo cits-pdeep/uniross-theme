@@ -20,4 +20,9 @@
         'views/website_menu.xml',
         'views/website_templates.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+            '/uniross_theme_extend/static/src/css/style.css',
+        ],
+    },
 }

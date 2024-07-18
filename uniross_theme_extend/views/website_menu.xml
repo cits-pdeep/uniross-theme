@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="website.website_menus_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position="after">
-                <field name="menu_image" widget="image" class="oe_avatar"/>
+                <field name="menu_image" widget="image"/>
             </xpath>
         </field>
     </record>
