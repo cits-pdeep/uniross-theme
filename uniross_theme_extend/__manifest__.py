@@ -15,7 +15,7 @@
     'description': """ Theme modification """,
     'author': 'Caret IT Solutions Pvt. Ltd.',
     'website': 'http://www.caretit.com',
-    'depends': ['website'],
+    'depends': ['website_sale'],
     'data': [
         'views/website_menu.xml',
         'views/website_templates.xml',
@@ -23,6 +23,7 @@
     'assets': {
         'web.assets_frontend': [
             '/uniross_theme_extend/static/src/css/style.css',
+            '/uniross_theme_extend/static/src/js/cit_public_widget.js',
         ],
     },
 }

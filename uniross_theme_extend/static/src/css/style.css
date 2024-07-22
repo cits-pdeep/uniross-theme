@@ -3,6 +3,9 @@
 #products_grid.col-lg-9 .oe_subdescription.mb-2.text-muted.small {
     display: none;
 }
+.product_price {
+    display: none;
+}
 /***********[Category page]GRID VIEW STYLE END***********/
 
 /***********[Category page]LIST VIEW STYLE END***********/
@@ -15,3 +18,10 @@
     display: block;
 }
 /***********[Category page]LIST VIEW STYLE END***********/
+
+/*[Header Menu] Start*/
+/*span[data-oe-model="website.menu"] {
+    font-size: 12px;
+    font-weight: 500;
+}*/
+/*[Header Menu] End*/

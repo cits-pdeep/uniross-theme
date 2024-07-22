@@ -72,9 +72,68 @@
 
     <!--Center product name in grid-->
     <template id="products_item" inherit_id="website_sale.products_item">
-        <xpath expr="//h6[contains(@class, 'o_wsale_products_item_title')]" position="attributes">
-            <attribute name="class">o_wsale_products_item_title mb-2 text-center</attribute>
+        <xpath expr="//div[hasclass('o_wsale_product_btn')]" position="replace">
+        </xpath>
+        <xpath expr="//div[contains(@class, 'o_wsale_product_information')]" position="replace">
+            <div class="o_wsale_product_information position-relative d-flex flex-column flex-grow-1 flex-shrink-1">
+                <div class="row">
+                    <div class="col-12 col-md-6 extra-name">
+                        <div class="o_wsale_product_information_text flex-grow-1">
+                            <h6 class="o_wsale_products_item_title mb-2 text-center">
+                                <a class="text-primary text-decoration-none" itemprop="name" t-att-href="product_href"
+                                   t-att-content="product.name" t-field="product.name"/>
+                                <a t-if="not product.website_published" role="button" t-att-href="product_href"
+                                   class="btn btn-sm btn-danger" title="This product is unpublished.">
+                                    Unpublished
+                                </a>
+                            </h6>
+                            <div class="oe_subdescription mb-2 text-muted small" contenteditable="false">
+                                <div itemprop="description" t-field="product.description_sale"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-md-block extra-buttons">
+                        <div class="o_wsale_product_sub d-flex justify-content-end align-items-end gap-2 flex-wrap pb-1">
+                            <t t-set="template_price_vals" t-value="get_product_prices(product)"/>
+                            <div class="o_wsale_product_btn">
+                                <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                                <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+                                <t t-if="product_variant_id and template_price_vals['price_reduce'] or not website.prevent_zero_price_sale">
+                                    <a t-if="product._website_show_quick_add()" href="#" role="button"
+                                       class="btn btn-outline-primary a-submit"
+                                       aria-label="Shopping cart" title="Shopping cart">
+                                        <span class="fa fa-checkbox"/>
+                                        Add To Quote
+                                    </a>
+                                </t>
+                                <div class="mt-2">
+                                    <a t-att-href="product_href" href="#" role="button"
+                                       class="btn btn-primary">
+                                        View Product
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product_price" itemprop="offers" itemscope="itemscope"
+                                 itemtype="http://schema.org/Offer">
+                                <t t-if="'base_price' in template_price_vals and (template_price_vals['base_price'] &gt; template_price_vals['price_reduce']) and (template_price_vals['price_reduce'] or not website.prevent_zero_price_sale)">
+                                    <del t-attf-class="text-muted me-1 h6 mb-0" style="white-space: nowrap;">
+                                        <em class="small" t-esc="template_price_vals['base_price']"
+                                            t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    </del>
+                                </t>
+                                <span class="h6 mb-0"
+                                      t-if="template_price_vals['price_reduce'] or not website.prevent_zero_price_sale"
+                                      t-esc="template_price_vals['price_reduce']"
+                                      t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                <span class="h6 mb-0" t-else="" t-field="website.prevent_zero_price_sale_text"/>
+                                <span itemprop="price" style="display:none;"
+                                      t-esc="template_price_vals['price_reduce']"/>
+                                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </xpath>
     </template>
-
 </odoo>
