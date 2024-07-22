@@ -19,11 +19,15 @@
     'data': [
         'views/website_menu.xml',
         'views/website_templates.xml',
+        'views/website_home_page.xml',
+        'views/website_about_us.xml',
     ],
     'assets': {
         'web.assets_frontend': [
             '/uniross_theme_extend/static/src/css/style.css',
             '/uniross_theme_extend/static/src/js/cit_public_widget.js',
+            'uniross_theme_extend/static/src/css/mobile_custom.css',
+            'uniross_theme_extend/static/src/css/desktop_custom.css',
         ],
     },
 }

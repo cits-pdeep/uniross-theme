@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+
+    .desktop_pt_40{
+        padding-top: 40px !important;
+    }
+    .desktop_pb_40{
+        padding-bottom: 40px !important;
+    }
+    .desktop_mt_4{
+        margin-top: 4px !important;
+    }
+
+}
