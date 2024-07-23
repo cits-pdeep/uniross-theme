@@ -68,6 +68,55 @@
                 </div>
             </section>
         </xpath>
+        <xpath expr="//div[@id='oe_structure_website_sale_products_2']" position="before">
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
+                     style="background: linear-gradient(91.77deg, #2C2C2C -7.9%, #676767 93.8%);">
+                <div class="s_allow_columns container">
+                    <div class="d-flex justify-content-between"
+                         style="color: #ffffff;font-size: 16px;font-weight: 400;">
+
+                        <div class="o_colored_level col-lg-6 col-md-12">
+                            <p class="o_default_snippet_text" style="text-align: center;">Uniross single-use batteries,
+                                available in alkaline, carbon zinc, and lithium variants, provide reliable, optimal
+                                power to maximize your devices' performance. They are ideal for electrical toys, lights,
+                                flashlights, remotes, and countless other devices.
+                            </p>
+                        </div>
+                        <div class="o_colored_level col-lg-4 col-md-12">
+                            <div class="o_text_columns">
+                                <div class="row">
+                                    <div class="col-4 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/performance 1.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                                            <br/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">High Performance
+                                        </p>
+                                    </div>
+                                    <div class="col-4 o_colored_level">
+                                        <p style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/duration 2.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                                            <br/>
+                                        </p>
+                                        <p style="text-align: center;">Long Shelf Life</p>
+                                    </div>
+                                    <div class="col-4 o_colored_level">
+                                        <p style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/protection 1.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                                            <br/>
+                                        </p>
+                                        <p style="text-align: center;">Leakage Protection</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
     </template>
 
     <!--Center product name in grid-->
@@ -76,11 +125,12 @@
         </xpath>
         <xpath expr="//div[contains(@class, 'o_wsale_product_information')]" position="replace">
             <div class="o_wsale_product_information position-relative d-flex flex-column flex-grow-1 flex-shrink-1">
-                <div class="row">
+                <div class="row" style="min-height: -webkit-fill-available;">
                     <div class="col-12 col-md-6 extra-name">
                         <div class="o_wsale_product_information_text flex-grow-1">
                             <h6 class="o_wsale_products_item_title mb-2 text-center">
-                                <a class="text-primary text-decoration-none" itemprop="name" t-att-href="product_href"
+                                <a class="text-primary text-decoration-none cit-product-name" itemprop="name"
+                                   t-att-href="product_href"
                                    t-att-content="product.name" t-field="product.name"/>
                                 <a t-if="not product.website_published" role="button" t-att-href="product_href"
                                    class="btn btn-sm btn-danger" title="This product is unpublished.">
@@ -92,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-none d-md-block extra-buttons">
+                    <div class="col-12 col-md-6 d-none d-md-block extra-buttons button-column">
                         <div class="o_wsale_product_sub d-flex justify-content-end align-items-end gap-2 flex-wrap pb-1">
                             <t t-set="template_price_vals" t-value="get_product_prices(product)"/>
                             <div class="o_wsale_product_btn">
@@ -100,15 +150,14 @@
                                 <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
                                 <t t-if="product_variant_id and template_price_vals['price_reduce'] or not website.prevent_zero_price_sale">
                                     <a t-if="product._website_show_quick_add()" href="#" role="button"
-                                       class="btn btn-outline-primary a-submit"
+                                       class="add-to-queue a-submit"
                                        aria-label="Shopping cart" title="Shopping cart">
-                                        <span class="fa fa-checkbox"/>
                                         Add To Quote
                                     </a>
                                 </t>
                                 <div class="mt-2">
                                     <a t-att-href="product_href" href="#" role="button"
-                                       class="btn btn-primary">
+                                       class="view-product">
                                         View Product
                                     </a>
                                 </div>

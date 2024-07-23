@@ -17,11 +17,12 @@ publicWidget.registry.WebsiteSaleLayout.include({
     updateLayoutInfo(){
         var clickedValue = $('input[name=wsale_products_layout]:checked').val();
         var isList = clickedValue === 'list';
-        if (isList){
-            $('.extra-buttons, .extra-name').removeAttr('style');
+        if (isList) {
+            $('.extra-buttons, .extra-name, .o_wsale_filmstip_container').removeAttr('style');
         } else {
             $('.extra-buttons').attr('style','display: none !important')
             $('.extra-name').attr('style','width: 100% !important')
+            $('.o_wsale_filmstip_container').attr('style','display: none !important')
         }
     },
 });

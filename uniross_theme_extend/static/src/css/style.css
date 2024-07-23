@@ -6,16 +6,75 @@
 .product_price {
     display: none;
 }
+.o_categories_collapse_title b, b.o_products_attributes_title.d-none.d-lg-block {
+    font-size: 18px;
+    font-weight: 500;
+}
+label.form-check-label.fw-normal {
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-group .btn-light.active {
+    box-shadow: inset 0 0 0 1px #FF0000;
+    border-color: transparent;
+    background-color: #FF0000;
+    color: #ffffff;
+}
+a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
+    display: none;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #E97018;
+  border-color: #E97018;
+  border-radius: 3px;
+}
+.o_pricelist_dropdown.dropdown.d-none.d-lg-inline {
+    display: none !important;
+}
 /***********[Category page]GRID VIEW STYLE END***********/
 
 /***********[Category page]LIST VIEW STYLE END***********/
 /*left align name*/
+.oe_subdescription.mb-2.text-muted.small {
+    font-size: 16px;
+    font-weight: 400;
+}
 #products_grid.o_wsale_layout_list .oe_product h6, #products_grid.o_wsale_layout_list .oe_product .h6 {
     text-align: left !important;
 }
+
 /*show description*/
 #products_grid.col-lg-9.o_wsale_layout_list .oe_subdescription.mb-2.text-muted.small {
     display: block;
+}
+.add-to-quote{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.93px;
+    border: solid 1px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.view-product, .view-product:hover{
+    font-size: 15px;
+    font-weight: 700;
+    border: solid 1px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #FF0000;
+    color: white;
+}
+.add-to-queue, .add-to-queue:hover{
+    font-size: 13px;
+    font-weight: 500;
+    border: solid 1px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 /***********[Category page]LIST VIEW STYLE END***********/
 
@@ -25,3 +84,20 @@
     font-weight: 500;
 }*/
 /*[Header Menu] End*/
+#products_grid .oe_product .cit-product-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2C2C2C !important;
+}
+@media (min-width: 992px) {
+    #products_grid.o_wsale_layout_list .oe_product .cit-product-name {
+        font-size: 20px;
+        font-weight: 500;
+        color: #2C2C2C !important;
+    }
+    .button-column {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
