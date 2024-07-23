@@ -9,5 +9,32 @@
     .desktop_mt_4{
         margin-top: 4px !important;
     }
+    .desktop_mt_16{
+        margin-top: 16px !important;
+    }
+    .desktop_solution_img_size {
+        height: 581px !important;
+        width: 570px !important;
+    }
+    .desktop_custom_video_size {
+        height: 397px !important;
+        width: 693px !important;
+    }
+    .desktop_youtube_video_size {
+        height: 323px !important;
+        width: 582px !important;
+    }
+    .desktop_product_categ_img {
+        height: 349px !important;
+    }
+    .desktop_slide_content_img_size {
+        height: 629px !important;
+    }
+    .desktop_bottom_-3 {
+        bottom: -3vh;
+    }
+    .desktop_bottom_-4 {
+        bottom: -4vh;
+    }
 
 }

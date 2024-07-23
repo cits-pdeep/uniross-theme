@@ -1,374 +1,1354 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-        <template id="custom_home_page" inherit_id="website.homepage">
-            <xpath expr="//t" position="replace">
-                <t t-call="website.layout">
+    <template id="custom_home_page" inherit_id="website.homepage">
+        <xpath expr="//t" position="replace">
+            <t t-call="website.layout">
                 <t t-set="pageName" t-value="'homepage'"/>
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
-                <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1720613027901" style="background-image: none;">
+                    <section class="s_carousel_wrapper" data-vxml="001"
+                             data-snippet="s_carousel" data-name="Carousel">
+                        <div class="s_carousel s_carousel_default carousel slide desktop_slide_content_img_size"
+                             data-bs-interval="10000" id="myCarousel1720613027901"
+                             style="background-image: none;">
 
-                    <ol class="carousel-indicators o_we_no_overlay">
-                        <li data-bs-slide-to="0" data-bs-target="#myCarousel1720613027901"/>
-                        <li data-bs-slide-to="1" data-bs-target="#myCarousel1720613027901" aria-current="true" class="active"/>
+                            <ol class="carousel-indicators o_we_no_overlay">
+                                <li data-bs-slide-to="0"
+                                    data-bs-target="#myCarousel1720613027901"/>
+                                <li data-bs-slide-to="1"
+                                    data-bs-target="#myCarousel1720613027901"
+                                    aria-current="true" class="active"/>
+                            </ol>
 
-                     </ol>
-
-                    <div class="carousel-inner"><div class="carousel-item pt152 pb152 o_colored_level o_cc o_cc3 s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/820-a6c941be/Uniross%20Industrial%20Solutions.webp&quot;);" data-name="Slide" data-scroll-background-ratio="0" data-mimetype="image/webp" data-original-id="817" data-original-src="/web/image/817-50b86bec/Uniross%20Industrial%20Solutions.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920">
-                            <div class="oe_unremovable container">
-                                <div class="row o_grid_mode" data-row-count="7">
-                                    <div class="carousel-content o_colored_level o_grid_item g-height-3 g-col-lg-7 col-lg-7" style="grid-area: 1 / 1 / 4 / 8; z-index: 1;">
-                                        <h1 class="o_default_snippet_text"><span style="font-size: 3.75rem;">
-        Batteries That Power Every Moment
-
-        </span><br/></h1></div>
-                                <div class="carousel-content o_colored_level o_grid_item g-col-lg-4 rounded g-height-3 col-lg-4 o_cc o_cc4" style="z-index: 2; grid-area: 5 / 1 / 8 / 5; border-radius: 10px !important; --grid-item-padding-y: 20px; --grid-item-padding-x: 15px;">
-                                        <p class="o_default_snippet_text">
-        <span style="font-size: 1.25rem;">
-        Consumer batteries &amp;amp; accessories for all your market needs
-
-        </span><br/>Emergency
-        </p>
-        <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="borderIndustries-width: 1px; border-style: solid;"><img src="/web/image/723-7aac8f59/bx_user.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="723" data-original-src="/web/image/723-7aac8f59/bx_user.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;
-        Consumer Soluti​​ons​​</span></a>
-        </div>
-        <div class="o_grid_item o_colored_level g-col-lg-4 g-height-1 col-lg-4" style="z-index: 3; grid-area: 7 / 1 / 8 / 5; --grid-item-padding-y: 0px; --grid-item-padding-x: 14px;">
-        <!--    <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/723-7aac8f59/bx_user.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="723" data-original-src="/web/image/723-7aac8f59/bx_user.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;-->
-
-        <!--Consumer Soluti​​ons​​</span></a>-->
-        <br/></div></div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item pt152 pb152 o_colored_level o_cc o_cc3 s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center"
+                                     style="background-image: url(&quot;/uniross_theme_extend/static/src/img/Uniross%20Industrial%20Solutions.webp&quot;);"
+                                     data-name="Slide" data-scroll-background-ratio="0"
+                                     data-mimetype="image/webp" data-original-id="817"
+                                     data-original-src="/web/image/817-50b86bec/Uniross%20Industrial%20Solutions.jpg"
+                                     data-mimetype-before-conversion="image/jpeg"
+                                     data-resize-width="1920">
+                                    <div class="oe_unremovable container">
+                                        <div class="row o_grid_mode" data-row-count="7">
+                                            <div class="carousel-content o_colored_level o_grid_item g-height-3 g-col-lg-7 col-lg-7"
+                                                 style="grid-area: 1 / 1 / 4 / 8; z-index: 1;">
+                                                <h1 class="o_default_snippet_text">
+                                                    <span style="font-size: 3.75rem;">
+                                                        Batteries That Power Every Moment
+                                                    </span>
+                                                    <br/>
+                                                </h1>
+                                            </div>
+                                            <div class="carousel-content o_colored_level o_grid_item g-col-lg-4 rounded g-height-3 col-lg-4 o_cc o_cc4"
+                                                 style="z-index: 2; grid-area: 5 / 1 / 7 / 5; border-radius: 10px !important; --grid-item-padding-y: 15px; --grid-item-padding-x: 15px;">
+                                                <p class="o_default_snippet_text">
+                                                    <span style="font-size: 1.25rem;">
+                                                        Consumer batteries &amp;amp;
+                                                        accessories for all your market
+                                                        needs
+                                                    </span>
+<!--                                                    <br/>-->
+                                                </p>
+                                                <a href="#"
+                                                   class="btn btn-custom text-o-color-1 bg-o-color-4 desktop_bottom_-3"
+                                                   data-bs-original-title="" title=""
+                                                   style="borderIndustries-width: 1px; border-style: solid;position: absolute !important;">
+                                                    <img src="/uniross_theme_extend/static/src/img/bx_user.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="723"
+                                                         data-original-src="/uniross_theme_extend/static/src/img/bx_user.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"
+                                                         loading="lazy"/>
+                                                    <span style="font-size: 1rem;">&amp;nbsp;
+                                                        Consumer Soluti​​ons​​
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!--<div class="o_grid_item o_colored_level g-col-lg-4 g-height-1 col-lg-4"
+                                                 style="z-index: 3; grid-area: 7 / 1 / 8 / 5; &#45;&#45;grid-item-padding-y: 0px; &#45;&#45;grid-item-padding-x: 14px;">
+                                                &lt;!&ndash;    <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/723-7aac8f59/bx_user.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="723" data-original-src="/web/image/723-7aac8f59/bx_user.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;&ndash;&gt;
+                                                &lt;!&ndash;Consumer Soluti​​ons​​</span></a>&ndash;&gt;
+                                                &lt;!&ndash;        <br/>&ndash;&gt;
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item pt152 pb152 o_colored_level o_cc o_cc3 oe_img_bg o_bg_img_center active"
+                                     style="background-image: url(&quot;/uniross_theme_extend/static/src/img/Uniross%20Consumer%20Solutions.webp&quot;);"
+                                     data-name="Slide" data-mimetype="image/webp"
+                                     data-original-id="818"
+                                     data-original-src="/web/image/818-daf1a3a0/Uniross%20Consumer%20Solutions.jpg"
+                                     data-mimetype-before-conversion="image/jpeg"
+                                     data-resize-width="1920">
+                                    <div class="oe_unremovable container">
+                                        <div class="row o_grid_mode" data-row-count="7">
+                                            <div class="carousel-content o_colored_level o_grid_item g-height-3 g-col-lg-7 col-lg-7"
+                                                 style="grid-area: 1 / 1 / 4 / 8; z-index: 1;">
+                                                <h1 class="o_default_snippet_text">
+                                                    <span style="font-size: 3.75rem;">
+                                                        Batteries That Never Let You Down&amp;nbsp;
+                                                    </span>
+                                                    <br/>
+                                                </h1>
+                                            </div>
+                                            <div class="carousel-content o_colored_level o_grid_item g-col-lg-4 rounded o_cc o_cc4 g-height-3 col-lg-4"
+                                                 style="z-index: 2; grid-area: 5 / 1 / 7 / 5; border-radius: 10px !important; --grid-item-padding-y: 15px; --grid-item-padding-x: 15px;">
+                                                <p class="o_default_snippet_text">
+                                                    <span style="font-size: 1.25rem;">
+                                                        Industrial batteries and solutions
+                                                        for wide industry applications.
+                                                    </span>
+                                                </p>
+                                                <a href="#"
+                                                   class="btn btn-custom text-o-color-1 bg-o-color-4 btn-custom desktop_bottom_-3"
+                                                   data-bs-original-title="" title=""
+                                                   style="border-width: 1px; border-style: solid;position: absolute !important;">
+                                                    <img src="/uniross_theme_extend/static/src/img/Vector.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="726"
+                                                         data-original-src="/uniross_theme_extend/static/src/img/Vector.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"
+                                                         loading="lazy"/>
+                                                    <span style="font-size: 1rem;">&amp;nbsp;
+                                                        Industrial Solutions
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!--<div class="o_grid_item o_colored_level g-col-lg-4 g-height-1 col-lg-4"
+                                                 style="z-index: 3; grid-area: 7 / 1 / 8 / 5; &#45;&#45;grid-item-padding-x: 14px; &#45;&#45;grid-item-padding-y: 0px;">
+                                                &lt;!&ndash;    <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/726-c82e347e/Vector.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="726" data-original-src="/web/image/726-c82e347e/Vector.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;&ndash;&gt;
+                                                &lt;!&ndash;Industrial Solutions</span></a>&ndash;&gt;
+                                                &lt;!&ndash;        <br/>&ndash;&gt;
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div><div class="carousel-item pt152 pb152 o_colored_level o_cc o_cc3 oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/819-0984d360/Uniross%20Consumer%20Solutions.webp&quot;);" data-name="Slide" data-mimetype="image/webp" data-original-id="818" data-original-src="/web/image/818-daf1a3a0/Uniross%20Consumer%20Solutions.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920">
-                            <div class="oe_unremovable container">
-                                <div class="row o_grid_mode" data-row-count="7">
-                                    <div class="carousel-content o_colored_level o_grid_item g-height-3 g-col-lg-7 col-lg-7" style="grid-area: 1 / 1 / 4 / 8; z-index: 1;">
-                                        <h1 class="o_default_snippet_text"><span style="font-size: 3.75rem;">Batteries That Never Let You Down&amp;nbsp;</span><br/></h1></div>
-                                <div class="carousel-content o_colored_level o_grid_item g-col-lg-4 rounded o_cc o_cc4 g-height-3 col-lg-4" style="z-index: 2; grid-area: 5 / 1 / 8 / 5; border-radius: 10px !important; --grid-item-padding-y: 20px; --grid-item-padding-x: 15px;">
-                                        <p class="o_default_snippet_text">
-        <span style="font-size: 1.25rem;">Industrial batteries and solutions for  wide industry applications.</span></p>
-        <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/726-c82e347e/Vector.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="726" data-original-src="/web/image/726-c82e347e/Vector.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;
-        Industrial Solutions</span></a>
-        </div><div class="o_grid_item o_colored_level g-col-lg-4 g-height-1 col-lg-4" style="z-index: 3; grid-area: 7 / 1 / 8 / 5; --grid-item-padding-x: 14px; --grid-item-padding-y: 0px;">
-        <!--    <a href="#" class="btn btn-custom text-o-color-1 bg-o-color-4" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/726-c82e347e/Vector.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="726" data-original-src="/web/image/726-c82e347e/Vector.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><span style="font-size: 1rem;">&amp;nbsp;-->
-        <!--Industrial Solutions</span></a>-->
-        <br/></div></div>
-                            </div>
-                        </div></div>
 
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1720613027901">
-                        <span class="carousel-control-prev-icon"/>
-                        <span class="visually-hidden o_default_snippet_text">Previous</span>
-                    </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1720613027901">
-                        <span class="carousel-control-next-icon"/>
-                        <span class="visually-hidden o_default_snippet_text">Next</span>
-                    </a>
-                </div>
-            </section><section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
-                <div class="container s_allow_columns">
-                    <h2 class="display-3-fs o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 2.8125rem;">Our Product<br/>Categories</span>
+                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                               data-bs-slide="prev" role="img" aria-label="Previous"
+                               title="Previous" href="#myCarousel1720613027901">
+                                <span class="carousel-control-prev-icon"/>
+                                <span class="visually-hidden o_default_snippet_text">
+                                    Previous
+                                </span>
+                            </a>
+                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                               data-bs-slide="next" role="img" aria-label="Next"
+                               title="Next" href="#myCarousel1720613027901">
+                                <span class="carousel-control-next-icon"/>
+                                <span class="visually-hidden o_default_snippet_text">
+                                    Next
+                                </span>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="s_title pt40 pb40 o_colored_level" data-vcss="001"
+                             data-snippet="s_title" data-name="Title"
+                             style="background-image: none;">
+                        <div class="container s_allow_columns">
+                            <h2 class="display-3-fs o_default_snippet_text"
+                                style="text-align: center;">
+                                <span style="font-size: 2.8125rem;">Our Product<br/>
+                                    Categories
+                                </span>
 
-        <br/></h2></div>
-            </section><section class="s_three_columns pt32 o_colored_level o_cc o_cc1 pb0" data-vcss="001" data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
-                <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                        <div class="s_col_no_bgcolor col-lg-6">
-                            <div class="card text-bg-white h-100 border rounded" style="border-width: 0px !important; border-radius: 0px !important;">
-                                <img src="/web/image/828-ced0a7e7/Uniross%20Type%20C%20Rechargeable%20Batteries.png" alt="" class="card-img-top img img-fluid o_we_custom_image" data-mimetype="image/png" data-original-id="821" data-original-src="/web/image/821-ced0a7e7/Uniross%20Type%20C%20Rechargeable%20Batteries.png" data-mimetype-before-conversion="image/png" data-resize-width="1226" loading="lazy"/>
-                                <div class="card-body">
-                                    <h3 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.5625rem;"><font class="text-o-color-2">Advanced Rechargeable Li-ion Accu &amp;nbsp; </font></span><span class="o_small-fs"><a class="btn btn-custom text-o-color-1" style="border-width: 1px; border-style: dashed; border-color: rgb(246, 80, 38);" href="" data-bs-original-title="" title=""><span style="font-size: 0.9375rem;">New</span></a></span>
+                                <br/>
+                            </h2>
+                        </div>
+                    </section>
+                    <section class="s_three_columns pt32 o_colored_level o_cc o_cc1 pb0"
+                             data-vcss="001" data-snippet="s_three_columns"
+                             data-name="Columns" style="background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="s_col_no_bgcolor col-lg-6">
+                                    <div class="card text-bg-white h-100 border rounded"
+                                         style="border-width: 0px !important; border-radius: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Uniross%20Type%20C%20Rechargeable%20Batteries.png"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image desktop_product_categ_img"
+                                             data-mimetype="image/png"
+                                             data-original-id="821"
+                                             data-original-src="/uniross_theme_extend/static/src/img/Uniross%20Type%20C%20Rechargeable%20Batteries.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="1226" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.5625rem;">
+                                                    <font class="text-o-color-2">Advanced
+                                                        Rechargeable Li-ion Accu &amp;nbsp;
+                                                    </font>
+                                                </span>
+                                                <span class="o_small-fs">
+                                                    <a class="btn btn-custom text-o-color-1"
+                                                       style="border-width: 1px; border-style: dashed; border-color: rgb(246, 80, 38);"
+                                                       href="" data-bs-original-title=""
+                                                       title="">
+                                                        <span style="font-size: 0.9375rem;">
+                                                            New
+                                                        </span>
+                                                    </a>
+                                                </span>
 
-        <br/></h3>
-                                    <p class="card-text o_default_snippet_text"><font class="text-o-color-3">
-        </font><font style="color: rgb(103, 103, 103);">Lightweight with low self-discharge, our Li-ion Accu is engineered for reliability and longevity. It delivers a stable 1.5V output for over 95% of its runtime and can be recharged up to 1000 times. Available in various sizes and shapes.&amp;nbsp;</font></p><p class="card-text o_default_snippet_text"><a class="btn btn-custom text-o-color-1" style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);" href="" data-bs-original-title="" title="">Learn More</a></p>
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text o_default_snippet_text">
+                                                <font class="text-o-color-3">
+                                                </font>
+                                                <font style="color: rgb(103, 103, 103);">
+                                                    Lightweight with low self-discharge,
+                                                    our Li-ion Accu is engineered for
+                                                    reliability and longevity. It delivers
+                                                    a stable 1.5V output for over 95% of
+                                                    its runtime and can be recharged up to
+                                                    1000 times. Available in various sizes
+                                                    and shapes.&amp;nbsp;
+                                                </font>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text">
+                                                <a class="btn btn-custom text-o-color-1"
+                                                   style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);"
+                                                   href="" data-bs-original-title=""
+                                                   title="">Learn More
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor col-lg-6">
+                                    <div class="card text-bg-white h-100 border rounded"
+                                         style="border-width: 0px !important; border-radius: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Uniross%20Lithium%20Batteries%20Banner.png"
+                                             alt=""
+                                             class="card-img-top o_we_image_cropped img img-fluid o_we_custom_image desktop_product_categ_img"
+                                             data-mimetype="image/png"
+                                             data-original-id="822"
+                                             data-original-src="/uniross_theme_extend/static/src/img/Uniross%20Lithium%20Batteries%20Banner.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="1216" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.5625rem;">
+                                                    <font class="text-o-color-2">Ultra
+                                                        Lithium Batteries
+                                                    </font>
+                                                </span>
+
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text o_default_snippet_text">
+                                                <font style="color: rgb(103, 103, 103);">
+                                                    Our advanced batteries provide high
+                                                    performance, making them ideal for
+                                                    devices requiring extended runtime.
+                                                    They ensure sustained and reliable
+                                                    power for peak efficiency and are
+                                                    available in AA, AAA, and 9V sizes.&amp;nbsp;
+                                                </font>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text">
+                                                <a class="btn btn-custom"
+                                                   style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);"
+                                                   href="">
+                                                    <font class="text-o-color-1">Learn
+                                                        More
+                                                    </font>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="s_col_no_bgcolor col-lg-6">
-                            <div class="card text-bg-white h-100 border rounded" style="border-width: 0px !important; border-radius: 0px !important;">
-                                <img src="/web/image/825-c9baa129/Uniross%20Lithium%20Batteries%20Banner.png" alt="" class="card-img-top o_we_image_cropped img img-fluid o_we_custom_image" data-mimetype="image/png" data-original-id="822" data-original-src="/web/image/822-c9baa129/Uniross%20Lithium%20Batteries%20Banner.png" data-mimetype-before-conversion="image/png" data-resize-width="1216" loading="lazy"/>
-                                <div class="card-body">
-                                    <h3 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.5625rem;"><font class="text-o-color-2">Ultra Lithium Batteries</font></span>
+                    </section>
+                    <section class="s_three_columns pb32 o_colored_level o_cc o_cc1 pt8"
+                             data-vcss="001" data-snippet="s_three_columns"
+                             data-name="Columns" style="background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="s_col_no_bgcolor col-lg-6">
+                                    <div class="card text-bg-white h-100 border rounded"
+                                         style="border-width: 0px !important; border-radius: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Uniross%20Max%20Power%20Alkaline%20Batteries%20Banner.png"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image desktop_product_categ_img"
+                                             data-mimetype="image/png"
+                                             data-original-id="823"
+                                             data-original-src="/uniross_theme_extend/static/src/img/Uniross%20Max%20Power%20Alkaline%20Batteries%20Banner.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="1222" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.5625rem;">
+                                                    Max Power Alkaline
 
-        <br/></h3>
-                                    <p class="card-text o_default_snippet_text">
-        <font style="color: rgb(103, 103, 103);">Our advanced batteries provide high performance, making them ideal for devices requiring extended runtime. They ensure sustained and reliable power for peak efficiency and are available in AA, AAA, and 9V sizes.&amp;nbsp;</font></p><p class="card-text o_default_snippet_text"><a class="btn btn-custom" style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);" href=""><font class="text-o-color-1">Learn More</font></a></p></div></div></div>
-                    </div>
-                </div>
-            </section><section class="s_three_columns pb32 o_colored_level o_cc o_cc1 pt8" data-vcss="001" data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
-                <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                        <div class="s_col_no_bgcolor col-lg-6">
-                            <div class="card text-bg-white h-100 border rounded" style="border-width: 0px !important; border-radius: 0px !important;">
-                                <img src="/web/image/826-7d098705/Uniross%20Max%20Power%20Alkaline%20Batteries%20Banner.png" alt="" class="card-img-top img img-fluid o_we_custom_image" data-mimetype="image/png" data-original-id="823" data-original-src="/web/image/823-7d098705/Uniross%20Max%20Power%20Alkaline%20Batteries%20Banner.png" data-mimetype-before-conversion="image/png" data-resize-width="1222" loading="lazy"/>
-                                <div class="card-body">
-                                    <h3 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.5625rem;">
-        Max Power Alkaline
-
-        </span><br/></h3>
-                                    <p class="card-text o_default_snippet_text"><font style="color: rgb(103, 103, 103);">High Performance for Mid to High-Tech Devices Tailored for optimal functionality in mid to high-tech devices, ensuring efficient power delivery and are available in AA, AAA sizes.
+                                                </span>
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text o_default_snippet_text">
+                                                <font style="color: rgb(103, 103, 103);">
+                                                    High Performance for Mid to High-Tech
+                                                    Devices Tailored for optimal
+                                                    functionality in mid to high-tech
+                                                    devices, ensuring efficient power
+                                                    delivery and are available in AA, AAA
+                                                    sizes.
 
 
-        </font><br/></p><p class="card-text o_default_snippet_text"><a class="btn btn-custom text-o-color-1" style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);" href="">Learn More</a></p>
+                                                </font>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text">
+                                                <a class="btn btn-custom text-o-color-1"
+                                                   style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);"
+                                                   href="">Learn More
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor col-lg-6">
+                                    <div class="card text-bg-white h-100 border rounded"
+                                         style="border-width: 0px !important; border-radius: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Uniross%20Portable%20Chargers.png"
+                                             alt=""
+                                             class="card-img-top o_we_image_cropped img img-fluid o_we_custom_image desktop_product_categ_img"
+                                             data-mimetype="image/png"
+                                             data-original-id="824"
+                                             data-original-src="/uniross_theme_extend/static/src/img/Uniross%20Portable%20Chargers.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="1216" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.5625rem;">
+                                                    One Charger, Multiple Possibilities
+
+                                                </span>
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text o_default_snippet_text">
+                                                <font style="color: rgb(103, 103, 103);">
+                                                    Whether you're charging AA, AAA, C, D,
+                                                    or 9V batteries, our charger ensures
+                                                    efficient and convenient power
+                                                    management for all your devices.
+                                                    Capable of charging multiple types of
+                                                    batteries simultaneously&amp;nbsp;with&amp;nbsp;ease.
+
+                                                </font>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text">
+                                                <a class="btn btn-custom"
+                                                   style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);"
+                                                   href="">
+                                                    <font class="text-o-color-1">Learn
+                                                        More
+                                                    </font>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="s_col_no_bgcolor col-lg-6">
-                            <div class="card text-bg-white h-100 border rounded" style="border-width: 0px !important; border-radius: 0px !important;">
-                                <img src="/web/image/827-a265edd2/Uniross%20Portable%20Chargers.png" alt="" class="card-img-top o_we_image_cropped img img-fluid o_we_custom_image" data-mimetype="image/png" data-original-id="824" data-original-src="/web/image/824-a265edd2/Uniross%20Portable%20Chargers.png" data-mimetype-before-conversion="image/png" data-resize-width="1216" loading="lazy"/>
-                                <div class="card-body">
-                                    <h3 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.5625rem;">
-        One Charger, Multiple Possibilities
+                    </section>
+                    <section class="s_title pt40 pb40 o_colored_level" data-vcss="001"
+                             data-snippet="s_title" data-name="Title"
+                             style="background-color: rgb(250, 250, 250); background-image: none;">
+                        <div class="container s_allow_columns">
+                            <h2 class="display-3-fs o_default_snippet_text"
+                                style="text-align: center;">
+                                <span style="font-size: 2.8125rem;">Power Solutions For
+                                </span>
+                            </h2>
+                            <h2 class="display-3-fs o_default_snippet_text"
+                                style="text-align: center;">
+                                <span style="font-size: 2.8125rem;">All Your Devices
+                                </span>
 
-        </span><br/></h3>
-                                    <p class="card-text o_default_snippet_text"><font style="color: rgb(103, 103, 103);">Whether you're charging AA, AAA, C, D, or 9V batteries, our charger ensures efficient and convenient power management for all your devices. Capable of charging multiple types of batteries simultaneously&amp;nbsp;with&amp;nbsp;ease.
-
-        </font><br/></p><p class="card-text o_default_snippet_text"><a class="btn btn-custom" style="border-width: 1px; border-style: solid; border-color: rgb(246, 80, 38);" href=""><font class="text-o-color-1">Learn More</font></a></p></div></div></div>
-                    </div>
-                </div>
-            </section><section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(250, 250, 250); background-image: none;">
-                <div class="container s_allow_columns">
-                    <h2 class="display-3-fs o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 2.8125rem;">Power Solutions For</span></h2><h2 class="display-3-fs o_default_snippet_text" style="text-align: center;"><span style="font-size: 2.8125rem;">All Your Devices</span>
-
-        <br/></h2>
-                </div>
-            </section><section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc2" data-vcss="001" data-snippet="s_three_columns" data-name="Columns" style="background-color: rgb(250, 250, 250); background-image: none;">
-                <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                        <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>
-        Lithium Ultra AA Batteries
-
-        </strong></span><br/></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div><div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
-                            <div class="card text-bg-white h-100 rounded" style="border-radius: 9.4px !important;">
-                                <img src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" alt="" class="card-img-top img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/svg+xml" data-original-id="842" data-original-src="/web/image/842-08ebf3db/ULIAA2_TBG.svg" data-mimetype-before-conversion="image/svg+xml" style="width: 50% !important;" loading="lazy"/>
-                                <div class="card-body">
-                                    <h5 class="card-title o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 1.125rem;"><strong>Lithium Ultra AA Batteries</strong></span></h5><p class="card-title o_default_snippet_text" style="text-align: center;"><span style="font-size: 0.9375rem;"><font style="color: rgb(103, 103, 103);">Experience extended runtime with Uniross Ultra Lithium AA batteries... &amp;nbsp;</font><strong/></span><br/></p>
-                                    <p class="card-text o_default_snippet_text" style="text-align: center;">&amp;nbsp;<a class="btn btn-primary" style="background-color: #F65026;" href="#top" data-bs-original-title="" title="">View All Products&amp;nbsp;</a><br/></p></div></div></div>
-
-                    </div>
-                </div>
-            </section><section class="s_features_grid pt48 pb24 o_colored_level" data-snippet="s_features_grid" data-name="Features Grid" style="background-image: none;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
-                            <div class="row">
-                                <div class="col-lg-12 o_colored_level pb0" data-name="Box">
-                                    <h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;">Our All-In-One</span></font></span></span></font></span></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;">Solution</span></font></span></span></font></span></h2><p class="o_default_snippet_text"><br/></p><p class="o_default_snippet_text"><font style="color: rgb(103, 103, 103);">Uniross designs, manufactures, and markets 'in-demand' portable energy solutions, offering innovative products and custom solutions that enhance the reliability, energy efficiency, and sustainability of portable power.</font></p><p class="o_default_snippet_text"><font style="color: rgb(103, 103, 103);">With over five decades of expertise, our tailored solutions have empowered businesses of all sizes worldwide to gain a competitive edge and increase their market share.</font>&amp;nbsp;</p></div>
-                                <div class="o_colored_level col-lg-6 pt0 pb0" data-name="Box">
-
-                                    <div class="s_features_grid_content">
-                                        <h4 class="o_default_snippet_text"><img src="/web/image/813-f96e80c1/battery-charging-1.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="813" data-original-src="/web/image/813-f96e80c1/battery-charging-1.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></h4><h4 class="o_default_snippet_text">
-        <span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><strong><font style="color: rgb(103, 103, 103);">Battery performance customization</font></strong></span>
-
-        <br/></h5></font></span></h4><p class="o_default_snippet_text"><br/></p></div>
-                                </div><div class="pb16 o_colored_level col-lg-6 pt0" data-name="Box">
-
-                                    <div class="s_features_grid_content">
-                                        <h4 class="o_default_snippet_text"><img src="/web/image/816-029132a3/mingcute_certificate-line-1.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="816" data-original-src="/web/image/816-029132a3/mingcute_certificate-line-1.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></h4><h5 class="o_default_snippet_text">
-        <span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);">
-        <span style="font-size: 1.125rem;">
-        <font style="color: rgb(103, 103, 103);">
-        <span style="font-size: 1.125rem;"><strong><font style="color: rgb(103, 103, 103);">Compliance &amp;amp; certification</font></strong></span>
-
-        </font></span></font></span><br/></h5></div>
-                                </div><div class="o_colored_level col-lg-6 pt0 pb16" data-name="Box">
-
-                                    <div class="s_features_grid_content">
-                                        <h4 class="o_default_snippet_text"><img src="/web/image/815-c8e99807/material-symbols_earbuds-battery-outline-sharp-1.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="815" data-original-src="/web/image/815-c8e99807/material-symbols_earbuds-battery-outline-sharp-1.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></h4><h4 class="o_default_snippet_text">
-        <span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><p class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"/></span></p><h5 class="o_default_snippet_text"><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><strong><font style="color: rgb(103, 103, 103);">Battery system development
-
-        </font></strong></span><br/></font></h5></font></span></h4><p/></div>
+                                <br/>
+                            </h2>
+                        </div>
+                    </section>
+                    <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc2"
+                             data-vcss="001" data-snippet="s_three_columns"
+                             data-name="Columns"
+                             style="background-color: rgb(250, 250, 250); background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>
+                                                        Lithium Ultra AA Batteries
 
-
-                            </div>
-                        </div>
-                        <div class="col-lg-6 s_col_no_bgcolor pb24">
-                            <div class="row">
-                                <div class="col-lg-12 o_colored_level pt32 pb24" data-name="Box">
-                                    <h2 class="o_default_snippet_text"><img src="/web/image/812-1ef3026c/Uniross%20all%20in%20one%20solutions.png" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/png" data-original-id="811" data-original-src="/web/image/811-1ef3026c/Uniross%20all%20in%20one%20solutions.png" data-mimetype-before-conversion="image/png" data-resize-width="1364" loading="lazy" style="padding: 20px;"/><br/></h2>
+                                                    </strong>
+                                                </span>
+                                                <br/>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><section class="s_features_grid pb24 o_colored_level pt32" data-snippet="s_features_grid" data-name="Features Grid" style="background-image: linear-gradient(135deg, rgb(255, 114, 79) 0%, rgb(246, 80, 38) 100%);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
-                            <div class="row">
-                                <div class="col-lg-12 pb24 o_colored_level" data-name="Box">
-                                    <h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-4"><span style="font-size: 2.8125rem;">Industries</span></font></span></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-4"><span style="font-size: 2.8125rem;">We Serve</span></font></span></h2><p class="o_default_snippet_text"><br/></p><div class="o_text_columns"><div class="row"><div class="col-6 o_colored_level pb16 col-lg-5"><p class="o_default_snippet_text"><img src="/web/image/891-05924bb4/ion_radio.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="891" data-original-src="/web/image/891-05924bb4/ion_radio.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Telecommunications</font></span></h5></div><div class="col-6 o_colored_level pb16 col-lg-4"><p><img src="/web/image/892-9dedbe88/mdi_emergency-exit.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Emergency Lighting</font></span></font></span></h5></div></div></div><div class="o_text_columns"><div class="row"><div class="col-6 o_colored_level pb16 col-lg-5"><p class="o_default_snippet_text"><img src="/web/image/894-551e6ff9/uil_monitor-heart-rate.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="894" data-original-src="/web/image/894-551e6ff9/uil_monitor-heart-rate.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">MedTech&amp;nbsp;</font></span></h5></div><div class="col-6 o_colored_level pb16 col-lg-4"><p><img src="/web/image/895-dc0df346/mdi_drone.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="895" data-original-src="/web/image/895-dc0df346/mdi_drone.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Aerospace &amp;amp; Military</font><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">&amp;nbsp;</font></span>
-
-        </font></span></h5></div></div></div><div class="o_text_columns"><div class="row"><div class="o_colored_level pt0 pb16 col-lg-5 col-6" data-name="Box">
-
-                                    <div class="s_features_grid_content">
-                                        <h4 class="o_default_snippet_text"><img src="/web/image/893-e127e109/bi_controller.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="893" data-original-src="/web/image/893-e127e109/bi_controller.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></h4><h5 class="o_default_snippet_text">
-        </h5><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><font class="text-o-color-4"><span style="font-size: 1.125rem;">IoT devices</span></font></font><font class="text-o-color-4">&amp;nbsp;</font></span></h5></div>
-                                </div><div class="pb16 o_colored_level pt0 col-lg-4 col-6" data-name="Box">
-
-                                    <div class="s_features_grid_content">
-                                        <h4 class="o_default_snippet_text"><img src="/web/image/897-6e8f6eb2/car.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="897" data-original-src="/web/image/897-6e8f6eb2/car.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></h4><h4 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Automobile</font></span></font></span></h4></div>
-                                </div></div></div></div>
-
-
-
-                            </div>
-                        </div>
-                        <div class="col-lg-6 s_col_no_bgcolor pb24">
-                            <div class="row">
-                                <div class="col-lg-12 pb24 o_colored_level pt24" data-name="Box">
-                                    <!--<h2 class="o_default_snippet_text"><img src="/web/image/651-75392937/Mask%20group.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/png" data-original-id="651" data-original-src="/web/image/651-75392937/Mask%20group.png" data-mimetype-before-conversion="image/png"/><br/></h2>-->
-                                    <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" class="mx-auto media_iframe_video">
-                                        <div class="css_editable_mode_display"/>
-                                        <div class="media_iframe_video_size"/>
-                                        <iframe allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" frameborder="0"/>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                    <div class="card text-bg-white h-100 rounded"
+                                         style="border-radius: 9.4px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="842"
+                                             data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             style="width: 50% !important;"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title o_default_snippet_text"
+                                                style="text-align: center;">
+                                                <span style="font-size: 1.125rem;">
+                                                    <strong>Lithium Ultra AA Batteries
+                                                    </strong>
+                                                </span>
+                                            </h5>
+                                            <p class="card-title o_default_snippet_text"
+                                               style="text-align: center;">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <font style="color: rgb(103, 103, 103);">
+                                                        Experience extended runtime with
+                                                        Uniross Ultra Lithium AA
+                                                        batteries... &amp;nbsp;
+                                                    </font>
+                                                    <strong/>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p class="card-text o_default_snippet_text"
+                                               style="text-align: center;">&amp;nbsp;
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #F65026;"
+                                                   href="#top" data-bs-original-title=""
+                                                   title="">View All Products&amp;nbsp;
+                                                </a>
+                                                <br/>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_features_grid pt48 pb24 o_colored_level"
+                             data-snippet="s_features_grid" data-name="Features Grid"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
+                                    <div class="row">
+                                        <div class="col-lg-12 o_colored_level pb0"
+                                             data-name="Box">
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-2">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            <span style="font-size: 3.4375rem;">
+                                                                <font class="text-o-color-2">
+                                                                    <span style="font-size: 2.8125rem;">
+                                                                        Our All-In-One
+                                                                    </span>
+                                                                </font>
+                                                            </span>
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-2">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            <span style="font-size: 3.4375rem;">
+                                                                <font class="text-o-color-2">
+                                                                    <span style="font-size: 2.8125rem;">
+                                                                        Solution
+                                                                    </span>
+                                                                </font>
+                                                            </span>
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <p class="o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="o_default_snippet_text">
+                                                <font style="color: rgb(103, 103, 103);">
+                                                    Uniross designs, manufactures, and
+                                                    markets 'in-demand' portable energy
+                                                    solutions, offering innovative
+                                                    products and custom solutions that
+                                                    enhance the reliability, energy
+                                                    efficiency, and sustainability of
+                                                    portable power.
+                                                </font>
+                                            </p>
+                                            <p class="o_default_snippet_text"><font
+                                                    style="color: rgb(103, 103, 103);">
+                                                With over five decades of expertise, our
+                                                tailored solutions have empowered
+                                                businesses of all sizes worldwide to gain
+                                                a competitive edge and increase their
+                                                market share.</font>&amp;nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="o_colored_level col-lg-6 pt0 pb0"
+                                             data-name="Box">
+                                            <div class="s_features_grid_content">
+                                                <h4 class="o_default_snippet_text">
+                                                    <img src="/uniross_theme_extend/static/src/img/battery-charging-1.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="813"
+                                                         data-original-src="/uniross_theme_extend/static/src/img/battery-charging-1.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"
+                                                         loading="lazy"/>
+                                                    <br/>
+                                                </h4>
+                                                <h4 class="o_default_snippet_text">
+                                                    <span style="font-size: 1.125rem;">
+                                                        <font style="color: rgb(103, 103, 103);">
+                                                            <h5 class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <strong>
+                                                                        <font style="color: rgb(103, 103, 103);">
+                                                                            Battery performance customization
+                                                                        </font>
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </h5>
+                                                        </font>
+                                                    </span>
+                                                </h4>
+                                                <p class="o_default_snippet_text">
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pb16 o_colored_level col-lg-6 pt0"
+                                             data-name="Box">
+                                            <div class="s_features_grid_content">
+                                                <h4 class="o_default_snippet_text">
+                                                    <img src="/uniross_theme_extend/static/src/img/mingcute_certificate-line-1.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="816"
+                                                         data-original-src="/uniross_theme_extend/static/src/img/mingcute_certificate-line-1.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"
+                                                         loading="lazy"/>
+                                                    <br/>
+                                                </h4>
+                                                <h5 class="o_default_snippet_text">
+                                                    <span style="font-size: 1.125rem;">
+                                                        <font style="color: rgb(103, 103, 103);">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <strong>
+                                                                            <font style="color: rgb(103, 103, 103);">
+                                                                                Compliance
+                                                                                &amp;amp;
+                                                                                certification
+                                                                            </font>
+                                                                        </strong>
+                                                                    </span>
 
+                                                                </font>
+                                                            </span>
+                                                        </font>
+                                                    </span>
+                                                    <br/>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="o_colored_level col-lg-6 pt0 pb16"
+                                             data-name="Box">
+                                            <div class="s_features_grid_content">
+                                                <h4 class="o_default_snippet_text">
+                                                    <img src="/uniross_theme_extend/static/src/img/material-symbols_earbuds-battery-outline-sharp-1.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="815"
+                                                         data-original-src="/uniross_theme_extend/static/src/img/material-symbols_earbuds-battery-outline-sharp-1.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"
+                                                         loading="lazy"/>
+                                                    <br/>
+                                                </h4>
+                                                <h4 class="o_default_snippet_text">
+                                                    <span style="font-size: 1.125rem;">
+                                                        <font style="color: rgb(103, 103, 103);">
+                                                            <p class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <font style="color: rgb(103, 103, 103);"/>
+                                                                </span>
+                                                            </p>
+                                                            <h5 class="o_default_snippet_text">
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <strong>
+                                                                            <font style="color: rgb(103, 103, 103);">
+                                                                                Battery system development
+                                                                            </font>
+                                                                        </strong>
+                                                                    </span>
+                                                                    <br/>
+                                                                </font>
+                                                            </h5>
+                                                        </font>
+                                                    </span>
+                                                </h4>
+                                                <p/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 s_col_no_bgcolor pb24">
+                                    <div class="row">
+                                        <div class="col-lg-12 o_colored_level pt32 pb24"
+                                             data-name="Box">
+                                            <h2 class="o_default_snippet_text">
+                                                <img src="/uniross_theme_extend/static/src/img/Uniross%20all%20in%20one%20solutions.png"
+                                                     alt=""
+                                                     class="img img-fluid o_we_custom_image desktop_solution_img_size"
+                                                     data-mimetype="image/png"
+                                                     data-original-id="811"
+                                                     data-original-src="/uniross_theme_extend/static/src/img/Uniross%20all%20in%20one%20solutions.png"
+                                                     data-mimetype-before-conversion="image/png"
+                                                     data-resize-width="1364"
+                                                     loading="lazy"
+                                                     style="padding: 20px;"/>
+                                                <br/>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_features_grid pb24 o_colored_level pt32"
+                             data-snippet="s_features_grid" data-name="Features Grid"
+                             style="background-image: linear-gradient(135deg, rgb(255, 114, 79) 0%, rgb(246, 80, 38) 100%);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
+                                    <div class="row">
+                                        <div class="col-lg-12 pb24 o_colored_level"
+                                             data-name="Box">
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-4">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            Industries
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-4">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            We Serve
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <p class="o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="col-6 o_colored_level pb16 col-lg-5">
+                                                        <p class="o_default_snippet_text">
+                                                            <img src="/uniross_theme_extend/static/src/img/ion_radio.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="891"
+                                                                 data-original-src="/uniross_theme_extend/static/src/img/ion_radio.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    Telecommunications
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-6 o_colored_level pb16 col-lg-4">
+                                                        <p>
+                                                            <img src="/uniross_theme_extend/static/src/img/mdi_emergency-exit.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <font class="text-o-color-4">
+                                                                            Emergency
+                                                                            Lighting
+                                                                        </font>
+                                                                    </span>
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="col-6 o_colored_level pb16 col-lg-5">
+                                                        <p class="o_default_snippet_text">
+                                                            <img src="/uniross_theme_extend/static/src/img/uil_monitor-heart-rate.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="894"
+                                                                 data-original-src="/uniross_theme_extend/static/src/img/uil_monitor-heart-rate.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    MedTech&amp;nbsp;
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-6 o_colored_level pb16 col-lg-4">
+                                                        <p>
+                                                            <img src="/uniross_theme_extend/static/src/img/mdi_drone.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="895"
+                                                                 data-original-src="/uniross_theme_extend/static/src/img/mdi_drone.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    Aerospace &amp;amp;
+                                                                    Military
+                                                                </font>
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <font class="text-o-color-4">
+                                                                            &amp;nbsp;
+                                                                        </font>
+                                                                    </span>
+
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="o_colored_level pt0 pb16 col-lg-5 col-6"
+                                                         data-name="Box">
+
+                                                        <div class="s_features_grid_content">
+                                                            <h4 class="o_default_snippet_text">
+                                                                <img src="/uniross_theme_extend/static/src/img/bi_controller.svg"
+                                                                     alt=""
+                                                                     class="img img-fluid o_we_custom_image"
+                                                                     data-mimetype="image/svg+xml"
+                                                                     data-original-id="893"
+                                                                     data-original-src="/uniross_theme_extend/static/src/img/bi_controller.svg"
+                                                                     data-mimetype-before-conversion="image/svg+xml"
+                                                                     loading="lazy"/>
+                                                                <br/>
+                                                            </h4>
+                                                            <h5 class="o_default_snippet_text">
+                                                            </h5>
+                                                            <h5 class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <font style="color: rgb(103, 103, 103);">
+                                                                        <font class="text-o-color-4">
+                                                                            <span style="font-size: 1.125rem;">
+                                                                                IoT
+                                                                                devices
+                                                                            </span>
+                                                                        </font>
+                                                                    </font>
+                                                                    <font class="text-o-color-4">
+                                                                        &amp;nbsp;
+                                                                    </font>
+                                                                </span>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pb16 o_colored_level pt0 col-lg-4 col-6"
+                                                         data-name="Box">
+
+                                                        <div class="s_features_grid_content">
+                                                            <h4 class="o_default_snippet_text">
+                                                                <img src="/uniross_theme_extend/static/src/img/car.svg"
+                                                                     alt=""
+                                                                     class="img img-fluid o_we_custom_image"
+                                                                     data-mimetype="image/svg+xml"
+                                                                     data-original-id="897"
+                                                                     data-original-src="/uniross_theme_extend/static/src/img/car.svg"
+                                                                     data-mimetype-before-conversion="image/svg+xml"
+                                                                     loading="lazy"/>
+                                                            </h4>
+                                                            <h4 class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <font style="color: rgb(103, 103, 103);">
+                                                                        <span style="font-size: 1.125rem;">
+                                                                            <font class="text-o-color-4">
+                                                                                Automobile
+                                                                            </font>
+                                                                        </span>
+                                                                    </font>
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_16">
+                                    <div class="row">
+                                        <div class="col-lg-12 pb24 o_colored_level pt24"
+                                             data-name="Box">
+<!--                                            <h2 class="o_default_snippet_text"><img src="/uniross_theme_extend/static/src/img/Mask%20group.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/png" data-original-id="651" data-original-src="/uniross_theme_extend/static/src/img/Mask%20group.png" data-mimetype-before-conversion="image/png"/><br/></h2>-->
+                                            <div data-oe-expression="/uniross_theme_extend/static/src/video/uniross_industries_we_serve.mp4"
+                                                 class="mx-auto media_iframe_video desktop_custom_video_size">
+                                                <div class="css_editable_mode_display"/>
+                                                <div class="media_iframe_video_size"/>
+                                                <iframe allowfullscreen="allowfullscreen"
+                                                        src="/uniross_theme_extend/static/src/video/uniross_industries_we_serve.mp4"
+                                                        frameborder="0"/>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image o_colored_level pt48 pb48"
+                             data-snippet="s_text_image" data-name="Text - Image"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="pt16 pb16 o_colored_level col-lg-6">
+                                    <div class="s_rating pt0 pb32" data-vcss="001"
+                                         data-icon="fa-star" data-snippet="s_rating"
+                                         data-name="Rating">
+                                        <h2 class="s_rating_title o_default_snippet_text">
+                                            <span style="font-size: 2.5rem;">
+                                                <strong>
+                                                    <font class="text-o-color-2">
+                                                        <span style="font-size: 2.8125rem; font-weight: normal;">
+                                                            Our Customers Say...
+                                                        </span>
+                                                    </font>
+                                                </strong>
+                                            </span>
+                                            <br/>
+                                        </h2>
+                                        <div class="s_rating_icons o_not_editable fa-2x">
+                                            <span class="s_rating_active_icons text-o-color-1">
+
+
+                                                <i class="fa fa-star"/>
+                                                <i class="fa fa-star"/>
+                                                <i class="fa fa-star"/>
+                                                <i class="fa fa-star"/>
+                                                <i class="fa fa-star"/>
+                                            </span>
+                                            <span class="s_rating_inactive_icons">
+
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h3 class="o_default_snippet_text">
+                                        <span style="font-size: 1.5625rem;">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                “Uniross listens to our customer needs and&amp;nbsp;continuously
+                                                improve the battery products &amp;amp;
+                                                chargers.”
+                                            </font>
+                                        </span>
+                                    </h3>
+                                    <h5 class="o_default_snippet_text">
+                                        <span style="font-size: 1.25rem;">
+                                            <strong>
+                                                <font class="text-o-color-2">
+                                                    <span style="font-size: 1.125rem;">
+                                                        Partner, Bangladesh Region
+                                                    </span>
+                                                </font>
+                                            </strong>
+                                        </span>
+
+                                        <br/>
+                                    </h5>
+                                </div>
+                                <div class="o_colored_level col-lg-6 pt48 pb64">
+                                    <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
+                                         class="mx-auto media_iframe_video desktop_youtube_video_size">
+                                        <div class="css_editable_mode_display"/>
+                                        <div class="media_iframe_video_size"/>
+                                        <iframe allowfullscreen="allowfullscreen"
+                                                src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
+                                                frameborder="0"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_title pt40 o_colored_level pb32" data-vcss="001"
+                             data-snippet="s_title" data-name="Title"
+                             style="background-color: rgb(250, 250, 250); background-image: none;">
+                        <div class="s_allow_columns container">
+                            <h2 class="display-3-fs o_default_snippet_text"
+                                style="text-align: center;">
+                                <span style="font-size: 2.8125rem;">News</span>
+
+                                <br/>
+                            </h2>
+                        </div>
+                    </section>
+                    <section class="s_three_columns pt32 o_colored_level pb56 o_cc o_cc2"
+                             data-vcss="001" data-snippet="s_three_columns"
+                             data-name="Columns"
+                             style="background-color: rgb(250, 250, 250); background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100 border rounded bg-400"
+                                         style="border-width: 0px !important; border-radius: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Rectangle%2011.svg"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image"
+                                             data-mimetype="image/svg+xml"
+                                             data-original-id="843"
+                                             data-original-src="/uniross_theme_extend/static/src/img/Rectangle%2011.svg"
+                                             data-mimetype-before-conversion="image/svg+xml"
+                                             loading="lazy"/>
+                                        <div class="card-body">
+                                            <h4 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.375rem;">
+                                                    Sustainable Energy Solutions:
+                                                    Uniross's Commitment to
+                                                    Environment-Friendly Batteries
+                                                </span>
+
+                                                <br/>
+                                            </h4>
+                                            <p class="card-text o_default_snippet_text">
+                                                Lorem Ipsum&amp;nbsp;is simply dummy text
+                                                of the printing and typesetting industry.
+                                                Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s,
+
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100 border bg-400"
+                                         style="border-width: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Rectangle%2011.webp"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image"
+                                             data-mimetype="image/webp"
+                                             data-original-id="657"
+                                             data-original-src="/web/image/657-d643d0ed/Rectangle%2011.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="421" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h4 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.375rem;">
+                                                    How to Prolong the Life of Your
+                                                    Rechargeable Batteries
+
+                                                </span>
+                                                <br/>
+                                            </h4>
+                                            <p class="card-text o_default_snippet_text">
+                                                Lorem Ipsum&amp;nbsp;is simply dummy text
+                                                of the printing and typesetting industry.
+                                                Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s,
+
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100 border bg-400"
+                                         style="border-width: 0px !important;">
+                                        <img src="/uniross_theme_extend/static/src/img/Rectangle%2011.webp"
+                                             alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image"
+                                             data-mimetype="image/webp"
+                                             data-original-id="657"
+                                             data-original-src="/web/image/657-d643d0ed/Rectangle%2011.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="421" loading="lazy"/>
+                                        <div class="card-body">
+                                            <h4 class="card-title o_default_snippet_text">
+                                                <span style="font-size: 1.375rem;">
+                                                    Portable Lighting Solutions:
+                                                    Battery-Powered Options for Every Need
+
+                                                </span>
+                                                <br/>
+                                            </h4>
+                                            <p class="card-text o_default_snippet_text">
+                                                Lorem Ipsum&amp;nbsp;is simply dummy text
+                                                of the printing and typesetting industry.
+                                                Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s,
+
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <section class="o_colored_level" data-name="Newsletter"
+                             style="background-image: none;"/>
                 </div>
-            </section><section class="s_text_image o_colored_level pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="pt16 pb16 o_colored_level col-lg-6">
-                            <div class="s_rating pt0 pb32" data-vcss="001" data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
-                <h2 class="s_rating_title o_default_snippet_text"><span style="font-size: 2.5rem;"><strong><font class="text-o-color-2"><span style="font-size: 2.8125rem; font-weight: normal;">Our Customers Say...</span></font></strong></span>
-                            <br/></h2>
-                <div class="s_rating_icons o_not_editable fa-2x">
-                    <span class="s_rating_active_icons text-o-color-1">
-
-
-
-                         <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> </span>
-                    <span class="s_rating_inactive_icons">
-
-
-                         </span>
-                </div>
-            </div>
-                            <h3 class="o_default_snippet_text"><span style="font-size: 1.5625rem;"><font style="color: rgb(103, 103, 103);">“Uniross listens to our customer needs and&amp;nbsp;continuously improve the battery products &amp;amp; chargers.”</font></span></h3><h5 class="o_default_snippet_text">
-        <span style="font-size: 1.25rem;"><strong><font class="text-o-color-2"><span style="font-size: 1.125rem;">Partner, Bangladesh Region</span></font></strong></span>
-
-        <br/></h5></div>
-                        <div class="o_colored_level col-lg-6 pt48 pb64">
-                            <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" class="mx-auto media_iframe_video">
-                        <div class="css_editable_mode_display"/>
-                        <div class="media_iframe_video_size"/>
-                        <iframe allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" frameborder="0"/>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </section><section class="s_title pt40 o_colored_level pb32" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(250, 250, 250); background-image: none;">
-                <div class="s_allow_columns container">
-                    <h2 class="display-3-fs o_default_snippet_text" style="text-align: center;">
-        <span style="font-size: 2.8125rem;">News</span>
-
-        <br/></h2>
-                </div>
-            </section><section class="s_three_columns pt32 o_colored_level pb56 o_cc o_cc2" data-vcss="001" data-snippet="s_three_columns" data-name="Columns" style="background-color: rgb(250, 250, 250); background-image: none;">
-                <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                            <div class="card text-bg-white h-100 border rounded bg-400" style="border-width: 0px !important; border-radius: 0px !important;">
-                                <img src="/web/image/843-ed677ff9/Rectangle%2011.svg" alt="" class="card-img-top img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="843" data-original-src="/web/image/843-ed677ff9/Rectangle%2011.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
-                                <div class="card-body">
-                                    <h4 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.375rem;">Sustainable Energy Solutions: Uniross's Commitment to Environment-Friendly Batteries</span>
-
-        <br/></h4>
-                                    <p class="card-text o_default_snippet_text">
-        Lorem Ipsum&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-
-        <br/></p></div></div></div><div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                            <div class="card text-bg-white h-100 border bg-400" style="border-width: 0px !important;">
-                                <img src="/web/image/660-dd793ce5/Rectangle%2011.webp" alt="" class="card-img-top img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="657" data-original-src="/web/image/657-d643d0ed/Rectangle%2011.png" data-mimetype-before-conversion="image/png" data-resize-width="421" loading="lazy"/>
-                                <div class="card-body">
-                                    <h4 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.375rem;">
-        How to Prolong the Life of Your Rechargeable Batteries
-
-        </span><br/></h4>
-                                    <p class="card-text o_default_snippet_text">
-        Lorem Ipsum&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-
-        <br/></p></div></div></div><div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                            <div class="card text-bg-white h-100 border bg-400" style="border-width: 0px !important;">
-                                <img src="/web/image/659-dd793ce5/Rectangle%2011.webp" alt="" class="card-img-top img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="657" data-original-src="/web/image/657-d643d0ed/Rectangle%2011.png" data-mimetype-before-conversion="image/png" data-resize-width="421" loading="lazy"/>
-                                <div class="card-body">
-                                    <h4 class="card-title o_default_snippet_text">
-        <span style="font-size: 1.375rem;">
-        Portable Lighting Solutions: Battery-Powered Options for Every Need
-
-        </span><br/></h4>
-                                    <p class="card-text o_default_snippet_text">
-        Lorem Ipsum&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-
-        <br/></p></div></div></div>
-
-                    </div>
-                </div>
-            </section><section class="o_colored_level" data-name="Newsletter" style="background-image: none;"/></div>
             </t>
-            </xpath>
-        </template>
+        </xpath>
+    </template>
 
 </odoo>

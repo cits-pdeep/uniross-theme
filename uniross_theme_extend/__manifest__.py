@@ -20,7 +20,7 @@
         'views/website_menu.xml',
         'views/website_templates.xml',
         'views/website_home_page.xml',
-        'views/website_about_us.xml',
+        # 'views/website_about_us.xml',
     ],
     'assets': {
         'web.assets_frontend': [

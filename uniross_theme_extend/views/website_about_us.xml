@@ -1,173 +1,753 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <template id="custom_about_us" inherit_id="website.aboutus">
-        <t t-call="website.layout">
-            <div id="wrap" class="oe_structure oe_empty"><section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
-            <div class="s_allow_columns o_container_small">
-                <h1 class="o_default_snippet_text" style="text-align: center;">
-    <span style="font-size: 4.6875rem;"><font class="text-o-color-2"><span style="font-size: 3.75rem;">Over 50 Years of Excellence</span></font></span>
+    <t t-name="website.about-us">
+        <!--    <template id="custom_about_us" inherit_id="website.aboutus">-->
+        <!--    <template id="website.about-us" name="About Us">-->
+        <xpath expr="//t" position="replace">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="s_title pt40 pb40 o_colored_level" data-vcss="001"
+                             data-snippet="s_title" data-name="Title"
+                             style="background-image: none;">
+                        <div class="s_allow_columns o_container_small">
+                            <h1 class="o_default_snippet_text"
+                                style="text-align: center;">
+                                <span style="font-size: 4.6875rem;">
+                                    <font class="text-o-color-2">
+                                        <span style="font-size: 3.75rem;">Over 50 Years of
+                                            Excellence
+                                        </span>
+                                    </font>
+                                </span>
 
-    <br/></h1>
-            </div>
-        </section><section class="s_text_block pb40 o_colored_level pt32" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
-            <div class="s_allow_columns o_container_small">
-                <p class="o_default_snippet_text" style="text-align: center;"><font style="color: rgb(103, 103, 103);">
-    With over five decades of expertise, Uniross is a B2B company specializing in designing, manufacturing, and marketing high-demand portable energy solutions. Our innovative products and tailored solutions ensure portable power is more reliable, energy-efficient, and sustainable. Our branded products and custom solutions empower businesses worldwide, providing them with a competitive edge and helping them capture a larger market share.
-
-    </font></p></div>
-        </section><section class="s_numbers pt24 pb24 o_colored_level o_cc o_cc1" data-snippet="s_numbers" data-name="Numbers" style="background-image: none;">
-            <div class="container">
-                <div class="row">
-                    <div class="text-center pt24 pb24 o_colored_level col-lg-4"><h2>
-                        <span class="s_number display-4 o_default_snippet_text"><span style="font-size: 4.6875rem;"><font class="text-o-color-1"><span style="font-size: 2.8125rem;">50+</span></font></span></span>
-                        </h2><h5 class="o_default_snippet_text">
-    <span style="font-size: 1.25rem;"><font class="text-600"><span style="font-size: 1.125rem;">Years Of Experience</span></font></span>
-
-    <br/></h5>
-                    </div><div class="text-center pt24 pb24 o_colored_level col-lg-4"><h2>
-                        <span class="s_number display-4 o_default_snippet_text"><span style="font-size: 4.6875rem;"><font class="text-o-color-1"><span style="font-size: 2.8125rem;">5000+</span></font></span></span>
-                        </h2><h5 class="o_default_snippet_text">
-    <span style="font-size: 1.25rem;"><font style="color: rgb(103, 103, 103);">
-    </font></span><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;">Retail Touchpoints
-
-    </span></font><br/></h5>
-                    </div><div class="text-center pt24 pb24 o_colored_level col-lg-4"><h2>
-                        <span class="s_number display-4 o_default_snippet_text"><span style="font-size: 4.6875rem;"><font class="text-o-color-1"><span style="font-size: 2.8125rem;">70+</span></font></span></span>
-                        </h2><h5 class="o_default_snippet_text">
-    <span style="font-size: 1.25rem;">
-    </span><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;">Subsidiaries Worldwide
-
-    </span></font>
-
-    <br/></h5>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section><section class="s_text_image pt32 o_colored_level pb56" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 pt16 pb16 o_colored_level"><h5>
-                        <img src="/web/image/905-2ed177e3/about_uniross.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="900" data-original-src="/web/image/900-0ee3c4e2/about_uniross.png" data-mimetype-before-conversion="image/png" data-resize-width="512" loading="lazy"/>
-                    </h5></div>
-                    <div class="col-lg-6 pt16 pb16 o_colored_level">
-                        <h2 class="o_default_snippet_text">
-    <span style="font-size: 1rem;"><font class="text-o-color-1"><span class="o_small-fs"><strong>ABOUT US</strong></span></font></span>
-
-    <br/></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2">
-    <span style="font-size: 2.8125rem;">
-    Global Leader in Quality</span></font></span></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;">and Reliability
-
-    &amp;nbsp;</span></font></span><br/></h2>
-                        <p class="o_default_snippet_text"><font style="color: rgb(103, 103, 103);">
-    Uniross is a household name known for high quality, efficiency, and reliability. From our humble beginnings in the United Kingdom, we are now headquartered in France, with branches serving global partners in over 70 countries. We have shipped over 150 million products, reaching consumers through more than 50,000 retail and online channels. This impeccable brand reputation has empowered our partners to seamlessly expand their business footprint and capture market share in key regions.
-
-    </font><br/></p><p><a href="#" class="btn btn-custom bg-o-color-1" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/757-23a43ac7/eva_people-outline.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy"/> ​​Join The Uniross Family</a><br/></p>
-                    </div>
-                </div>
-            </div>
-        </section><section class="s_features_grid pb24 o_colored_level pt32 s_custom_snippet" data-snippet="s_features_grid" style="background-image: linear-gradient(135deg, rgb(255, 114, 79) 0%, rgb(246, 80, 38) 100%);" data-name="Custom Features Grid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
-                        <div class="row">
-                            <div class="col-lg-12 pb24 o_colored_level" data-name="Box">
-                                <h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-4"><span style="font-size: 2.8125rem;">Industries</span></font></span></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-4"><span style="font-size: 2.8125rem;">We Serve</span></font></span></h2><p class="o_default_snippet_text"><br/></p><div class="o_text_columns"><div class="row"><div class="col-6 o_colored_level pb16 col-lg-5"><p class="o_default_snippet_text"><img src="/web/image/891-05924bb4/ion_radio.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="891" data-original-src="/web/image/891-05924bb4/ion_radio.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Telecommunications</font></span></h5></div><div class="col-6 o_colored_level pb16 col-lg-4"><p><img src="/web/image/892-9dedbe88/mdi_emergency-exit.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/svg+xml" data-original-id="892" data-original-src="/web/image/892-9dedbe88/mdi_emergency-exit.svg" data-mimetype-before-conversion="image/svg+xml"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Emergency Lighting</font></span></font></span></h5></div></div></div><div class="o_text_columns"><div class="row"><div class="col-6 o_colored_level pb16 col-lg-5"><p class="o_default_snippet_text"><img src="/web/image/894-551e6ff9/uil_monitor-heart-rate.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="894" data-original-src="/web/image/894-551e6ff9/uil_monitor-heart-rate.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">MedTech&amp;nbsp;</font></span></h5></div><div class="col-6 o_colored_level pb16 col-lg-4"><p><img src="/web/image/895-dc0df346/mdi_drone.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="895" data-original-src="/web/image/895-dc0df346/mdi_drone.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></p><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Aerospace &amp;amp; Military</font><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">&amp;nbsp;</font></span>
-
-    </font></span></h5></div></div></div><div class="o_text_columns"><div class="row"><div class="o_colored_level pt0 pb16 col-lg-5 col-6" data-name="Box">
-
-                                <div class="s_features_grid_content">
-                                    <h4 class="o_default_snippet_text"><img src="/web/image/893-e127e109/bi_controller.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="893" data-original-src="/web/image/893-e127e109/bi_controller.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></h4><h5 class="o_default_snippet_text">
-    </h5><h5 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><font class="text-o-color-4"><span style="font-size: 1.125rem;">IoT devices</span></font></font><font class="text-o-color-4">&amp;nbsp;</font></span></h5></div>
-                            </div><div class="pb16 o_colored_level pt0 col-lg-4 col-6" data-name="Box">
-
-                                <div class="s_features_grid_content">
-                                    <h4 class="o_default_snippet_text"><img src="/web/image/897-6e8f6eb2/car.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="897" data-original-src="/web/image/897-6e8f6eb2/car.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></h4><h4 class="o_default_snippet_text"><span style="font-size: 1.125rem;"><font style="color: rgb(103, 103, 103);"><span style="font-size: 1.125rem;"><font class="text-o-color-4">Automobile</font></span></font></span></h4></div>
-                            </div></div></div></div>
-
-
-
+                                <br/>
+                            </h1>
                         </div>
-                    </div>
-                    <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_4">
-                        <div class="row">
-                            <div class="col-lg-12 pb24 o_colored_level pt24" data-name="Box">
-                                <!--<h2 class="o_default_snippet_text"><img src="/web/image/651-75392937/Mask%20group.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/png" data-original-id="651" data-original-src="/web/image/651-75392937/Mask%20group.png" data-mimetype-before-conversion="image/png"/><br/></h2>-->
-                                <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" class="mx-auto media_iframe_video">
-                                    <div class="css_editable_mode_display"/>
-                                    <div class="media_iframe_video_size"/>
-                                    <iframe allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0" frameborder="0"/>
+                    </section>
+                    <section class="s_text_block pb40 o_colored_level pt32"
+                             data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns o_container_small">
+                            <p class="o_default_snippet_text" style="text-align: center;">
+                                <font style="color: rgb(103, 103, 103);">
+                                    With over five decades of expertise, Uniross is a B2B
+                                    company specializing in designing, manufacturing, and
+                                    marketing high-demand portable energy solutions. Our
+                                    innovative products and tailored solutions ensure
+                                    portable power is more reliable, energy-efficient, and
+                                    sustainable. Our branded products and custom solutions
+                                    empower businesses worldwide, providing them with a
+                                    competitive edge and helping them capture a larger
+                                    market share.
+
+                                </font>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="s_numbers pt24 pb24 o_colored_level o_cc o_cc1"
+                             data-snippet="s_numbers" data-name="Numbers"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                    <h2>
+                                        <span class="s_number display-4 o_default_snippet_text">
+                                            <span style="font-size: 4.6875rem;">
+                                                <font class="text-o-color-1">
+                                                    <span style="font-size: 2.8125rem;">
+                                                        50+
+                                                    </span>
+                                                </font>
+                                            </span>
+                                        </span>
+                                    </h2>
+                                    <h5 class="o_default_snippet_text">
+                                        <span style="font-size: 1.25rem;">
+                                            <font class="text-600">
+                                                <span style="font-size: 1.125rem;">Years
+                                                    Of Experience
+                                                </span>
+                                            </font>
+                                        </span>
+
+                                        <br/>
+                                    </h5>
+                                </div>
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                    <h2>
+                                        <span class="s_number display-4 o_default_snippet_text">
+                                            <span style="font-size: 4.6875rem;">
+                                                <font class="text-o-color-1">
+                                                    <span style="font-size: 2.8125rem;">
+                                                        5000+
+                                                    </span>
+                                                </font>
+                                            </span>
+                                        </span>
+                                    </h2>
+                                    <h5 class="o_default_snippet_text">
+                                        <span style="font-size: 1.25rem;">
+                                            <font style="color: rgb(103, 103, 103);">
+                                            </font>
+                                        </span>
+                                        <font style="color: rgb(103, 103, 103);">
+                                            <span style="font-size: 1.125rem;">Retail
+                                                Touchpoints
+
+                                            </span>
+                                        </font>
+                                        <br/>
+                                    </h5>
+                                </div>
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                    <h2>
+                                        <span class="s_number display-4 o_default_snippet_text">
+                                            <span style="font-size: 4.6875rem;">
+                                                <font class="text-o-color-1">
+                                                    <span style="font-size: 2.8125rem;">
+                                                        70+
+                                                    </span>
+                                                </font>
+                                            </span>
+                                        </span>
+                                    </h2>
+                                    <h5 class="o_default_snippet_text">
+                                        <span style="font-size: 1.25rem;">
+                                        </span>
+                                        <font style="color: rgb(103, 103, 103);">
+                                            <span style="font-size: 1.125rem;">
+                                                Subsidiaries Worldwide
+
+                                            </span>
+                                        </font>
+
+                                        <br/>
+                                    </h5>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image pt32 o_colored_level pb56"
+                             data-snippet="s_image_text" data-name="Image - Text"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <h5>
+                                        <img src="/uniross_theme_extend/static/src/img/about_uniross.webp"
+                                             alt=""
+                                             class="img img-fluid mx-auto o_we_custom_image"
+                                             data-mimetype="image/webp"
+                                             data-original-id="900"
+                                             data-original-src="/web/image/900-0ee3c4e2/about_uniross.png"
+                                             data-mimetype-before-conversion="image/png"
+                                             data-resize-width="512" loading="lazy"/>
+                                    </h5>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 1rem;">
+                                            <font class="text-o-color-1">
+                                                <span class="o_small-fs">
+                                                    <strong>ABOUT US</strong>
+                                                </span>
+                                            </font>
+                                        </span>
+
+                                        <br/>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 3.4375rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 2.8125rem;">
+                                                    Global Leader in Quality
+                                                </span>
+                                            </font>
+                                        </span>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 3.4375rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 2.8125rem;">and
+                                                    Reliability
+
+                                                    &amp;nbsp;
+                                                </span>
+                                            </font>
+                                        </span>
+                                        <br/>
+                                    </h2>
+                                    <p class="o_default_snippet_text">
+                                        <font style="color: rgb(103, 103, 103);">
+                                            Uniross is a household name known for high
+                                            quality, efficiency, and reliability. From our
+                                            humble beginnings in the United Kingdom, we
+                                            are now headquartered in France, with branches
+                                            serving global partners in over 70 countries.
+                                            We have shipped over 150 million products,
+                                            reaching consumers through more than 50,000
+                                            retail and online channels. This impeccable
+                                            brand reputation has empowered our partners to
+                                            seamlessly expand their business footprint and
+                                            capture market share in key regions.
+
+                                        </font>
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <a href="#" class="btn btn-custom bg-o-color-1"
+                                           data-bs-original-title="" title=""
+                                           style="border-width: 1px; border-style: solid;">
+                                            <img src="/uniross_theme_extend/static/src/img/eva_people-outline.svg"
+                                                 alt=""
+                                                 class="img img-fluid o_we_custom_image"
+                                                 loading="lazy"/>
+                                            ​​Join The Uniross Family
+                                        </a>
+                                        <br/>
+                                    </p>
                                 </div>
                             </div>
-
-
-
                         </div>
-                    </div>
+                    </section>
+                    <section
+                            class="s_features_grid pb24 o_colored_level pt32 s_custom_snippet"
+                            data-snippet="s_features_grid"
+                            style="background-image: linear-gradient(135deg, rgb(255, 114, 79) 0%, rgb(246, 80, 38) 100%);"
+                            data-name="Custom Features Grid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 s_col_no_bgcolor mobile_padding_left_right_8 pb24">
+                                    <div class="row">
+                                        <div class="col-lg-12 pb24 o_colored_level"
+                                             data-name="Box">
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-4">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            Industries
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <h2 class="o_default_snippet_text">
+                                                <span style="font-size: 3.4375rem;">
+                                                    <font class="text-o-color-4">
+                                                        <span style="font-size: 2.8125rem;">
+                                                            We Serve
+                                                        </span>
+                                                    </font>
+                                                </span>
+                                            </h2>
+                                            <p class="o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="col-6 o_colored_level pb16 col-lg-5">
+                                                        <p class="o_default_snippet_text">
+                                                            <img src="/uniross_theme_extend/static/src/img/ion_radio.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="891"
+                                                                 data-original-src="/web/image/891-05924bb4/ion_radio.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    Telecommunications
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-6 o_colored_level pb16 col-lg-4">
+                                                        <p>
+                                                            <img src="/uniross_theme_extend/static/src/img/mdi_emergency-exit.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 loading="lazy"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="892"
+                                                                 data-original-src="/web/image/892-9dedbe88/mdi_emergency-exit.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <font class="text-o-color-4">
+                                                                            Emergency
+                                                                            Lighting
+                                                                        </font>
+                                                                    </span>
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="col-6 o_colored_level pb16 col-lg-5">
+                                                        <p class="o_default_snippet_text">
+                                                            <img src="/uniross_theme_extend/static/src/img/uil_monitor-heart-rate.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="894"
+                                                                 data-original-src="/web/image/894-551e6ff9/uil_monitor-heart-rate.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    MedTech&amp;nbsp;
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-6 o_colored_level pb16 col-lg-4">
+                                                        <p>
+                                                            <img src="/uniross_theme_extend/static/src/img/mdi_drone.svg"
+                                                                 alt=""
+                                                                 class="img img-fluid o_we_custom_image"
+                                                                 data-mimetype="image/svg+xml"
+                                                                 data-original-id="895"
+                                                                 data-original-src="/web/image/895-dc0df346/mdi_drone.svg"
+                                                                 data-mimetype-before-conversion="image/svg+xml"
+                                                                 loading="lazy"/>
+                                                        </p>
+                                                        <h5 class="o_default_snippet_text">
+                                                            <span style="font-size: 1.125rem;">
+                                                                <font class="text-o-color-4">
+                                                                    Aerospace &amp;amp;
+                                                                    Military
+                                                                </font>
+                                                                <font style="color: rgb(103, 103, 103);">
+                                                                    <span style="font-size: 1.125rem;">
+                                                                        <font class="text-o-color-4">
+                                                                            &amp;nbsp;
+                                                                        </font>
+                                                                    </span>
+
+                                                                </font>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="o_text_columns">
+                                                <div class="row">
+                                                    <div class="o_colored_level pt0 pb16 col-lg-5 col-6"
+                                                         data-name="Box">
+
+                                                        <div class="s_features_grid_content">
+                                                            <h4 class="o_default_snippet_text">
+                                                                <img src="/uniross_theme_extend/static/src/img/bi_controller.svg"
+                                                                     alt=""
+                                                                     class="img img-fluid o_we_custom_image"
+                                                                     data-mimetype="image/svg+xml"
+                                                                     data-original-id="893"
+                                                                     data-original-src="/web/image/893-e127e109/bi_controller.svg"
+                                                                     data-mimetype-before-conversion="image/svg+xml"
+                                                                     loading="lazy"/>
+                                                                <br/>
+                                                            </h4>
+                                                            <h5 class="o_default_snippet_text">
+                                                            </h5>
+                                                            <h5 class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <font style="color: rgb(103, 103, 103);">
+                                                                        <font class="text-o-color-4">
+                                                                            <span style="font-size: 1.125rem;">
+                                                                                IoT
+                                                                                devices
+                                                                            </span>
+                                                                        </font>
+                                                                    </font>
+                                                                    <font class="text-o-color-4">
+                                                                        &amp;nbsp;
+                                                                    </font>
+                                                                </span>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pb16 o_colored_level pt0 col-lg-4 col-6"
+                                                         data-name="Box">
+
+                                                        <div class="s_features_grid_content">
+                                                            <h4 class="o_default_snippet_text">
+                                                                <img src="/uniross_theme_extend/static/src/img/car.svg"
+                                                                     alt=""
+                                                                     class="img img-fluid o_we_custom_image"
+                                                                     data-mimetype="image/svg+xml"
+                                                                     data-original-id="897"
+                                                                     data-original-src="/web/image/897-6e8f6eb2/car.svg"
+                                                                     data-mimetype-before-conversion="image/svg+xml"
+                                                                     loading="lazy"/>
+                                                            </h4>
+                                                            <h4 class="o_default_snippet_text">
+                                                                <span style="font-size: 1.125rem;">
+                                                                    <font style="color: rgb(103, 103, 103);">
+                                                                        <span style="font-size: 1.125rem;">
+                                                                            <font class="text-o-color-4">
+                                                                                Automobile
+                                                                            </font>
+                                                                        </span>
+                                                                    </font>
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_4">
+                                    <div class="row">
+                                        <div class="col-lg-12 pb24 o_colored_level pt24"
+                                             data-name="Box">
+                                            <!--<h2 class="o_default_snippet_text"><img src="/uniross_theme_extend/static/src/img/Mask%20group.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/png" data-original-id="651" data-original-src="/uniross_theme_extend/static/src/img/Mask%20group.png" data-mimetype-before-conversion="image/png"/><br/></h2>-->
+                                            <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
+                                                 class="mx-auto media_iframe_video">
+                                                <div class="css_editable_mode_display"/>
+                                                <div class="media_iframe_video_size"/>
+                                                <iframe allowfullscreen="allowfullscreen"
+                                                        src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
+                                                        frameborder="0"/>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image o_colored_level pb56 pt72"
+                             data-snippet="s_image_text" data-name="Image - Text"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="o_colored_level col-lg-6 pb24">
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 1rem;">
+                                            <font class="text-o-color-1">
+                                                <span style="font-size: 0.875rem;">
+                                                    <strong>OUR CORE COMPETENCY</strong>
+                                                </span>
+                                            </font>
+                                        </span>
+                                        <br/>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 3.4375rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 3.125rem;">
+                                                    Building new age
+                                                </span>
+                                            </font>
+                                        </span>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 3.4375rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 3.125rem;">
+                                                    products &amp;amp; solutions
+                                                </span>
+                                            </font>
+                                        </span>
+                                        <br/>
+                                    </h2>
+                                    <p class="o_default_snippet_text">
+                                        <font style="color: rgb(103, 103, 103);">
+                                            At Uniross, we are dedicated to staying ahead
+                                            of the evolving demands and expectations of
+                                            modern consumers. Our R&amp;amp;D team is
+                                            committed to developing and enhancing
+                                            technologies and products by effectively
+                                            harnessing consumer insights and employing
+                                            best-in-class prototyping and manufacturing
+                                            techniques.
+                                        </font>
+                                    </p>
+                                    <div class="o_text_columns">
+                                        <div class="row">
+                                            <div class="o_colored_level col-6 pb8">
+                                                <p class="o_default_snippet_text">
+                                                    <img src="/uniross_theme_extend/static/src/img/Frame%2039546.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         loading="lazy"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="758"
+                                                         data-original-src="/web/image/758-cdb3e241/Frame%2039546.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"/>
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                            <div class="o_colored_level col-6">
+                                                <p>
+                                                    <img src="/uniross_theme_extend/static/src/img/Frame%2039547.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         loading="lazy"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="759"
+                                                         data-original-src="/web/image/759-1080de2f/Frame%2039547.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"/>
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                            <div class="o_colored_level col-6 col-lg-5">
+                                                <p>
+                                                    <img src="/uniross_theme_extend/static/src/img/Frame%2039548.svg"
+                                                         alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         loading="lazy"
+                                                         data-mimetype="image/svg+xml"
+                                                         data-original-id="760"
+                                                         data-original-src="/web/image/760-0a24159b/Frame%2039548.svg"
+                                                         data-mimetype-before-conversion="image/svg+xml"/>
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o_colored_level col-lg-6 pb0">
+                                    <img src="/uniross_theme_extend/static/src/img/type_c_innovation.webp"
+                                         alt=""
+                                         class="img img-fluid mx-auto o_we_custom_image"
+                                         data-mimetype="image/webp" data-original-id="901"
+                                         data-original-src="/web/image/901-9fe94d6e/type_c_innovation.png"
+                                         data-mimetype-before-conversion="image/png"
+                                         data-resize-width="690" loading="lazy"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_features pt32 pb32 o_colored_level"
+                             data-snippet="s_features" data-name="Features"
+                             style="background-color: rgb(250, 250, 250); background-image: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3">
+
+                                    <h2 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <span style="font-size: 1.5625rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 2.8125rem;">Our
+                                                </span>
+                                            </font>
+                                        </span>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <span style="font-size: 1.5625rem;">
+                                            <font class="text-o-color-2">
+                                                <span style="font-size: 2.8125rem;">Core
+                                                    Values
+                                                </span>
+                                            </font>
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                     style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                                    <img src="/uniross_theme_extend/static/src/img/cil_badge.svg"
+                                         alt=""
+                                         class="m-3 img img-fluid o_we_custom_image rounded me-auto float-start"
+                                         data-mimetype="image/svg+xml"
+                                         data-original-id="761"
+                                         data-original-src="/web/image/761-0e2c6f0c/cil_badge.svg"
+                                         data-mimetype-before-conversion="image/svg+xml"
+                                         loading="lazy"/>
+                                    <h3 class="o_default_snippet_text">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <span style="font-size: 1.5625rem;">
+                                            <font class="text-o-color-2">Quality</font>
+                                        </span>
+                                        <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text"
+                                       style="text-align: left;">
+                                        <font style="color: rgb(103, 103, 103);">
+                                            We ensure the highest product quality through
+                                            multiple certifications and audits,
+                                            complemented by stringent internal quality
+                                            processes. This meticulous approach allows us
+                                            to carefully select suppliers, resulting in
+                                            consistently high-grade output.
+
+                                        </font>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                     style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                                    <img src="/uniross_theme_extend/static/src/img/fluent-emoji-high-contrast_handshake.svg"
+                                         alt=""
+                                         class="rounded m-3 img img-fluid o_we_custom_image me-auto float-start"
+                                         data-mimetype="image/svg+xml"
+                                         data-original-id="762"
+                                         data-original-src="/web/image/762-6c40508a/fluent-emoji-high-contrast_handshake.svg"
+                                         data-mimetype-before-conversion="image/svg+xml"
+                                         loading="lazy"/>
+                                    <h3 class="o_default_snippet_text">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <font class="text-o-color-2">Trust</font>
+                                        <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text"
+                                       style="text-align: left;">
+                                        <font style="color: rgb(103, 103, 103);">
+                                            We have strong belief and confidence in our
+                                            team members and external partners, fostering
+                                            long-term relationships and enabling us to
+                                            excel in our work.
+
+                                        </font>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                     style="border-radius: 10px !important; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                                    <img src="/uniross_theme_extend/static/src/img/solar_graph-up-linear.svg"
+                                         alt=""
+                                         class="rounded m-3 img img-fluid o_we_custom_image me-auto float-start"
+                                         data-mimetype="image/svg+xml"
+                                         data-original-id="763"
+                                         data-original-src="/web/image/763-f009686f/solar_graph-up-linear.svg"
+                                         data-mimetype-before-conversion="image/svg+xml"
+                                         loading="lazy"/>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <br/>
+                                    </h3>
+                                    <h3 class="o_default_snippet_text"
+                                        style="text-align: left;">
+                                        <font class="text-o-color-2">Client Value
+                                            Creation
+                                        </font>
+                                        <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text"
+                                       style="text-align: left;">
+                                        <font style="color: rgb(103, 103, 103);">
+                                            Our ongoing commitment is to continually
+                                            enhance our processes, products, and solutions
+                                            to deliver greater value to our customers. We
+                                            also believe in the power of knowledge
+                                            sharing, fostering mutual growth and
+                                            prosperity.
+
+                                        </font>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image o_colored_level pb56 pt72"
+                             data-snippet="s_image_text" data-name="Image - Text"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-stretch">
+                                <div class="o_colored_level col-lg-6">
+                                    <img src="/uniross_theme_extend/static/src/img/Group%2039604.webp"
+                                         alt=""
+                                         class="img img-fluid mx-auto o_we_custom_image"
+                                         data-mimetype="image/webp" data-original-id="904"
+                                         data-original-src="/web/image/904-6936b828/Group%2039604.png"
+                                         data-mimetype-before-conversion="image/png"
+                                         data-resize-width="512" loading="lazy"/>
+                                </div>
+                                <div class="o_colored_level col-lg-6 pt104">
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 1rem;">
+                                            <font class="text-o-color-1">
+                                                <span style="font-size: 0.875rem;">
+                                                    <strong>SUSTAINABILITY</strong>
+                                                </span>
+                                            </font>
+                                        </span>
+                                        <br/>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 2.8125rem;">
+                                            Environmental
+                                        </span>
+                                    </h2>
+                                    <h2 class="o_default_snippet_text">
+                                        <span style="font-size: 2.8125rem;">Responsibility
+
+                                        </span>
+                                        <br/>
+                                    </h2>
+                                    <p class="o_default_snippet_text">
+                                        At Uniross, we operate with the highest integrity
+                                        and compliance, while striving to minimize the
+                                        environmental impact of our technologies. Our
+                                        products undergo rigorous testing and verification
+                                        to meet the highest standards across various
+                                        countries. We are committed not only to preserving
+                                        our world but also to making it a better place for
+                                        future generations.
+
+                                        <br/>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-        </section><section class="s_text_image o_colored_level pb56 pt72" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="o_colored_level col-lg-6 pb24">
-                        <h2 class="o_default_snippet_text">
-    <span style="font-size: 1rem;"><font class="text-o-color-1"><span style="font-size: 0.875rem;"><strong>OUR CORE COMPETENCY</strong></span></font></span><br/></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 3.125rem;">Building new age</span></font></span></h2><h2 class="o_default_snippet_text"><span style="font-size: 3.4375rem;"><font class="text-o-color-2"><span style="font-size: 3.125rem;">products &amp;amp; solutions</span></font></span><br/></h2><p class="o_default_snippet_text"><font style="color: rgb(103, 103, 103);">
-    At Uniross, we are dedicated to staying ahead of the evolving demands and expectations of modern consumers. Our R&amp;amp;D team is committed to developing and enhancing technologies and products by effectively harnessing consumer insights and employing best-in-class prototyping and manufacturing techniques.</font></p><div class="o_text_columns"><div class="row"><div class="o_colored_level col-6 pb8"><p class="o_default_snippet_text"><img src="/web/image/758-cdb3e241/Frame%2039546.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/svg+xml" data-original-id="758" data-original-src="/web/image/758-cdb3e241/Frame%2039546.svg" data-mimetype-before-conversion="image/svg+xml"/><br/></p></div><div class="o_colored_level col-6"><p><img src="/web/image/759-1080de2f/Frame%2039547.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/svg+xml" data-original-id="759" data-original-src="/web/image/759-1080de2f/Frame%2039547.svg" data-mimetype-before-conversion="image/svg+xml"/><br/></p></div><div class="o_colored_level col-6 col-lg-5"><p><img src="/web/image/760-0a24159b/Frame%2039548.svg" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/svg+xml" data-original-id="760" data-original-src="/web/image/760-0a24159b/Frame%2039548.svg" data-mimetype-before-conversion="image/svg+xml"/><br/></p></div></div></div></div><div class="o_colored_level col-lg-6 pb0"><img src="/web/image/906-34beeb99/type_c_innovation.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="901" data-original-src="/web/image/901-9fe94d6e/type_c_innovation.png" data-mimetype-before-conversion="image/png" data-resize-width="690" loading="lazy"/></div>
-
-                </div>
-            </div>
-        </section><section class="s_features pt32 pb32 o_colored_level" data-snippet="s_features" data-name="Features" style="background-color: rgb(250, 250, 250); background-image: none;">
-            <div class="container">
-                <div class="row">
-                    <div class="pt32 pb32 text-center o_colored_level col-lg-3">
-
-                        <h2 class="o_default_snippet_text" style="text-align: left;"><span style="font-size: 1.5625rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;">Our</span></font></span></h2><h2 class="o_default_snippet_text" style="text-align: left;"><span style="font-size: 1.5625rem;"><font class="text-o-color-2"><span style="font-size: 2.8125rem;">Core Values</span></font></span></h2></div>
-                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow" style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
-                        <img src="/web/image/761-0e2c6f0c/cil_badge.svg" alt="" class="m-3 img img-fluid o_we_custom_image rounded me-auto float-start" data-mimetype="image/svg+xml" data-original-id="761" data-original-src="/web/image/761-0e2c6f0c/cil_badge.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
-                        <h3 class="o_default_snippet_text"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><span style="font-size: 1.5625rem;"><font class="text-o-color-2">Quality</font></span><br/></h3>
-                        <p class="o_default_snippet_text" style="text-align: left;"><font style="color: rgb(103, 103, 103);">
-    We ensure the highest product quality through multiple certifications and audits, complemented by stringent internal quality processes. This meticulous approach allows us to carefully select suppliers, resulting in consistently high-grade output.
-
-    </font><br/></p>
-                    </div>
-                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow" style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
-                        <img src="/web/image/762-6c40508a/fluent-emoji-high-contrast_handshake.svg" alt="" class="rounded m-3 img img-fluid o_we_custom_image me-auto float-start" data-mimetype="image/svg+xml" data-original-id="762" data-original-src="/web/image/762-6c40508a/fluent-emoji-high-contrast_handshake.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
-                        <h3 class="o_default_snippet_text"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><font class="text-o-color-2">Trust</font><br/></h3>
-                        <p class="o_default_snippet_text" style="text-align: left;"><font style="color: rgb(103, 103, 103);">
-    We have strong belief and confidence in our team members and external partners, fostering long-term relationships and enabling us to excel in our work.
-
-    </font><br/></p>
-                    </div><div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow" style="border-radius: 10px !important; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
-                        <img src="/web/image/763-f009686f/solar_graph-up-linear.svg" alt="" class="rounded m-3 img img-fluid o_we_custom_image me-auto float-start" data-mimetype="image/svg+xml" data-original-id="763" data-original-src="/web/image/763-f009686f/solar_graph-up-linear.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
-                        <h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><br/></h3><h3 class="o_default_snippet_text" style="text-align: left;"><font class="text-o-color-2">Client Value Creation</font><br/></h3>
-                        <p class="o_default_snippet_text" style="text-align: left;"><font style="color: rgb(103, 103, 103);">
-    Our ongoing commitment is to continually enhance our processes, products, and solutions to deliver greater value to our customers. We also believe in the power of knowledge sharing, fostering mutual growth and prosperity.
-
-    </font><br/></p>
-                    </div>
-                </div>
-            </div>
-        </section><section class="s_text_image o_colored_level pb56 pt72" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
-            <div class="container">
-                <div class="row align-items-stretch">
-                    <div class="o_colored_level col-lg-6"><img src="/web/image/907-6cc3207d/Group%2039604.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="904" data-original-src="/web/image/904-6936b828/Group%2039604.png" data-mimetype-before-conversion="image/png" data-resize-width="512" loading="lazy"/></div><div class="o_colored_level col-lg-6 pt104">
-                        <h2 class="o_default_snippet_text">
-    <span style="font-size: 1rem;"><font class="text-o-color-1"><span style="font-size: 0.875rem;"><strong>SUSTAINABILITY</strong></span></font></span><br/></h2><h2 class="o_default_snippet_text"><span style="font-size: 2.8125rem;">
-    Environmental</span></h2><h2 class="o_default_snippet_text"><span style="font-size: 2.8125rem;">Responsibility
-
-    </span><br/></h2>
-                        <p class="o_default_snippet_text">
-    At Uniross, we operate with the highest integrity and compliance, while striving to minimize the environmental impact of our technologies. Our products undergo rigorous testing and verification to meet the highest standards across various countries. We are committed not only to preserving our world but also to making it a better place for future generations.
-
-    <br/></p></div>
-
-                </div>
-            </div>
-        </section></div>
-        </t>
-    </template>
+            </t>
+        </xpath>
+        <!--    </template>-->
+    </t>
 
 </odoo>
