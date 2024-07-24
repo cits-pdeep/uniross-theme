@@ -21,6 +21,8 @@
         'views/website_templates.xml',
         'views/website_home_page.xml',
         # 'views/website_about_us.xml',
+        'views/website_contact_us_page.xml',
+        'views/website_footer_custom.xml',
     ],
     'assets': {
         'web.assets_frontend': [

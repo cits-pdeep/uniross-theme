@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <t t-name="website.about-us">
-        <!--    <template id="custom_about_us" inherit_id="website.aboutus">-->
-        <!--    <template id="website.about-us" name="About Us">-->
+<!--    <t t-name="website.about-us">-->
+    <template id="custom_about_us" inherit_id="website.aboutus">
+<!--    <template id="website.about-us" name="About Us">-->
         <xpath expr="//t" position="replace">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
@@ -413,17 +413,17 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_4">
+                                <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_16">
                                     <div class="row">
                                         <div class="col-lg-12 pb24 o_colored_level pt24"
                                              data-name="Box">
                                             <!--<h2 class="o_default_snippet_text"><img src="/uniross_theme_extend/static/src/img/Mask%20group.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" data-mimetype="image/png" data-original-id="651" data-original-src="/uniross_theme_extend/static/src/img/Mask%20group.png" data-mimetype-before-conversion="image/png"/><br/></h2>-->
-                                            <div data-oe-expression="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
-                                                 class="mx-auto media_iframe_video">
+                                            <div data-oe-expression="/uniross_theme_extend/static/src/video/uniross_industries_we_serve.mp4"
+                                                 class="mx-auto media_iframe_video desktop_custom_video_size">
                                                 <div class="css_editable_mode_display"/>
                                                 <div class="media_iframe_video_size"/>
                                                 <iframe allowfullscreen="allowfullscreen"
-                                                        src="//www.youtube.com/embed/JDPjsXu34Ok?rel=0&amp;autoplay=0&amp;controls=0"
+                                                        src="/uniross_theme_extend/static/src/video/uniross_industries_we_serve.mp4"
                                                         frameborder="0"/>
                                             </div>
                                         </div>
@@ -747,7 +747,7 @@
                 </div>
             </t>
         </xpath>
-        <!--    </template>-->
-    </t>
+    </template>
+<!--    </t>-->
 
 </odoo>

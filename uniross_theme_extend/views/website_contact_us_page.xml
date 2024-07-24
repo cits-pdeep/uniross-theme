@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_contactus_page" inherit_id="website.contactus">
+        <xpath expr="//t" position="replace">
+            <t t-call="website.layout">
+                <t t-set="logged_partner"
+                   t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"/>
+                <t t-set="contactus_form_values"
+                   t-value="{'email_to': res_company.email,
+                   'name': request.params.get('name', ''),
+                   'phone': request.params.get('phone', ''),
+                   'email_from': request.params.get('email_from', ''),
+                   'company': request.params.get('company', ''),
+                   'subject': request.params.get('subject', '')}"/>
+                <span class="hidden" data-for="contactus_form"
+                      t-att-data-values="contactus_form_values"/>
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section
+                            class="s_cover pt96 pb96 o_colored_level s_parallax_no_overflow_hidden"
+                            data-scroll-background-ratio="0" data-snippet="s_cover"
+                            data-name="Cover"
+                            style="background-color: rgb(255, 224, 201);">
+                        <div class="s_allow_columns o_container_small">
+                            <h1 class="display-3 o_default_snippet_text"
+                                style="text-align: center; font-weight: bold;">
+                                <span style="font-size: 4.6875rem; font-weight: normal;">
+                                    Get In Touch
+                                </span>
+                                <br/>
+                            </h1>
+                            <p class="lead o_default_snippet_text"
+                               style="text-align: center;">At Uniross, we are dedicated to
+                                providing you with the highest quality batteries for all
+                                your needs. Whether you’re looking for batteries for your
+                                household devices, automotive, industrial applications, or
+                                sustainable energy solutions, our team is here to help
+                                you.&amp;nbsp;
+                                <br/>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="s_text_block pt40 o_colored_level pb88"
+                             data-snippet="s_text_block" data-name="Text"
+                             style="position: relative; background-image: none;"
+                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/04_001&quot;,&quot;colors&quot;:{&quot;c3&quot;:&quot;#FFE0C9&quot;},&quot;flip&quot;:[],&quot;showOnMobile&quot;:false}">
+                        <div class="o_we_shape o_web_editor_Origins_04_001"
+                             style="background-image: url(&quot;/web_editor/shape/web_editor%2FOrigins%2F04_001.svg?c3=%23FFE0C9&quot;);"/>
+                        <div class="s_allow_columns container">
+                            <div style="background-color: white;border-radius: 15px;box-shadow: 0px 2px 6px #0000001A;">
+                                <div class="row contact_information">
+                                    <div class="col-lg-4 mt-4 mt-lg-0 o_colored_level o_cc o_cc4 rounded pt24 pb104"
+                                         style="border-radius: 10px !important;">
+                                        <ul class="list-unstyled mb-0 ps-2">
+                                            <li>
+                                                <span style="font-size: 1.5625rem;">
+                                                    Contact Information
+                                                </span>
+                                                <br/>
+                                            </li>
+                                            <li>
+                                                <img src="/web/image/764-b894030c/iconamoon_home-light.svg"
+                                                     alt=""
+                                                     class="me-2 img img-fluid o_we_custom_image"
+                                                     data-mimetype="image/svg+xml"
+                                                     data-original-id="764"
+                                                     data-original-src="/web/image/764-b894030c/iconamoon_home-light.svg"
+                                                     data-mimetype-before-conversion="image/svg+xml"
+                                                     loading="lazy"/>
+                                                <span class="o_force_ltr">Uniross
+                                                    Europe</span>49 Rue De Ponthieu,
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            <span class="o_force_ltr">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                75008 Paris, France
+                                            </span>
+                                        </p>
+                                        <ul class="list-unstyled mb-0 ps-2">
+                                            <li>
+                                                <img src="/web/image/766-fba04382/Vector.svg"
+                                                     alt=""
+                                                     class="me-2 img img-fluid o_we_custom_image"
+                                                     loading="lazy"/>
+                                                <span class="o_force_ltr">hello@uniross.com
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-4 mt-lg-0 o_colored_level o_cc o_cc1 rounded col-lg-8"
+                                         style="border-radius: 10px !important;">
+                                        <p>&amp;nbsp;
+                                            <br/>
+                                        </p>
+                                        <section class="s_website_form" data-vcss="001"
+                                                 data-snippet="s_website_form"
+                                                 data-name="Form">
+                                            <div class="container">
+                                                <form id="contactus_form"
+                                                      action="/website/form/" method="post"
+                                                      enctype="multipart/form-data"
+                                                      class="o_mark_required" data-mark=""
+                                                      data-model_name="mail.mail"
+                                                      data-success-mode="redirect"
+                                                      data-success-page="/contactus-thank-you"
+                                                      data-pre-fill="true">
+                                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required pb0 offset-lg-1 col-lg-10"
+                                                             data-type="char">
+                                                            <label class="s_website_form_label"
+                                                                   style="width: 200px"
+                                                                   for="o79i222hrrq4">
+                                                                <span class="s_website_form_label_content">
+                                                                    Name
+                                                                </span>
+                                                            </label>
+                                                            <input class="form-control s_website_form_input"
+                                                                   type="text" name="Name"
+                                                                   required="1"
+                                                                   placeholder="Your Name"
+                                                                   id="o79i222hrrq4"
+                                                                   data-fill-with="name"/>
+                                                        </div>
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_custom col-lg-5 offset-lg-1"
+                                                             data-type="char">
+                                                            <label class="s_website_form_label"
+                                                                   style="width: 200px"
+                                                                   for="oyo9ao0mk7ps">
+                                                                <span class="s_website_form_label_content">
+                                                                    Company Name
+                                                                </span>
+                                                            </label>
+                                                            <input class="form-control s_website_form_input"
+                                                                   type="text"
+                                                                   name="Company Name"
+                                                                   placeholder="Company Name"
+                                                                   id="oyo9ao0mk7ps"
+                                                                   data-fill-with="phone"/>
+                                                        </div>
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_required col-lg-5"
+                                                             data-type="email">
+                                                            <label class="s_website_form_label"
+                                                                   style="width: 200px"
+                                                                   for="oll27jyorszi">
+                                                                <span class="s_website_form_label_content">
+                                                                    Company Email
+                                                                </span>
+                                                            </label>
+                                                            <input class="form-control s_website_form_input"
+                                                                   type="email"
+                                                                   name="email_from"
+                                                                   required="1"
+                                                                   placeholder="Company Email"
+                                                                   id="oll27jyorszi"
+                                                                   data-fill-with="email"/>
+                                                        </div>
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_custom col-lg-5 offset-lg-1"
+                                                             data-type="char">
+                                                            <label class="s_website_form_label"
+                                                                   style="width: 200px"
+                                                                   for="o6q3y5zvfxqk">
+                                                                <span class="s_website_form_label_content">
+                                                                    Phone Number
+                                                                </span>
+                                                            </label>
+                                                            <input class="form-control s_website_form_input"
+                                                                   type="text"
+                                                                   name="Phone Number"
+                                                                   placeholder="Phone Number"
+                                                                   id="o6q3y5zvfxqk"
+                                                                   data-fill-with="commercial_company_name"/>
+                                                        </div>
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 col-lg-5 s_website_form_custom s_website_form_required"
+                                                             data-type="char">
+                                                            <label class="s_website_form_label"
+                                                                   style="width: 200px"
+                                                                   for="or5mrtwe2up">
+                                                                <span class="s_website_form_label_content">
+                                                                    Country
+                                                                </span>
+                                                            </label>
+                                                            <input class="form-control s_website_form_input"
+                                                                   type="text" name="Country"
+                                                                   required="1"
+                                                                   placeholder="Where're you from?"
+                                                                   id="or5mrtwe2up"
+                                                                   data-fill-with="undefined"/>
+                                                        </div>
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required offset-lg-1 col-lg-10"
+                                                             data-type="text">
+                                                            <label class="s_website_form_label"
+                                                                   for="oepw4g0ozjcj">
+                                                                <span class="s_website_form_label_content">
+                                                                    Briefly describe your
+                                                                    requirements...
+                                                                </span>
+                                                            </label>
+                                                            <textarea
+                                                                    class="form-control s_website_form_input"
+                                                                    name="Briefly describe your requirements..."
+                                                                    required="1"
+                                                                    placeholder="Queries"
+                                                                    id="oepw4g0ozjcj"
+                                                                    rows="2"/>
+                                                        </div>
+
+                                                        <div data-name="Field"
+                                                             class="s_website_form_field mb-3 col-12 s_website_form_dnone">
+                                                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                       style="width: 200px">
+                                                                    <span class="s_website_form_label_content"/>
+                                                                </label>
+                                                                <div class="col-sm">
+                                                                    <input type="hidden"
+                                                                           class="form-control s_website_form_input"
+                                                                           name="email_to"
+                                                                           value="hello@uniross.com"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-0 py-2 col-12 s_website_form_submit text-left s_website_form_no_submit_label offset-lg-1"
+                                                             data-name="Submit Button">
+                                                            <div style="width: 200px;"
+                                                                 class="s_website_form_label"/>
+                                                            <a href="#" role="button"
+                                                               class="btn btn-primary s_website_form_send"
+                                                               data-bs-original-title=""
+                                                               title="">
+                                                                <img src="/web/image/768-8fb5dbe2/iconamoon_send.svg"
+                                                                     alt=""
+                                                                     class="img img-fluid o_we_custom_image"
+                                                                     loading="lazy"/>
+                                                                Send Message
+                                                            </a>&amp;nbsp;
+                                                            <span id="s_website_form_result"/>
+                                                            <br/>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

@@ -36,5 +36,41 @@
     .desktop_bottom_-4 {
         bottom: -4vh;
     }
+    .desktop_heading_font_size {
+        font-size: 2.8125rem;
+    }
+    .product_width {
+        width: 50% !important;
+    }
+    .contact_information {
+        padding: 20px;
+        margin-left: 0px;
+    }
+    .des_margin_left_right {
+        margin-right: calc(-.5 * var(--gutter-x));
+        margin-left: calc(-.5 * var(--gutter-x));
+    }
+    .des_width_20_pr {
+        width:20% !important;
+    }
+    .des_width_25_pr {
+        width:25% !important;
+    }
+    .des_width_21_pr {
+        width:21% !important;
+    }
+    .des_width_40_pr {
+        width:40% !important;
+    }
+    .des_width_41_pr {
+        width:41% !important;
+    }
+    .des_margin_left_38 {
+        margin-left: 38% !important;
+    }
 
+}
+
+.line_height_2 {
+    line-height: 2;
 }

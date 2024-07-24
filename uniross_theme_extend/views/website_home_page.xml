@@ -364,16 +364,18 @@
                         <div class="container s_allow_columns">
                             <h2 class="display-3-fs o_default_snippet_text"
                                 style="text-align: center;">
-                                <span style="font-size: 2.8125rem;">Power Solutions For
+                                <span class="desktop_heading_font_size">
+                                    Power Solutions For All Your Devices
                                 </span>
+                                <br/>
                             </h2>
-                            <h2 class="display-3-fs o_default_snippet_text"
+                            <!--<h2 class="display-3-fs o_default_snippet_text"
                                 style="text-align: center;">
                                 <span style="font-size: 2.8125rem;">All Your Devices
                                 </span>
 
                                 <br/>
-                            </h2>
+                            </h2>-->
                         </div>
                     </section>
                     <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc2"
@@ -382,17 +384,17 @@
                              style="background-color: rgb(250, 250, 250); background-image: none;">
                         <div class="container">
                             <div class="row d-flex align-items-stretch">
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -426,17 +428,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -473,17 +475,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -517,17 +519,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -561,17 +563,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -605,17 +607,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -649,17 +651,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -693,17 +695,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                             class="card-img-top img img-fluid o_we_custom_image mx-auto d-block product_width"
                                              data-mimetype="image/svg+xml"
                                              data-original-id="842"
                                              data-original-src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
                                              data-mimetype-before-conversion="image/svg+xml"
-                                             style="width: 50% !important;"
+                                             style="width: 50%;"
                                              loading="lazy"/>
                                         <div class="card-body">
                                             <h5 class="card-title o_default_snippet_text"
@@ -1130,8 +1132,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                                 <div class="col-lg-6 s_col_no_bgcolor pb24 desktop_pt_40 desktop_pb_40 desktop_mt_16">

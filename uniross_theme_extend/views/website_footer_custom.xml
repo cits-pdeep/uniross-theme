@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_footer" inherit_id="website.layout" active="True">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true"
+                 t-if="not no_footer">
+                <section class="s_text_block pt40 pb40" data-snippet="s_text_block"
+                         data-name="Text"
+                         style="background-image: none; position: relative;"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/18&quot;,&quot;flip&quot;:[&quot;y&quot;,&quot;x&quot;],&quot;showOnMobile&quot;:true,&quot;animated&quot;:&quot;true&quot;}">
+                    <div class="o_we_shape o_web_editor_Origins_18 o_we_animated o_shape_show_mobile"
+                         style="background-image: url(&quot;/web_editor/shape/web_editor%2FOrigins%2F18.svg?c1=%23F65026&amp;flip=xy&quot;); background-position: 50% 50%; background-color: rgb(251, 175, 156);"/>
+                    <div class="container">
+                        <div class="row">
+                            <div class="o_colored_level col-lg-7">
+                                <h3 class="o_default_snippet_text">
+                                    <span style="font-size: 1.25rem;"/>
+                                    <strong>
+                                        <span style="font-size: 1.875rem;">
+                                            <font class="text-o-color-4">
+                                                <span style="font-size: 1.875rem;">Over
+                                                    400 retailers &amp;amp; OEMs use
+                                                    Uniross products grow their
+                                                    businesses.
+                                                </span>
+                                            </font>
+                                        </span>
+                                    </strong>
+                                    <span style="font-size: 1.25rem;"/>
+                                    <br/>
+                                </h3>
+                            </div>
+                            <div class="o_colored_level col-lg-3 offset-lg-2 pt24">
+                                <p class="mb-3">​
+                                    <a class="btn btn-custom bg-o-color-1"
+                                       style="border-width: 1px; border-style: solid;"
+                                       href="" data-bs-original-title="" title="">
+                                        <img src="/web/image/743-4af04f68/fe_calendar.svg"
+                                             alt=""
+                                             class="img img-fluid o_we_custom_image"
+                                             loading="lazy"/>
+                                        <span style="font-size: 1rem;">&amp;nbsp;Become
+                                            Uniross Partner
+                                        </span>
+                                    </a>
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block pt56 pb16" data-snippet="s_text_block"
+                         data-name="Text" style="background-image: none;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="o_colored_level des_margin_left_right des_width_20_pr">
+                                <h5 class="mb-3">
+                                    <strong>
+                                        <span style="font-size: 1.125rem;">Support
+
+                                        </span>
+                                    </strong>
+                                    <br/>
+                                </h5>
+                                <ul class="list-unstyled line_height_2">
+                                    <li>
+                                        <a href="/" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Product Registration
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Documentation
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Warranty
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Return
+                                            </font>
+                                        </a>
+                                        <br/>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Shipping Info
+                                            </font>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="o_colored_level des_margin_left_right des_width_25_pr">
+                                <h5 class="mb-3">
+                                    <strong>
+                                        <span style="font-size: 1.125rem;">Company
+
+                                        </span>
+                                    </strong>
+                                    <br/>
+                                </h5>
+                                <ul class="list-unstyled line_height_2">
+                                    <li>
+                                        <a href="/" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">Our
+                                                Story​
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Sustainability
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Bat​tery Disposal Information
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Blog​​
+                                            </font>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="o_colored_level des_margin_left_right des_width_20_pr">
+                                <h5 class="mb-3">
+                                    <strong>
+                                        <span style="font-size: 1.125rem;">Contact
+
+                                        </span>
+                                    </strong>
+                                    <br/>
+                                </h5>
+                                <ul class="list-unstyled line_height_2">
+                                    <li>
+                                        <a href="/" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Press
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">Sales
+                                                Enquiries
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Customer Service
+                                            </font>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-original-title="" title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Careers
+                                            </font>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/contactus" data-bs-original-title=""
+                                           title="">
+                                            <font style="color: rgb(103, 103, 103);">
+                                                Contact us
+                                            </font>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="o_colored_level des_margin_left_right des_width_40_pr">
+                                <p class="o_default_snippet_text line_height_2">
+                                    <strong>
+                                        <span style="font-size: 1.125rem;">
+                                            <font class="text-o-color-2">Subscribe to our
+                                                newsletter for business updates
+                                            </font>
+                                        </span>
+                                    </strong>
+                                    <span style="font-size: 1.125rem;">
+                                        <font class="text-o-color-2">&amp;nbsp;</font>
+                                    </span>
+                                    <br/>
+                                </p>
+                                <p class="o_default_snippet_text"/>
+                                <p class="mb-3">
+                                    <span style="font-size: 1.125rem;">
+                                    </span>
+                                    <span style="font-size: 0.9375rem;">
+                                        <font style="color: rgb(103, 103, 103);">Our
+                                            newsletters provide important events and
+                                            relevant industry news. You can unsubscribe at
+                                            any time.
+
+                                        </font>
+                                    </span>
+                                    <br/>
+                                </p>
+                                <div class="s_newsletter_subscribe_form s_newsletter_list js_subscribe"
+                                     data-vxml="001" data-list-id="0"
+                                     data-name="Newsletter Form"
+                                     data-snippet="s_newsletter_subscribe_form">
+                                    <div class="input-group">
+                                        <input type="email" name="email"
+                                               class="js_subscribe_value form-control"
+                                               placeholder="your email..." wfd-id="id10"/>
+
+                                    </div>
+                                    <div style="margin-top:15px">
+                                        <a role="button" href="#"
+                                           class="btn btn-primary js_subscribe_btn o_submit o_default_snippet_text"
+                                           data-bs-original-title="" title="">Subscribe
+                                        </a>
+                                        <a role="button" href="#"
+                                           class="btn btn-success js_subscribed_btn d-none o_submit o_default_snippet_text"
+                                           disabled="disabled">Thanks
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="s_hr text-start pt16 pb16" data-snippet="s_hr"
+                                     data-name="Separator">
+                                    <hr class="w-100 mx-auto"
+                                        style="border-top: 1px solid rgb(243, 242, 242);"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="footer_copyright_company_name" inherit_id="website.layout">
+        <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]"
+               position="replace">
+            <span class="o_footer_copyright_name me-2">Copyright @2022 Uniross All rights
+                reserved | Terms Of Use | Terms Of Sale | Privacy Policy
+            </span>
+
+            <span class="s_social_media o_not_editable des_margin_left_38 text-end"
+                  data-snippet="s_social_media" data-name="Social Media">
+                <h4 class="s_social_media_title d-none o_default_snippet_text">Social
+                    Medias
+                </h4>
+                <a target="_blank" href="/website/social/facebook"
+                   class="s_social_media_facebook" aria-label="Facebook">
+                    <i class="fa o_editable_media fa-facebook fa-stack text-o-color-1"/>
+                </a>
+                <a target="_blank" href="/website/social/youtube"
+                   class="s_social_media_youtube" aria-label="YouTube">
+                    <i class="fa o_editable_media fa-youtube fa-stack text-o-color-1"/>
+                </a>
+                <a target="_blank" href="/website/social/instagram"
+                   class="s_social_media_instagram" aria-label="Instagram">
+                    <i class="fa o_editable_media fa-instagram fa-stack text-o-color-1"/>
+                </a>
+            </span>
+        </xpath>
+    </template>
+
+</odoo>

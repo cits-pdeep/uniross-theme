@@ -4,5 +4,13 @@
         padding-right: calc(var(--gutter-x) * .8);
         padding-left: calc(var(--gutter-x) * .8);
     }
+    .mobile_product_list {
+        max-width: 50% !important;
+        padding-right: calc(var(--gutter-x) * .25) !important;
+        padding-left: calc(var(--gutter-x) * .25) !important;
+    }
+    .product_width {
+        width: 80% !important;
+    }
 
 }
