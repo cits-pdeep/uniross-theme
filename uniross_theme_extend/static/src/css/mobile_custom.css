@@ -15,5 +15,14 @@
     .mobile_pt24 {
         padding-top: 24px !important;
     }
+    .mobile_ml0 {
+        margin-left: 0px !important;
+    }
+    .mobile_mt8 {
+        margin-top: 8px !important;
+    }
+    .mobile_mt16 {
+        margin-top: 16px !important;
+    }
 
 }

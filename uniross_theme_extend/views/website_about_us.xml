@@ -50,7 +50,7 @@
                              style="background-image: none;">
                         <div class="container">
                             <div class="row">
-                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4 col-md-4">
                                     <h2>
                                         <span class="s_number display-4 o_default_snippet_text">
                                             <span style="font-size: 4.6875rem;">
@@ -65,8 +65,8 @@
                                     <h5 class="o_default_snippet_text">
                                         <span style="font-size: 1.25rem;">
                                             <font class="text-600">
-                                                <span style="font-size: 1.125rem;">Years
-                                                    Of Experience
+                                                <span style="font-size: 1.125rem;">
+                                                    Years Of Experience
                                                 </span>
                                             </font>
                                         </span>
@@ -74,7 +74,7 @@
                                         <br/>
                                     </h5>
                                 </div>
-                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4 col-md-4">
                                     <h2>
                                         <span class="s_number display-4 o_default_snippet_text">
                                             <span style="font-size: 4.6875rem;">
@@ -92,15 +92,14 @@
                                             </font>
                                         </span>
                                         <font style="color: rgb(103, 103, 103);">
-                                            <span style="font-size: 1.125rem;">Retail
-                                                Touchpoints
-
+                                            <span style="font-size: 1.125rem;">
+                                                Retail Touchpoints
                                             </span>
                                         </font>
                                         <br/>
                                     </h5>
                                 </div>
-                                <div class="text-center pt24 pb24 o_colored_level col-lg-4">
+                                <div class="text-center pt24 pb24 o_colored_level col-lg-4 col-md-4">
                                     <h2>
                                         <span class="s_number display-4 o_default_snippet_text">
                                             <span style="font-size: 4.6875rem;">
@@ -118,15 +117,11 @@
                                         <font style="color: rgb(103, 103, 103);">
                                             <span style="font-size: 1.125rem;">
                                                 Subsidiaries Worldwide
-
                                             </span>
                                         </font>
-
                                         <br/>
                                     </h5>
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
@@ -427,8 +422,6 @@
                                                         frameborder="0"/>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -509,7 +502,7 @@
                                                     <br/>
                                                 </p>
                                             </div>
-                                            <div class="o_colored_level col-6 col-lg-5">
+                                            <div class="o_colored_level col-6 col-lg-5 pl_gutter-p25">
                                                 <p>
                                                     <img src="/uniross_theme_extend/static/src/img/Frame%2039548.svg"
                                                          alt=""
@@ -542,8 +535,8 @@
                              data-snippet="s_features" data-name="Features"
                              style="background-color: rgb(250, 250, 250); background-image: none;">
                         <div class="container">
-                            <div class="row">
-                                <div class="pt32 pb32 text-center o_colored_level col-lg-3">
+                            <div class="row mobile_ml0 tab_ml0">
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 tab_width_100">
 
                                     <h2 class="o_default_snippet_text"
                                         style="text-align: left;">
@@ -558,14 +551,14 @@
                                         style="text-align: left;">
                                         <span style="font-size: 1.5625rem;">
                                             <font class="text-o-color-2">
-                                                <span style="font-size: 2.8125rem;">Core
-                                                    Values
+                                                <span style="font-size: 2.8125rem;">
+                                                    Core Values
                                                 </span>
                                             </font>
                                         </span>
                                     </h2>
                                 </div>
-                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                <div class="pt32 pb32 tab_width_49 tab_mr4 text-center o_colored_level col-lg-3 col-md-6 rounded shadow"
                                      style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
                                     <img src="/uniross_theme_extend/static/src/img/cil_badge.svg"
                                          alt=""
@@ -607,7 +600,7 @@
                                         <br/>
                                     </p>
                                 </div>
-                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                <div class="pt32 pb32 tab_width_49 mobile_mt8 tab_ml4 text-center o_colored_level col-lg-3 col-md-6 rounded shadow"
                                      style="background-color: rgb(255, 255, 255); border-radius: 10px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
                                     <img src="/uniross_theme_extend/static/src/img/fluent-emoji-high-contrast_handshake.svg"
                                          alt=""
@@ -645,7 +638,7 @@
                                         <br/>
                                     </p>
                                 </div>
-                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 rounded shadow"
+                                <div class="pt32 pb32 tab_width_49 mobile_mt8 tab_mr4 tab_mt8 text-center o_colored_level col-lg-3 col-md-6 rounded shadow"
                                      style="border-radius: 10px !important; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
                                     <img src="/uniross_theme_extend/static/src/img/solar_graph-up-linear.svg"
                                          alt=""

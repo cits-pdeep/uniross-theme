@@ -384,7 +384,7 @@
                              style="background-color: rgb(250, 250, 250); background-image: none;">
                         <div class="container">
                             <div class="row d-flex align-items-stretch">
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -428,7 +428,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -475,7 +475,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -519,7 +519,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -563,7 +563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -607,7 +607,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -651,7 +651,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"
@@ -695,7 +695,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="s_col_no_bgcolor pb16 col-lg-3 pt8 mobile_product_list">
+                                <div class="s_col_no_bgcolor pb16 col-lg-3 col-md-6 tab_width_50 pt8 mobile_product_list">
                                     <div class="card text-bg-white h-100 rounded"
                                          style="border-radius: 9.4px !important;">
                                         <img src="/uniross_theme_extend/static/src/img/ULIAA2_TBG.svg"

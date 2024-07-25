@@ -1,0 +1,35 @@
+@media (min-width:767px) and (max-width: 1024px) {
+
+    .tab_width_49 {
+        width: 49% !important;
+    }
+    .tab_width_50 {
+        width: 50% !important;
+    }
+    .tab_width_100 {
+        width: 100% !important;
+    }
+    .tab_ml0 {
+        margin-left: 0px !important;
+    }
+    .tab_mr0 {
+        margin-right: 0px !important;
+    }
+    .tab_ml4 {
+        margin-left: 4px !important;
+    }
+    .tab_mr4 {
+        margin-right: 4px !important;
+    }
+    .tab_mt8 {
+        margin-top: 8px !important;
+    }
+    .tab_padding_lr_p25 {
+        padding-right: calc(var(--gutter-x) * .25) !important;
+        padding-left: calc(var(--gutter-x) * .25) !important;
+    }
+    .product_width {
+        width: 80% !important;
+    }
+
+}

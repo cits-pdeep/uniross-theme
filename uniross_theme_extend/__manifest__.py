@@ -29,6 +29,7 @@
             '/uniross_theme_extend/static/src/css/style.css',
             '/uniross_theme_extend/static/src/js/cit_public_widget.js',
             'uniross_theme_extend/static/src/css/mobile_custom.css',
+            'uniross_theme_extend/static/src/css/tablet_custom.css',
             'uniross_theme_extend/static/src/css/desktop_custom.css',
         ],
     },
