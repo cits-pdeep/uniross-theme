@@ -72,7 +72,7 @@
             <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
                      style="background: linear-gradient(91.77deg, #2C2C2C -7.9%, #676767 93.8%);">
                 <div class="s_allow_columns container">
-                    <div class="d-flex justify-content-between"
+                    <div class="row d-flex justify-content-between"
                          style="color: #ffffff;font-size: 16px;font-weight: 400;">
 
                         <div class="o_colored_level col-lg-6 col-md-12">
@@ -82,7 +82,7 @@
                                 flashlights, remotes, and countless other devices.
                             </p>
                         </div>
-                        <div class="o_colored_level col-lg-4 col-md-12">
+                        <div class="o_colored_level col-lg-4 col-md-12 mobile_pt24">
                             <div class="o_text_columns">
                                 <div class="row">
                                     <div class="col-4 o_colored_level">
