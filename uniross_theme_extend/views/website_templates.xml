@@ -14,8 +14,27 @@
         <xpath expr="//li[contains(@t-if, 'submenu.is_visible')]/a/span" position="before">
             <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
         </xpath>
-        <xpath expr="//li[contains(@t-elif, 'show_dropdown')]/a/span" position="before">
-            <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+        <xpath expr="//li[contains(@t-elif, 'show_dropdown')]/a/span" position="replace">
+            <!--<img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>-->
+            <div class="text-with-image">
+                <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+                <div class="text-content">
+                    <t t-set="menu_name" t-value="submenu.get_menu_name()"/>
+                    <t t-esc="menu_name"/>
+
+                </div>
+                <span t-field="submenu.name" style="display:none"/>
+            </div>
+        </xpath>
+        <xpath expr="//li[contains(@t-elif, 'show_dropdown')]" position="attributes">
+            <attribute name="t-attf-class">#{item_class or ''} dropdown
+                #{submenu.is_mega_menu and submenu.name == 'Single-use Batteries' and 'position-static'}
+            </attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='submenu.is_mega_menu and not is_mobile']" position="attributes">
+            <attribute name="t-attf-style">
+                #{submenu.name=='Single-use Batteries' and 'width: 770px !important;left: 690px;' or ''}
+            </attribute>
         </xpath>
     </template>
 
@@ -24,6 +43,29 @@
     <template id="template_header_sales_two" inherit_id="website.template_header_sales_two">
         <xpath expr="//div[contains(@class, 'o_border_contrast')]/div" position="attributes">
             <attribute name="class">container d-flex justify-content-center</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@class, 'o_header_sales_two_top')]" position="attributes">
+            <attribute name="class">o_header_sales_two_top py-1 d-none</attribute>
+        </xpath>
+        <xpath expr="//t[@t-call='website.placeholder_header_search_box']" position="replace">
+            <t t-call="website.placeholder_header_search_box">
+                <t t-set="_input_classes" t-valuef="text-bg-light"/>
+                <t t-set="_submit_classes" t-valuef="bg-o-color-3"/>
+            </t>
+        </xpath>
+        <xpath expr="//ul[contains(@class, 'align-items-center')]" position="after">
+            <li style="margin-left: 240px;list-style: none;font-size: 14px;font-weight: 500;">
+                <a style="color: #2C2C2C;">About Us</a>
+            </li>
+            <li style="list-style: none;font-size: 14px;font-weight: 500;">
+                <a style="color: #2C2C2C;">Contact Us</a>
+            </li>
+            <li style="list-style: none;border-radius: 5px;" class="book-appointment">
+                <a class="book-appointment">
+                    <i class="fa fa-calendar"/>
+                    Book An Appointment
+                </a>
+            </li>
         </xpath>
     </template>
 

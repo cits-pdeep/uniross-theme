@@ -16,3 +16,14 @@ class WebsiteMenu(models.Model):
 
     def set_mega_menu_data(self, content):
         self.mega_menu_content = Markup(content)
+
+    def get_menu_name(self):
+        words = self.name.split()
+        if len(words) == 1:
+            return words
+
+        first_line = " ".join(words[:-1])
+        second_line = words[-1]
+        menu_name = "<span>%s</span><span>%s</span>"%(first_line, second_line)
+        # first_line + "<br/>" + second_line
+        return Markup(menu_name)
