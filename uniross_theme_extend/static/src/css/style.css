@@ -126,6 +126,9 @@ ul#top_menu {
 ul#top_menu .dropdown-toggle::after {
     display: none;
 }
+a.nav-link.o_default_snippet_text {
+    padding-bottom: 0px !important;
+}
 /*[Header Menu] End*/
 #products_grid .oe_product .cit-product-name {
     font-size: 16px;
