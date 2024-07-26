@@ -20,7 +20,7 @@ class WebsiteMenu(models.Model):
     def get_menu_name(self):
         words = self.name.split()
         if len(words) == 1:
-            return words
+            return self.name
 
         first_line = " ".join(words[:-1])
         second_line = words[-1]

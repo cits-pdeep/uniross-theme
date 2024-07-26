@@ -13,3 +13,4 @@ class ProductPublicCategory(models.Model):
     _inherit = 'product.public.category'
 
     is_industrial_category = fields.Boolean()
+    category_description = fields.Text()

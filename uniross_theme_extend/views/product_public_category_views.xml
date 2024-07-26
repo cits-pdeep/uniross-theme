@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sequence']" position="after">
                 <field name="is_industrial_category"/>
+                <field name="category_description"/>
             </xpath>
         </field>
     </record>

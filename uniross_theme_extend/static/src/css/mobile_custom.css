@@ -1,5 +1,16 @@
 @media (min-width: 300px) and (max-width: 767px) {
-
+    .why-us-snippet{
+        padding: unset;
+    }
+    .select-product-quote{
+        display:none;
+    }
+    .why-us-snippet1{
+        padding: 15px;
+    }
+    .why-us-snippet2{
+        margin-top: 20px;
+    }
     .mobile_padding_left_right_8 {
         padding-right: calc(var(--gutter-x) * .8);
         padding-left: calc(var(--gutter-x) * .8);

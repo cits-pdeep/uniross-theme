@@ -47,6 +47,7 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
 .grid-top-button img {
     margin-right: 5px;
 }
+
 /***********[Category page]GRID VIEW STYLE END***********/
 
 /***********[Category page]LIST VIEW STYLE END***********/
@@ -103,6 +104,15 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
     font-weight: 400;
     width: 400px;
 }
+.o_wsale_filmstip_wrapper .btn-light{
+    background: #F65026;
+    border: solid 2px;
+    border-color: #F65026;
+    border-radius: 5px !important;
+    color: white;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+}
 /***********[Category page]LIST VIEW STYLE END***********/
 
 /*[Header Menu] Start*/
@@ -110,6 +120,24 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
     font-size: 12px;
     font-weight: 500;
 }*/
+.why-us-snippet{
+    padding: 50px;
+}
+.navbar-nav .select-product-quote {
+    display: none;
+}
+.select-product-quote {
+    border-radius: 5px !important;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 15px 7px 15px;
+    background: #F65026;
+    color: #ffffff;
+    margin-left: 5px !important;
+}
+.oe_search_button {
+    border-radius: 0.4rem !important;
+}
 li.o_wsale_my_cart {
     display: none;
 }

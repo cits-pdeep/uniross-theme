@@ -11,8 +11,16 @@
                 <span>Single-use<br/>Batteries</span>
             </a>
         -->
-        <xpath expr="//li[contains(@t-if, 'submenu.is_visible')]/a/span" position="before">
-            <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+        <xpath expr="//li[contains(@t-if, 'submenu.is_visible')]/a/span" position="replace">
+            <!--<img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>-->
+            <div class="text-with-image">
+                <img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>
+                <div class="text-content">
+                    <t t-set="menu_name" t-value="submenu.get_menu_name()"/>
+                    <t t-esc="menu_name"/>
+                </div>
+                <span t-field="submenu.name" style="display:none"/>
+            </div>
         </xpath>
         <xpath expr="//li[contains(@t-elif, 'show_dropdown')]/a/span" position="replace">
             <!--<img t-if="submenu.menu_image" t-att-src="image_data_uri(submenu.menu_image)"/>-->
@@ -21,7 +29,6 @@
                 <div class="text-content">
                     <t t-set="menu_name" t-value="submenu.get_menu_name()"/>
                     <t t-esc="menu_name"/>
-
                 </div>
                 <span t-field="submenu.name" style="display:none"/>
             </div>
@@ -79,7 +86,21 @@
     <template id="products_attributes" inherit_id="website_sale.products_attributes">
         <xpath expr="//a[@t-if='attrib_values or tags']" position="replace"/>
     </template>
-
+    <template id="website_search_box" inherit_id="website.website_search_box">
+        <xpath expr="//button" position="after">
+            <span t-if="category and category.is_industrial_category" class="select-product-quote" data-oe-id="1236"
+                  data-oe-xpath="/data/xpath[4]/li[3]"
+                  data-oe-model="ir.ui.view" data-oe-field="arch">
+                <img src="/uniross_theme_extend/static/img/Group.png"/>
+                Select Products To Get Quote
+            </span>
+        </xpath>
+    </template>
+    <template id="add_grid_or_list_option" inherit_id="website_sale.add_grid_or_list_option">
+        <xpath expr="//div" position="attributes">
+            <attribute name="t-att-style">'' if not category or not category.is_industrial_category else 'display:none !important'</attribute>
+        </xpath>
+    </template>
     <!--This template will put name and image of category at top of specific category page-->
     <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
         <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
@@ -143,7 +164,7 @@
                             <h2 class="o_default_snippet_text"><br/></h2>
                             <h2 class="o_default_snippet_text"><br/></h2>-->
                             <h2 class="o_default_snippet_text">
-                                <span t-esc="category.name"/>
+                                <span style="font-size: 55px;font-weight: 400;" t-esc="category.category_description or category.name"/>
                             </h2>
                         </div>
                         <div class="col-lg-6 pt16 pb16 o_colored_level">
@@ -156,12 +177,103 @@
             </section>
         </xpath>
         <xpath expr="//div[@id='oe_structure_website_sale_products_2']" position="before">
-            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
+            <section t-if="category and category.is_industrial_category" class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text"
+                     style="background-image: none;color:#F65026;font-weight:400;font-size:16px;">
+                <div class="s_allow_columns container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 o_colored_level why-us-snippet why-us-snippet1"
+                             style="background-color: rgb(255, 224, 201);">
+                            <h2 style="font-size: 55px;font-weight: 400;">Why Us?</h2>
+                            <p class="o_default_snippet_text" style="line-height: 1.8;">At Uniross, we excel in delivering top-tier battery solutions tailored to meet your specific needs. Our expert engineering team specializes in battery performance customization, ensuring each product is optimized for its intended application. We take pride in our comprehensive battery system development, meticulously designing and integrating systems to deliver peak performance. All our batteries undergo rigorous testing and certification processes, guaranteeing reliability and safety.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 o_colored_level why-us-snippet why-us-snippet2">
+                            <div class="container o_text_columns">
+                                <div class="row">
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 16.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Home Applicances</p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 8.png" alt=""
+                                                 class="img img-fluid o_we_custom_image" loading="lazy" style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Light Urban
+                                            Mobility
+                                        </p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 10.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Professional
+                                            Tools
+                                        </p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 12.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Emergency
+                                            Lighting
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:14px !important;">
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 9.png" alt=""
+                                                 class="img img-fluid o_we_custom_image" loading="lazy" style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Telecom</p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 14.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Solar</p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 11.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">MedTech</p>
+                                    </div>
+                                    <div class="col-3 o_colored_level">
+                                        <p class="o_default_snippet_text" style="text-align: center;">
+                                            <img src="/uniross_theme_extend/static/img/category_page/image 13.png"
+                                                 alt="" class="img img-fluid o_we_custom_image" loading="lazy"
+                                                 style=""/>
+                                        </p>
+                                        <p class="o_default_snippet_text" style="text-align: center;">Aerospace &amp;
+                                            Military
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section t-if="not category or not category.is_industrial_category"
+                     class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
                      style="background: linear-gradient(91.77deg, #2C2C2C -7.9%, #676767 93.8%);">
                 <div class="s_allow_columns container">
                     <div class="row d-flex justify-content-between"
                          style="color: #ffffff;font-size: 16px;font-weight: 400;">
-
                         <div class="o_colored_level col-lg-6 col-md-12">
                             <p class="o_default_snippet_text" style="text-align: center;">Uniross single-use batteries,
                                 available in alkaline, carbon zinc, and lithium variants, provide reliable, optimal
