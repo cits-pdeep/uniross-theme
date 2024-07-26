@@ -1,4 +1,4 @@
-@media (min-width:767px) and (max-width: 1024px) {
+@media (min-width:767px) and (max-width: 1200px) {
 
     .tab_width_49 {
         width: 49% !important;
@@ -30,6 +30,13 @@
     }
     .product_width {
         width: 80% !important;
+    }
+    .contact_information {
+        padding: 25px;
+        margin-left: 0px;
+    }
+    .mob_tab_pb_52 {
+        padding-bottom: 52px !important;
     }
 
 }

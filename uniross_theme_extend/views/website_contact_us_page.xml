@@ -48,9 +48,9 @@
                         <div class="o_we_shape o_web_editor_Origins_04_001"
                              style="background-image: url(&quot;/web_editor/shape/web_editor%2FOrigins%2F04_001.svg?c3=%23FFE0C9&quot;);"/>
                         <div class="s_allow_columns container">
-                            <div style="background-color: white;border-radius: 15px;box-shadow: 0px 2px 6px #0000001A;">
-                                <div class="row contact_information">
-                                    <div class="col-lg-4 mt-4 mt-lg-0 o_colored_level o_cc o_cc4 rounded pt24 pb104"
+                            <div style="background-color: white;border-radius: 15px;box-shadow: 0px 0px 2px 2px #0000001A">
+                                <div class="row col-lg-12 col-md-12 col-sm-12 col-12 contact_information">
+                                    <div class="col-lg-4 col-sm-12 mt-lg-0 o_colored_level o_cc o_cc4 rounded pt24 pb104 mob_tab_pb_52"
                                          style="border-radius: 10px !important;">
                                         <ul class="list-unstyled mb-0 ps-2">
                                             <li>
@@ -68,16 +68,20 @@
                                                      data-original-src="/web/image/764-b894030c/iconamoon_home-light.svg"
                                                      data-mimetype-before-conversion="image/svg+xml"
                                                      loading="lazy"/>
-                                                <span class="o_force_ltr">Uniross
-                                                    Europe</span>49 Rue De Ponthieu,
+                                                <span class="o_force_ltr">Uniross Europe </span>
                                             </li>
                                         </ul>
-                                        <p>
-                                            <span class="o_force_ltr">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                        <p class="mb8">
+                                            <span class="o_force_ltr">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                49 Rue De Ponthieu,
+                                            </span>
+                                        </p>
+                                        <p class="mb8">
+                                            <span class="o_force_ltr">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 75008 Paris, France
                                             </span>
                                         </p>
-                                        <ul class="list-unstyled mb-0 ps-2">
+                                        <ul class="list-unstyled mb-0 ps-2 mt16">
                                             <li>
                                                 <img src="/web/image/766-fba04382/Vector.svg"
                                                      alt=""
@@ -88,7 +92,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="mt-4 mt-lg-0 o_colored_level o_cc o_cc1 rounded col-lg-8"
+                                    <div class="col-lg-8 col-sm-12 mt-lg-0 o_colored_level o_cc o_cc1 rounded"
                                          style="border-radius: 10px !important;">
                                         <p>&amp;nbsp;
                                             <br/>
