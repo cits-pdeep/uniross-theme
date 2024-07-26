@@ -52,6 +52,19 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
 
 /***********[Category page]LIST VIEW STYLE END***********/
 /*left align name*/
+.o_sortby_dropdown {
+    display: none !important;
+}
+a.nav-link.active{
+    color: #F65026 !important;
+    border-bottom: solid 4px !important;
+}
+a.nav-link.active .text-content{
+    color: #F65026 !important;
+}
+.text-content:hover {
+    color: #F65026 !important;
+}
 .oe_subdescription.mb-2.text-muted.small {
     font-size: 16px;
     font-weight: 400;
