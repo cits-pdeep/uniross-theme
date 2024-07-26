@@ -17,6 +17,7 @@
     'website': 'http://www.caretit.com',
     'depends': ['website_sale'],
     'data': [
+        'views/product_public_category_views.xml',
         'views/website_menu.xml',
         'views/website_templates.xml',
         'views/website_home_page.xml',

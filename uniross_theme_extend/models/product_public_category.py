@@ -6,5 +6,10 @@
 #                                                                            #
 ##############################################################################
 
-from . import product_public_category
-from . import website_menu
+from odoo import fields, models
+from markupsafe import Markup
+
+class ProductPublicCategory(models.Model):
+    _inherit = 'product.public.category'
+
+    is_industrial_category = fields.Boolean()

@@ -54,20 +54,18 @@
             </t>
         </xpath>
         <xpath expr="//ul[contains(@class, 'align-items-center')]" position="after">
-            <xpath expr="//ul[contains(@class, 'align-items-center')]" position="after">
-                <li style="margin-left: 240px;list-style: none;font-size: 14px;font-weight: 500;">
-                    <a style="color: #2C2C2C;" href="/about-us">About Us</a>
-                </li>
-                <li style="list-style: none;font-size: 14px;font-weight: 500;">
-                    <a style="color: #2C2C2C;" href="/contactus">Contact Us</a>
-                </li>
-                <li style="list-style: none;border-radius: 5px;" class="book-appointment">
-                    <a class="book-appointment" href="/appointment">
-                        <i class="fa fa-calendar"/>
-                        Book An Appointment
-                    </a>
-                </li>
-            </xpath>
+            <li style="margin-left: 240px;list-style: none;font-size: 14px;font-weight: 500;">
+                <a style="color: #2C2C2C;" href="/about-us">About Us</a>
+            </li>
+            <li style="list-style: none;font-size: 14px;font-weight: 500;">
+                <a style="color: #2C2C2C;" href="/contactus">Contact Us</a>
+            </li>
+            <li style="list-style: none;border-radius: 5px;" class="book-appointment">
+                <a class="book-appointment" href="/appointment">
+                    <i class="fa fa-calendar"/>
+                    Book An Appointment
+                </a>
+            </li>
         </xpath>
     </template>
 
@@ -78,10 +76,55 @@
         </xpath>
     </template>
 
+    <template id="products_attributes" inherit_id="website_sale.products_attributes">
+        <xpath expr="//a[@t-if='attrib_values or tags']" position="replace"/>
+    </template>
+
     <!--This template will put name and image of category at top of specific category page-->
     <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
         <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
-
+        <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
+        <xpath expr="//div[@id='products_grid']" position="before">
+            <t t-if="category and category.is_industrial_category">
+                <t t-set="layout_mode" t-value="'list'"/>
+            </t>
+        </xpath>
+        <xpath expr="//aside[@id='products_grid_before']" position="attributes">
+            <attribute name="t-if">not category or not category.is_industrial_category</attribute>
+        </xpath>
+        <xpath expr="//div[@id='products_grid']" position="attributes">
+            <attribute name="t-attf-class">#{'o_wsale_layout_list' if layout_mode == 'list' else ''} {{'col-lg-9' if not category or not category.is_industrial_category else 'col-12'}}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('products_header')]" position="before">
+            <t t-if="is_view_active('website_sale.search')" t-call="website_sale.search">
+                <t t-set="search" t-value="original_search or search"/>
+                <t t-set="_form_classes" t-valuef="d-lg-inline {{'d-inline' if not category else 'd-none'}}"/>
+            </t>
+        </xpath>
+        <xpath expr="//t[@t-call='website_sale.pricelist_list']" position="before">
+            <div t-if="not category or not category.is_industrial_category">
+                <button class="grid-top-button" style="color: #F65026;border-color: #F65026;">
+                    <img src="/uniross_theme_extend/static/img/menu/battery.png"/>Primary Batteries
+                </button>
+                <button class="grid-top-button">
+                    <img src="/uniross_theme_extend/static/img/system-uicons_coin.png"/>Button/ Coin Batteries
+                </button>
+                <button class="grid-top-button">
+                    <img src="/uniross_theme_extend/static/img/Vector_1.png"/>Specialty Batteries
+                </button>
+            </div>
+        </xpath>
+        <xpath expr="//div[@t-if='opt_wsale_categories']" position="before">
+            <!--t-if="attrib_values or tags"-->
+            <a t-if="attrib_values or tags"
+               t-att-href="keep('/shop'+ ('/category/'+slug(category)) if category else None, attrib=0, tags=0)"
+               t-attf-class="btn btn-{{navClass}} d-flex align-items-center py-1 mb-2">
+                <small class="mx-auto">
+                    <b>Clear Filters</b>
+                </small>
+                <i class="oi oi-close"/>
+            </a>
+        </xpath>
         <xpath expr="//div[@id='oe_structure_website_sale_products_1']" position="after">
             <section t-if="category" class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image"
                      data-name="Text - Image"

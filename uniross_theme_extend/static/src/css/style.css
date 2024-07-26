@@ -33,6 +33,20 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
 .o_pricelist_dropdown.dropdown.d-none.d-lg-inline {
     display: none !important;
 }
+.grid-top-button{
+    font-size: 18px;
+    font-weight: 400;
+    /* line-height: 16.93px; */
+    border: dashed 1px #676767;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: transparent;
+    color: #676767;
+}
+.grid-top-button img {
+    margin-right: 5px;
+}
 /***********[Category page]GRID VIEW STYLE END***********/
 
 /***********[Category page]LIST VIEW STYLE END***********/
