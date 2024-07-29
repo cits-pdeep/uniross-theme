@@ -88,7 +88,7 @@
     </template>
     <template id="website_search_box" inherit_id="website.website_search_box">
         <xpath expr="//button" position="after">
-            <span t-if="category and category.is_industrial_category" class="select-product-quote" data-oe-id="1236"
+            <span  t-if="not product and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category" class="select-product-quote" data-oe-id="1236"
                   data-oe-xpath="/data/xpath[4]/li[3]"
                   data-oe-model="ir.ui.view" data-oe-field="arch">
                 <img src="/uniross_theme_extend/static/img/Group.png"/>
