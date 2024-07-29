@@ -23,17 +23,14 @@
     .product_width {
         width: 80% !important;
     }
+    .mobile_width_100 {
+        width: 100% !important;
+    }
     .mobile_pt24 {
         padding-top: 24px !important;
     }
     .mobile_ml0 {
         margin-left: 0px !important;
-    }
-    .mobile_ml4 {
-        margin-left: 4px !important;
-    }
-    .mobile_mr4 {
-        margin-right: 4px !important;
     }
     .mobile_mt8 {
         margin-top: 8px !important;

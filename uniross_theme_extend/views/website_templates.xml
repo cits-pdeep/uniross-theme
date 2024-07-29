@@ -123,17 +123,20 @@
             </t>
         </xpath>
         <xpath expr="//t[@t-call='website_sale.pricelist_list']" position="before">
-            <div t-if="not category or not category.is_industrial_category">
-                <button class="mt8 mobile_ml4 mobile_mr4 mobile_type_product" class="grid-top-button" style="color: #F65026;border-color: #F65026;">
+            <div class="mt8" t-if="not category or not category.is_industrial_category">
+                <button class="grid-top-button mobile_width_100" style="color: #F65026;border-color: #F65026;">
                     <img src="/uniross_theme_extend/static/img/menu/battery.png"/>Primary Batteries
                 </button>
-                <button class="grid-top-button">
+                <button class="grid-top-button mobile_width_100">
                     <img src="/uniross_theme_extend/static/img/system-uicons_coin.png"/>Button/ Coin Batteries
                 </button>
-                <button class="grid-top-button">
+                <button class="grid-top-button mobile_width_100">
                     <img src="/uniross_theme_extend/static/img/Vector_1.png"/>Specialty Batteries
                 </button>
             </div>
+        </xpath>
+        <xpath expr="//div[hasclass('products_header', 'btn-toolbar', 'flex-nowrap', 'align-items-center', 'justify-content-between', 'gap-3', 'mb-3')]" position="attributes">
+            <attribute name="class" add="mobile_flex-wrap" separator=" " />
         </xpath>
         <xpath expr="//div[@t-if='opt_wsale_categories']" position="before">
             <!--t-if="attrib_values or tags"-->
@@ -351,10 +354,12 @@
                                     <a t-if="product._website_show_quick_add()" href="#" role="button"
                                        class="add-to-queue a-submit"
                                        aria-label="Shopping cart" title="Shopping cart">
+                                        <input type="checkbox" class="form-check-input mr4"
+                                               id="add_to_quote"/>
                                         Add To Quote
                                     </a>
                                 </t>
-                                <div class="mt-2">
+                                <div class="mt-3">
                                     <a t-att-href="product_href" href="#" role="button"
                                        class="view-product">
                                         View Product
