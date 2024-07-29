@@ -398,10 +398,10 @@
                     <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" t-attf-class="btn btn-primary js_check_product a-submit flex-grow-1" href="#" class="btn btn-primary js_check_product a-submit flex-grow-1">
                         <img src="/uniross_theme_extend/static/img/Group.png"/>Request A Quote
                     </a>
-                    <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" t-attf-class="btn btn-outline-primary flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
+                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-outline-primary flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
                         <i class="fa fa-download" contenteditable="false" style="margin-right: 3px;" />Download Details
                     </a>
-                    <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
+                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
                         <i class="fa fa-share-alt" contenteditable="false" style="margin-right: 3px;"/>Share
                     </a>
                 </div>
@@ -481,6 +481,11 @@
                     </div>
                 </div>
             </section>
+        </xpath>
+    </template>
+    <template id="alternative_products" inherit_id="website_sale.alternative_products">
+        <xpath expr="//div[@id='oe_structure_website_sale_recommended_products']" position="before">
+            <h1 style="text-align: center;font-weight: 400;font-size: 35px;">Related Products</h1>
         </xpath>
     </template>
 </odoo>
