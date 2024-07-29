@@ -48,9 +48,4 @@
     .mobile_flex-wrap {
         flex-wrap: wrap !important;
     }
-    .mobile_type_product {
-        flex-wrap: wrap;
-        display: -webkit-flex;
-    }
-
 }
