@@ -37,5 +37,9 @@ publicWidget.registry.UniFooterWidget = publicWidget.Widget.extend({
         } else if(window.location.href.includes('contactus')) {
             $('.uni-contact-us').attr('style','color:#FF0000');
         }
+
+        $('.uni-download').click(function() {
+            $('.uni-download-menu').toggle();
+        });
     },
 });

@@ -411,9 +411,19 @@
                     <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" t-attf-class="btn btn-primary js_check_product a-submit flex-grow-1" href="#" class="btn btn-primary js_check_product a-submit flex-grow-1">
                             <img src="/uniross_theme_extend/static/img/Group.png"/>Request A Quote
                     </a>
-                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-outline-primary flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
+                    <!--<a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-outline-primary flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
                         <i class="fa fa-download" contenteditable="false" style="margin-right: 3px;" />Download Details
-                    </a>
+                    </a>-->
+                    <div class="dropdown show" style="float: right;">
+                        <a class="btn btn-outline-primary dropdown-toggle uni-download" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-download" contenteditable="false" style="margin-right: 3px;"/> Download Details
+                        </a>
+                        <div class="dropdown-menu uni-download-menu" aria-labelledby="dropdownMenuLink" style="overflow: hidden;">
+                            <a class="dropdown-item" href="#" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Spec Sheet</a>
+                            <a class="dropdown-item" href="#" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Images</a>
+                        </div>
+                    </div>
+
                     <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
                         <i class="fa fa-share-alt" contenteditable="false" style="margin-right: 3px;"/>Share
                     </a>
