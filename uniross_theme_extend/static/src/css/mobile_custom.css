@@ -61,4 +61,7 @@
     .uni-product-buttons .btn {
         margin-top: 10px;
     }
+    .carousel-item.h-100.text-center, .o_carousel_product_outer.carousel-outer.position-relative.flex-grow-1.overflow-hidden{
+        min-height: 400px !important;
+    }
 }
