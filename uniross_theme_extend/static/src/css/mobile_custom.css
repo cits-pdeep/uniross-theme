@@ -48,4 +48,11 @@
     .mobile_flex-wrap {
         flex-wrap: wrap !important;
     }
+    .product_details_icon {
+        position: absolute !important;
+        max-height: 56px !important;
+    }
+    .product_details_content {
+        margin-top: 64px !important;
+    }
 }
