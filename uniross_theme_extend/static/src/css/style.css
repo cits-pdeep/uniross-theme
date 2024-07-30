@@ -15,9 +15,9 @@ label.form-check-label.fw-normal {
     font-weight: 500;
 }
 .btn-group .btn-light.active {
-    box-shadow: inset 0 0 0 1px #FF0000;
+    box-shadow: inset 0 0 0 1px #F65026;
     border-color: transparent;
-    background-color: #FF0000;
+    background-color: #F65026;
     color: #ffffff;
 }
 a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
@@ -83,7 +83,7 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
     padding: 8px 18px 8px 18px;
     border-radius: 5px;
     text-decoration: none;
-    background: #FF0000;
+    background: #F65026;
     color: white;
 }
 .add-to-queue, .add-to-queue:hover{
@@ -99,7 +99,7 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
     font-weight: 700;
     padding: 8px 12px 8px 12px;
     text-decoration: none;
-    background: #FF0000;
+    background: #F65026;
     color: white !important;
 }
 .navbar-nav input.search-query.form-control.oe_search_box.border-0.bg-light.text-bg-light {
@@ -255,3 +255,13 @@ a.nav-link.o_default_snippet_text {
     text-align: center;
 }
 /*Product Page end*/
+/*Checkout Page/Process start*/
+
+.accordion-button .d-flex, div[name="website_sale_cart_line_price"], .col-3.d-flex.flex-column.align-items-end.gap-1, div#cart_total, #amount_total_summary, .td-price{
+   display: none !important;
+}
+
+label[for="company_name"], input[name="company_name"], .div_vat, .div_street2{
+    display: none !important;
+}
+/*Checkout Page/Process End*/

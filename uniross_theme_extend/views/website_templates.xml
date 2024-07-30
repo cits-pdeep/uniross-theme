@@ -113,6 +113,9 @@
     <!--This template will put name and image of category at top of specific category page-->
     <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
         <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
+        <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="attributes">
+            <attribute name="t-if">opt_wsale_categories_top and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category</attribute>
+        </xpath>
         <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
         <xpath expr="//div[@id='products_grid']" position="before">
             <t t-if="category and category.is_industrial_category">
@@ -400,12 +403,13 @@
     </template>
 
     <template id="product" inherit_id="website_sale.product" name="Product">
+        <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
         <xpath expr="//div[@id='o_wsale_cta_wrapper']" position="after">
             <div class="uni-product-buttons">
                 <div style="border: dashed 0.5px #CCCBCB;margin-top: 30px;margin-bottom: 30px;"/>
                 <div id="add_to_cart_wrap" t-attf-class="{{'d-none' if combination_info['prevent_zero_price_sale'] else 'd-inline-flex'}} align-items-center mb-2 me-auto">
                     <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" t-attf-class="btn btn-primary js_check_product a-submit flex-grow-1" href="#" class="btn btn-primary js_check_product a-submit flex-grow-1">
-                        <img src="/uniross_theme_extend/static/img/Group.png"/>Request A Quote
+                            <img src="/uniross_theme_extend/static/img/Group.png"/>Request A Quote
                     </a>
                     <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-outline-primary flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
                         <i class="fa fa-download" contenteditable="false" style="margin-right: 3px;" />Download Details
@@ -417,7 +421,7 @@
             </div>
         </xpath>
         <xpath expr="//div[@id='product_full_description']" position="before">
-            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;" t-nocache="No Cache">
                 <div class="container s_allow_columns">
                     <div class="row">
                         <div class="col-lg-6 o_colored_level" style="padding: 60px;">
@@ -456,35 +460,35 @@
                             <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px;">Technical Details</div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Type</div>
-                                <div class="col-6 o_colored_level2">AA/FR6</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.dimension_type"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Volts (V)</div>
-                                <div class="col-6 o_colored_level2">1.0</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_volts"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Weight (g)</div>
-                                <div class="col-6 o_colored_level2">15.0</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.weight"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Diameter  (mm)</div>
-                                <div class="col-6 o_colored_level2">14.5</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_diameter"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Height (mm)</div>
-                                <div class="col-6 o_colored_level2">50.5</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_height"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Width (mm)</div>
-                                <div class="col-6 o_colored_level2">-</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_width"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Depth (mm)</div>
-                                <div class="col-6 o_colored_level2">-</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_depth"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Lifespan</div>
-                                <div class="col-6 o_colored_level2">15 Years</div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.lifespan"/></div>
                             </div>
                         </div>
                     </div>
@@ -497,4 +501,16 @@
             <h1 style="text-align: center;font-weight: 400;font-size: 35px;">Related Products</h1>
         </xpath>
     </template>
+    <template id="checkout_layout" inherit_id="website_sale.checkout_layout" name="Uniross Website Check Out Page">
+		<xpath expr="//button[hasclass('accordion-button')]" position="replace">
+			<button class="accordion-button px-0 collapsed" data-bs-toggle="collapse" data-bs-target="#o_wsale_accordion_item" aria-expanded="false" aria-controls="o_wsale_accordion_item">
+                <div class="d-flex flex-wrap">
+                    <b class="w-100">Order summary</b>
+                    <span t-out="str(website_sale_order.cart_quantity)"/>
+                    &amp;nbsp;item(s)&amp;nbsp;&amp;nbsp;
+                    <span id="amount_total_summary" class="monetary_field ms-1" t-field="website_sale_order.amount_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: website_sale_order.currency_id}"/>
+                </div>
+            </button>
+		</xpath>
+	</template>
 </odoo>

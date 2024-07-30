@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record model="ir.ui.view" id="product_normal_form_view">
+        <field name="name">product_normal_form_view</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                <field name="dimension_type"/>
+                <field name="product_volts"/>
+                <field name="product_diameter"/>
+                <field name="product_height"/>
+                <field name="product_width"/>
+                <field name="product_depth"/>
+                <field name="lifespan"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

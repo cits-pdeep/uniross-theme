@@ -7,7 +7,7 @@
         <div class="o_container_small">
             <div class="row">
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/battery.png"/>
                         Primary
                     </h4>
@@ -27,7 +27,7 @@
                     </nav>
                 </div>
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/system-uicons_coin.png"/>
                         Button/Coin
                     </h4>
@@ -44,7 +44,7 @@
                     </nav>
                 </div>
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/Vector.png"/>
                         Speciality
                     </h4>
@@ -70,7 +70,7 @@
         <div class="o_container_small">
             <div class="row">
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4" style="width:100%">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/battery-charging.png"/>
                         Rechargeable Batteries
                     </h4>
@@ -95,7 +95,7 @@
         <div class="o_container_small">
             <div class="row">
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4" style="width:100%">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/carbon_plug.png"/>
                         Charging Devices
                     </h4>
@@ -128,7 +128,7 @@
         <div class="o_container_small">
             <div class="row">
                 <div class="col-12 col-sm py-2 text-center o_colored_level col-lg-4" style="width:100%">
-                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#FF0000">
+                    <h4 class="o_default_snippet_text" style="text-align: left;font-size: 18px;color:#F65026">
                         <img src="/uniross_theme_extend/static/img/menu/solar_flashlight-on-outline.png"/>
                         Portable Lighting
                     </h4>

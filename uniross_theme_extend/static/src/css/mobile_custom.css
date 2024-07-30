@@ -55,4 +55,10 @@
     .product_details_content {
         margin-top: 64px !important;
     }
+    div#add_to_cart_wrap {
+        display: block !important;
+    }
+    .uni-product-buttons .btn {
+        margin-top: 10px;
+    }
 }

@@ -24,6 +24,7 @@
         # 'views/website_about_us.xml',
         'views/website_contact_us_page.xml',
         'views/website_footer_custom.xml',
+        'views/product_view.xml',
     ],
     'assets': {
         'web.assets_frontend': [
