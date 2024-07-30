@@ -498,7 +498,7 @@
     </template>
     <template id="alternative_products" inherit_id="website_sale.alternative_products">
         <xpath expr="//div[@id='oe_structure_website_sale_recommended_products']" position="before">
-            <h1 style="text-align: center;font-weight: 400;font-size: 35px;">Related Products</h1>
+            <h1 t-if="product.alternative_product_ids" style="text-align: center;font-weight: 400;font-size: 35px;">Related Products</h1>
         </xpath>
     </template>
     <template id="checkout_layout" inherit_id="website_sale.checkout_layout" name="Uniross Website Check Out Page">
