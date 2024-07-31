@@ -124,6 +124,9 @@ a.page-link .fa-chevron-right, a.page-link .fa-chevron-left {
     font-weight: 500;
 }*/
 /*https://codepen.io/sosuke/pen/Pjoqqp*/
+h4.o_default_snippet_text {
+    color: #F65026 !important;
+}
 a.nav-link.active img {
     filter: invert(56%) sepia(98%) saturate(4827%) hue-rotate(347deg) brightness(98%) contrast(96%);
 }
@@ -229,6 +232,9 @@ a.nav-link.o_default_snippet_text {
 .breadcrumb, .breadcrumb-item{
     font-size: 14px;
     font-weight:700;
+}
+.breadcrumb-item a {
+    color: #F65026;
 }
 .o_default_snippet_text1{
     font-size: 20px;
