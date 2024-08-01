@@ -61,8 +61,8 @@
                 <t t-set="_submit_classes" t-valuef="bg-o-color-3"/>
             </t>
         </xpath>
-        <xpath expr="//t[@t-call='portal.placeholder_user_sign_in']" position="replace">
-        </xpath>
+        <!--<xpath expr="//t[@t-call='portal.placeholder_user_sign_in']" position="replace">
+        </xpath>-->
         <xpath expr="//ul[contains(@class, 'align-items-center')]" position="after">
             <li style="margin-left: 240px;list-style: none;font-size: 14px;font-weight: 500;">
                 <a style="color: #2C2C2C;" href="/about-us" class="uni-about-us">About Us</a>
@@ -81,8 +81,8 @@
 
     <!--This template is used for hide sign in menus for mobile view-->
     <template id="template_header_mobile" inherit_id="website.template_header_mobile">
-        <xpath expr="//t[@t-call='portal.placeholder_user_sign_in']" position="replace">
-        </xpath>
+        <!--<xpath expr="//t[@t-call='portal.placeholder_user_sign_in']" position="replace">
+        </xpath>-->
     </template>
 
     <!--Hide contact us button from the header (Menu - Sales 2)-->

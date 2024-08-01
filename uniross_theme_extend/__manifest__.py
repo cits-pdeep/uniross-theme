@@ -25,6 +25,7 @@
         'views/website_contact_us_page.xml',
         'views/website_footer_custom.xml',
         'views/product_view.xml',
+        'data/mail_template_data.xml',
     ],
     'assets': {
         'web.assets_frontend': [

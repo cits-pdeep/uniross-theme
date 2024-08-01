@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+       <record id="mail_template_sale_send_quote_customer" model="mail.template">
+            <field name="name">Sales: Send Quote</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">'Quotation'</field>
+            <field name="email_to">{{ (ctx['customer_email'] or '') }}</field>
+            <field name="description">Sent to customers on quote</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 12px;">
+        <p>Dear <t t-out="ctx['name']"></t>,</p>
+        <br/><br/>
+        Thank you for sending quote.
+        <br/><br/><br/><br/>
+    </p>
+<t t-if="hasattr(object, 'website_id') and object.website_id">
+    <div style="margin: 0px; padding: 0px;">
+        <table width="100%" style="color: #454748; font-size: 12px; border-collapse: collapse;">
+            <tr style="border-bottom: 2px solid #dee2e6;">
+                <td style="width: 150px;"><span style="font-weight:bold;">Products</span></td>
+                <td></td>
+            </tr>
+        </table>
+        <t t-foreach="object.order_line" t-as="line">
+            <table width="100%" style="color: #454748; font-size: 12px; border-collapse: collapse;">
+                <t t-set="loop_cycle_number" t-value="loop_cycle_number or 0" />
+                <tr t-att-style="'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 else 'background-color: #ffffff'">
+                    <t t-set="loop_cycle_number" t-value="loop_cycle_number + 1" />
+                    <td style="width: 150px;">
+                        <img t-attf-src="/web/image/product.product/{{ line.product_id.id }}/image_128" style="width: 64px; height: 64px; object-fit: contain;" alt="Product image"></img>
+                    </td>
+                    <td align="left" t-out="line.product_id.name or ''">	Taking care of Trees Course</td>
+                </tr>
+            </table>
+        </t>
+    </div>
+</t>
+</div></field>
+            <field name="lang">{{ object.partner_id.lang }}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+        <record id="mail_template_sale_send_quote_admin" model="mail.template">
+            <field name="name">Sales: Send Quote Administrator</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">'Quotation'</field>
+            <field name="email_to">{{ object.user_id.partner_id.email }}</field>
+            <field name="description">Sent to admin on quote</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 12px;">
+        <p>Dear <t t-out="object.user_id.name or ''"></t>,</p>
+        <br/><br/>
+        New inquiry generated.
+
+        <p>
+            Customer Name: <t t-out="ctx['name']"></t>,<br/>
+            Phone: <t t-out="ctx['phone']"></t>,<br/>
+            Email: <t t-out="ctx['customer_email']"></t>
+        </p>
+
+        <br/><br/><br/><br/>
+    </p>
+<t t-if="hasattr(object, 'website_id') and object.website_id">
+    <div style="margin: 0px; padding: 0px;">
+        <table width="100%" style="color: #454748; font-size: 12px; border-collapse: collapse;">
+            <tr style="border-bottom: 2px solid #dee2e6;">
+                <td style="width: 150px;"><span style="font-weight:bold;">Products</span></td>
+                <td></td>
+            </tr>
+        </table>
+        <t t-foreach="object.order_line" t-as="line">
+            <table width="100%" style="color: #454748; font-size: 12px; border-collapse: collapse;">
+                <t t-set="loop_cycle_number" t-value="loop_cycle_number or 0" />
+                <tr t-att-style="'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 else 'background-color: #ffffff'">
+                    <t t-set="loop_cycle_number" t-value="loop_cycle_number + 1" />
+                    <td style="width: 150px;">
+                        <img t-attf-src="/web/image/product.product/{{ line.product_id.id }}/image_128" style="width: 64px; height: 64px; object-fit: contain;" alt="Product image"></img>
+                    </td>
+                    <td align="left" t-out="line.product_id.name or ''">	Taking care of Trees Course</td>
+                </tr>
+            </table>
+        </t>
+    </div>
+</t>
+</div></field>
+            <field name="lang">{{ object.partner_id.lang }}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>

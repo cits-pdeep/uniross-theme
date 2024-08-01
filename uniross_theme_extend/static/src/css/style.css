@@ -270,4 +270,16 @@ a.nav-link.o_default_snippet_text {
 label[for="company_name"], input[name="company_name"], .div_vat, .div_street2{
     display: none !important;
 }
+
+/******************/
+div#o_cart_summary {
+    display: none;
+}
+.css_quantity.input-group {
+    display: none;
+}
+/*Review Order > Shipping > Payment*/
+.d-flex.flex-column.flex-md-row.align-items-end.align-items-md-start.justify-content-center {
+    display: none !important;
+}
 /*Checkout Page/Process End*/
