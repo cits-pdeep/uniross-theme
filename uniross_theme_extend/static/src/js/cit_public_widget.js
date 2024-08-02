@@ -22,7 +22,7 @@ publicWidget.registry.WebsiteSaleLayout.include({
         } else {
             $('.extra-buttons').attr('style','display: none !important')
             $('.extra-name').attr('style','width: 100% !important')
-            $('.o_wsale_filmstip_container').attr('style','display: none !important');
+            //$('.o_wsale_filmstip_container').attr('style','display: none !important');
         }
     },
 });
@@ -33,8 +33,14 @@ publicWidget.registry.UniFooterWidget = publicWidget.Widget.extend({
     async start() {
         await this._super(...arguments);
         if(window.location.href.includes('about-us')){
+            if($('.mob-about-us').is(':visible')){
+                $('.mob-about-us').addClass('active');
+            }
             $('.uni-about-us').attr('style','color:#FF0000');
         } else if(window.location.href.includes('contactus')) {
+            if($('.mob-contact-us').is(':visible')){
+                $('.mob-contact-us').addClass('active');
+            }
             $('.uni-contact-us').attr('style','color:#FF0000');
         }
 

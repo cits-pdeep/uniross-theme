@@ -83,6 +83,29 @@
     <template id="template_header_mobile" inherit_id="website.template_header_mobile">
         <!--<xpath expr="//t[@t-call='portal.placeholder_user_sign_in']" position="replace">
         </xpath>-->
+        <xpath expr="//t[@t-call='website.placeholder_header_text_element']" position="before">
+            <li role="presentation" class="nav-item">
+                <a role="menuitem" href="/about-us" class="nav-link  mob-about-us">
+                <div class="text-with-image">
+                    <div class="text-content">
+                        About Us
+                    </div>
+                    <span style="display:none" data-oe-model="website.menu" data-oe-id="10" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">About Us</span>
+                </div>
+            </a>
+        </li>
+        <li role="presentation" class="nav-item ">
+                <a role="menuitem" href="/contactus" class="nav-link mob-contact-us">
+                <div class="text-with-image">
+                    <div class="text-content">
+                        Contact Us
+                    </div>
+                    <span style="display:none" data-oe-model="website.menu" data-oe-id="10" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Contact Us</span>
+                </div>
+            </a>
+        </li>
+
+        </xpath>
     </template>
 
     <!--Hide contact us button from the header (Menu - Sales 2)-->
@@ -113,9 +136,9 @@
     <!--This template will put name and image of category at top of specific category page-->
     <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
         <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
-        <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="attributes">
+        <!--<xpath expr="//t[@t-if='opt_wsale_categories_top']" position="attributes">
             <attribute name="t-if">opt_wsale_categories_top and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category</attribute>
-        </xpath>
+        </xpath>-->
         <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
         <xpath expr="//div[@id='products_grid']" position="before">
             <t t-if="category and category.is_industrial_category">
@@ -423,8 +446,10 @@
                             <a class="dropdown-item" href="#" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Images</a>
                         </div>
                     </div>
-
-                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1">
+                    <a  data-animation-selector=".o_wsale_product_images" role="button" class="btn btn-outline-primary flex-grow-1 flex-grow-1" href="/shop/cart" >
+                        View Quote
+                    </a>
+                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1" style="float:right">
                         <i class="fa fa-share-alt" contenteditable="false" style="margin-right: 3px;"/>Share
                     </a>
                 </div>

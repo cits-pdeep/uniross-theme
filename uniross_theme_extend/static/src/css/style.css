@@ -287,4 +287,7 @@ div#o_cart_summary {
 .d-flex.flex-column.flex-md-row.align-items-end.align-items-md-start.justify-content-center {
     display: none !important;
 }
+.o_wizard_circle_progress {
+    display: none;
+}
 /*Checkout Page/Process End*/
