@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-inherit="website_sale.addToCartNotification" t-inherit-mode="extension">
+        <xpath expr="//a" position="replace">
+            <a role="button" class="w-100 btn btn-primary" href="/shop/cart">
+                View Quote
+            </a>
+        </xpath>
+        <xpath expr="//div[hasclass('align-items-start')]" position="replace">
+            <div class="col-6 d-flex flex-column align-items-start">
+                <span t-out="line.name"/>
+            </div>
+        </xpath>
+    </t>
+</templates>

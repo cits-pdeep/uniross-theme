@@ -34,6 +34,7 @@
             'uniross_theme_extend/static/src/css/mobile_custom.css',
             'uniross_theme_extend/static/src/css/tablet_custom.css',
             'uniross_theme_extend/static/src/css/desktop_custom.css',
+            'uniross_theme_extend/static/src/views/add_to_cart_notification.xml',
         ],
     },
 }

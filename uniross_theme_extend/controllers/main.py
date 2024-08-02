@@ -35,4 +35,5 @@ class UnirossThemController(http.Controller):
         adminObj = request.env.ref('uniross_theme_extend.mail_template_sale_send_quote_admin', raise_if_not_found=False)
         send_mail = adminObj.sudo().with_context(ctx).send_mail(order.id)
         request.env['mail.mail'].sudo().browse(send_mail).send()
+        order.unlink()
         return request.redirect('/contactus-thank-you')

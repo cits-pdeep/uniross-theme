@@ -97,12 +97,12 @@
     </template>
     <template id="website_search_box" inherit_id="website.website_search_box">
         <xpath expr="//button" position="after">
-            <span  t-if="not product and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category" class="select-product-quote" data-oe-id="1236"
+            <a href="/shop/cart" t-if="not product and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category" class="select-product-quote" data-oe-id="1236"
                   data-oe-xpath="/data/xpath[4]/li[3]"
                   data-oe-model="ir.ui.view" data-oe-field="arch">
                 <img src="/uniross_theme_extend/static/img/Group.png"/>
                 Select Products To Get Quote
-            </span>
+            </a>
         </xpath>
     </template>
     <template id="add_grid_or_list_option" inherit_id="website_sale.add_grid_or_list_option">
@@ -435,7 +435,8 @@
                 <div class="container s_allow_columns">
                     <div class="row">
                         <div class="col-lg-6 o_colored_level" style="padding: 60px;">
-                            <div class="o_text_columns">
+                            <t t-esc="product.uni_product_description"/>
+                            <!--<div class="o_text_columns">
                                 <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px !important;">Product Details</div>
                                 <div class="row" style="margin-bottom: 10px !important;">
                                     <div class="col-lg-10 col-md-10 o_colored_level product_details_content">
@@ -464,41 +465,41 @@
                                         <p><img src="/uniross_theme_extend/static/img/protection 2.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" style=""/><br/></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="col-lg-6 o_colored_level" style="background: linear-gradient(91.77deg, #2C2C2C -7.9%, #676767 93.8%);border-radius: 15px;color: #ffffff;padding: 60px;">
                             <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px;">Technical Details</div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Type</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.dimension_type"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.dimension_type"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Volts (V)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_volts"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_volts"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Weight (g)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.weight"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.weight"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Diameter  (mm)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_diameter"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_diameter"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Height (mm)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_height"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_height"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Width (mm)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_width"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_width"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Depth (mm)</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.product_depth"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.product_depth"/></div>
                             </div>
                             <div class="row" style="margin-bottom: 10px !important;padding-bottom: 10px;border-bottom: solid 0.5px #FAFAFA;">
                                 <div class="col-6 o_colored_level1">Lifespan</div>
-                                <div class="col-6 o_colored_level2"><t t-esc="product.product_variant_id.lifespan"/></div>
+                                <div class="col-6 o_colored_level2"><t t-esc="product.lifespan"/></div>
                             </div>
                         </div>
                     </div>
@@ -511,7 +512,62 @@
             <h1 t-if="product.alternative_product_ids" style="text-align: center;font-weight: 400;font-size: 35px;">Related Products</h1>
         </xpath>
     </template>
+    <template id="cart" inherit_id="website_sale.cart">
+        <xpath expr="//h3" position="replace">
+            <h3 class="mb-4">Quote overview</h3>
+        </xpath>
+    </template>
+
     <template id="checkout_layout" inherit_id="website_sale.checkout_layout" name="Uniross Website Check Out Page">
+         <xpath expr="//div[@id='o_cart_summary']" position="before">
+             <div class="offset-xl-1 col-lg-5 col-xl-4 order-2" id="o_quote_summary" t-if="website_sale_order and website_sale_order.website_order_line">
+                <h3>Enter Detail For Submit Quote</h3>
+                <form id="contactus_form" action="/submit-quote" method="post" class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-pre-fill="true">
+                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact1">
+                                <span class="s_website_form_label_content">Name</span>
+                                <span class="s_website_form_mark"> *</span>
+                                </label>
+                                <div class="col-sm">
+                                    <input id="contact1" type="text" class="form-control s_website_form_input" name="name" required="" data-fill-with="name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">
+                                <span class="s_website_form_label_content">Phone Number</span>
+                                    <span class="s_website_form_mark"> *</span>
+                                </label>
+                                <div class="col-sm">
+                                    <input id="contact2" type="tel" class="form-control s_website_form_input" required="" name="phone" data-fill-with="phone"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field">
+                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact3">
+                                <span class="s_website_form_label_content">Email</span>
+                                <span class="s_website_form_mark"> *</span>
+                                </label>
+                                <div class="col-sm">
+                                    <input id="contact3" type="email" class="form-control s_website_form_input" name="customer_email" required="" data-fill-with="email"/>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="order_id" t-att-value="website_sale_order.id"/>
+                        <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+                            <div style="width: 200px;" class="s_website_form_label"/>
+                                <input type="submit" value="Submit Quote" class="btn btn-primary"/>
+                                <!--<a href="#" role="button" class="btn btn-primary s_website_form_send">Submit Quote</a>-->
+                                <span id="s_website_form_result"/>
+                            </div>
+                        </div>
+                </form>
+             </div>
+        </xpath>
 		<xpath expr="//button[hasclass('accordion-button')]" position="replace">
 			<button class="accordion-button px-0 collapsed" data-bs-toggle="collapse" data-bs-target="#o_wsale_accordion_item" aria-expanded="false" aria-controls="o_wsale_accordion_item">
                 <div class="d-flex flex-wrap">
@@ -522,5 +578,10 @@
                 </div>
             </button>
 		</xpath>
+        <xpath expr="//div[@id='wrap']" position="after">
+            <div name="cart_summary_info" t-if="not website_sale_order or not website_sale_order.website_order_line" class="alert alert-info container">
+                Your quote is empty!
+            </div>
+        </xpath>
 	</template>
 </odoo>

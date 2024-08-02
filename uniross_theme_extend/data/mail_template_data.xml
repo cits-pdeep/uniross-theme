@@ -4,7 +4,7 @@
        <record id="mail_template_sale_send_quote_customer" model="mail.template">
             <field name="name">Sales: Send Quote</field>
             <field name="model_id" ref="sale.model_sale_order"/>
-            <field name="subject">'Quotation'</field>
+            <field name="subject">Thank you for sending quotation</field>
             <field name="email_to">{{ (ctx['customer_email'] or '') }}</field>
             <field name="description">Sent to customers on quote</field>
             <field name="body_html" type="html">
@@ -12,7 +12,9 @@
     <p style="margin: 0px; padding: 0px; font-size: 12px;">
         <p>Dear <t t-out="ctx['name']"></t>,</p>
         <br/><br/>
-        Thank you for sending quote.
+        I hope this email finds you well.
+        <br/><br/>
+        We have received your quote and appreciate the detailed proposal you provided. Our team will review the quote thoroughly and we will get back to you shortly with our feedback or any questions we may have.
         <br/><br/><br/><br/>
     </p>
 <t t-if="hasattr(object, 'website_id') and object.website_id">
@@ -45,23 +47,25 @@
         <record id="mail_template_sale_send_quote_admin" model="mail.template">
             <field name="name">Sales: Send Quote Administrator</field>
             <field name="model_id" ref="sale.model_sale_order"/>
-            <field name="subject">'Quotation'</field>
-            <field name="email_to">{{ object.user_id.partner_id.email }}</field>
+            <field name="subject">New Quote Generated</field>
+            <field name="email_to">{{ object.user_id.partner_id.email or object.company_id.email}}</field>
             <field name="description">Sent to admin on quote</field>
             <field name="body_html" type="html">
 <div style="margin: 0px; padding: 0px;">
     <p style="margin: 0px; padding: 0px; font-size: 12px;">
         <p>Dear <t t-out="object.user_id.name or ''"></t>,</p>
         <br/><br/>
-        New inquiry generated.
-
+        New quote has been generated.
+        <br/>
+        Please find the belowed information related to quote.
+        <br/><br/>
         <p>
             Customer Name: <t t-out="ctx['name']"></t>,<br/>
             Phone: <t t-out="ctx['phone']"></t>,<br/>
             Email: <t t-out="ctx['customer_email']"></t>
         </p>
 
-        <br/><br/><br/><br/>
+        <br/><br/>
     </p>
 <t t-if="hasattr(object, 'website_id') and object.website_id">
     <div style="margin: 0px; padding: 0px;">

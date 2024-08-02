@@ -147,7 +147,7 @@ a.nav-link.active .text-content{
 .navbar-nav .select-product-quote {
     display: none;
 }
-.select-product-quote {
+.select-product-quote, .select-product-quote:hover {
     border-radius: 5px !important;
     font-size: 15px;
     font-weight: 700;
@@ -155,6 +155,7 @@ a.nav-link.active .text-content{
     background: #F65026;
     color: #ffffff;
     margin-left: 5px !important;
+    text-decoration: none !important;
 }
 .oe_search_button {
     border-radius: 0.4rem !important;
@@ -278,6 +279,10 @@ div#o_cart_summary {
 .css_quantity.input-group {
     display: none;
 }
+.toast-header.justify-content-between, .js_cart_lines.alert.alert-info{
+    display: none !important;
+}
+
 /*Review Order > Shipping > Payment*/
 .d-flex.flex-column.flex-md-row.align-items-end.align-items-md-start.justify-content-center {
     display: none !important;
