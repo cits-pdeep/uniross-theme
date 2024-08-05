@@ -5,12 +5,12 @@
             <field name="name">Sales: Send Quote</field>
             <field name="model_id" ref="sale.model_sale_order"/>
             <field name="subject">Thank you for sending quotation</field>
-            <field name="email_to">{{ (ctx['customer_email'] or '') }}</field>
+            <field name="email_to">{{ (ctx.get('customer_email') or '') }}</field>
             <field name="description">Sent to customers on quote</field>
             <field name="body_html" type="html">
 <div style="margin: 0px; padding: 0px;">
     <p style="margin: 0px; padding: 0px; font-size: 12px;">
-        <p>Dear <t t-out="ctx['name']"></t>,</p>
+        <p>Dear <t t-out="ctx.get('name')"></t>,</p>
         <br/><br/>
         I hope this email finds you well.
         <br/><br/>
@@ -60,9 +60,11 @@
         Please find the belowed information related to quote.
         <br/><br/>
         <p>
-            Customer Name: <t t-out="ctx['name']"></t>,<br/>
-            Phone: <t t-out="ctx['phone']"></t>,<br/>
-            Email: <t t-out="ctx['customer_email']"></t>
+            Customer Name: <t t-out="ctx.get('name')"></t>,<br/>
+            Company Name: <t t-out="ctx.get('company_name')"></t>,<br/>
+            Phone: <t t-out="ctx.get('phone')"></t>,<br/>
+            Email: <t t-out="ctx.get('customer_email')"></t>,<br/>
+            Country: <t t-out="ctx.get('country_id')"></t>
         </p>
 
         <br/><br/>

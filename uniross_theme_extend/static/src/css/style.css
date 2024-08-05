@@ -1,5 +1,8 @@
 /***********[Category page]GRID VIEW STYLE START***********/
 /*hide description*/
+.products_header {
+    margin-top: 10px;
+}
 #products_grid.col-lg-9 .oe_subdescription.mb-2.text-muted.small {
     display: none;
 }
@@ -268,9 +271,9 @@ a.nav-link.o_default_snippet_text {
    display: none !important;
 }
 
-label[for="company_name"], input[name="company_name"], .div_vat, .div_street2{
+/*label[for="company_name"], input[name="company_name"], .div_vat, .div_street2{
     display: none !important;
-}
+}*/
 
 /******************/
 div#o_cart_summary {

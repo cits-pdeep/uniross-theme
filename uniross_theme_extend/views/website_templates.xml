@@ -135,6 +135,9 @@
     </template>
     <!--This template will put name and image of category at top of specific category page-->
     <template id="products_category_image" name="Category Image" inherit_id="website_sale.products">
+        <xpath expr="//t[@t-call='website_sale.add_grid_or_list_option']" position="before">
+            <xpath expr="//t[@t-call='website_sale.filmstrip_categories']" position="move"/>
+        </xpath>
         <xpath expr="//t[@t-call='website_sale.products_breadcrumb']" position="replace"/>
         <!--<xpath expr="//t[@t-if='opt_wsale_categories_top']" position="attributes">
             <attribute name="t-if">opt_wsale_categories_top and category and category.sudo()._name =='product.public.category' and category.sudo().is_industrial_category</attribute>
@@ -157,7 +160,7 @@
                 <t t-set="_form_classes" t-valuef="d-lg-inline {{'d-inline' if not category else 'd-none'}}"/>
             </t>
         </xpath>
-        <xpath expr="//t[@t-call='website_sale.pricelist_list']" position="before">
+        <!--<xpath expr="//t[@t-call='website_sale.pricelist_list']" position="before">
             <div class="mt8" t-if="not category or not category.is_industrial_category">
                 <button class="grid-top-button mobile_width_100" style="color: #F65026;border-color: #F65026;">
                     <img src="/uniross_theme_extend/static/img/menu/battery.png"/>Primary Batteries
@@ -169,7 +172,7 @@
                     <img src="/uniross_theme_extend/static/img/Vector_1.png"/>Specialty Batteries
                 </button>
             </div>
-        </xpath>
+        </xpath>-->
         <xpath expr="//div[hasclass('products_header', 'btn-toolbar', 'flex-nowrap', 'align-items-center', 'justify-content-between', 'gap-3', 'mb-3')]" position="attributes">
             <attribute name="class" add="mobile_flex-wrap" separator=" " />
         </xpath>
@@ -560,6 +563,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact1">
+                                <span class="s_website_form_label_content">Company Name</span>
+                                <span class="s_website_form_mark"> *</span>
+                                </label>
+                                <div class="col-sm">
+                                    <input type="text" class="form-control s_website_form_input" name="company_name" required="" data-fill-with="company_name"/>
+                                </div>
+                            </div>
+                        </div>
                         <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
                             <div class="row s_col_no_resize s_col_no_bgcolor">
                                 <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">
@@ -579,6 +593,24 @@
                                 </label>
                                 <div class="col-sm">
                                     <input id="contact3" type="email" class="form-control s_website_form_input" name="customer_email" required="" data-fill-with="email"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact1">
+                                <span class="s_website_form_label_content">Country</span>
+                                <span class="s_website_form_mark"> *</span>
+                                </label>
+                                <div class="col-sm">
+                                    <select id="country_id" class="form-select s_website_form_input" name="country_id" required="1">
+                                        <option></option>
+                                        <t t-foreach="request.env['res.country'].search([])" t-as="country">
+                                            <option t-att-data-id="country.name" t-att-value='country.name' >
+                                                <t t-esc="country.name"/>
+                                            </option>
+                                        </t>
+                                    </select>
                                 </div>
                             </div>
                         </div>

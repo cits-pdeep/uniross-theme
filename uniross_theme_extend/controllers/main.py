@@ -27,8 +27,10 @@ class UnirossThemController(http.Controller):
         customerObj = request.env.ref('uniross_theme_extend.mail_template_sale_send_quote_customer', raise_if_not_found=False)
         ctx = dict(customerObj._context or {})
         ctx['name'] =  post.get('name')
+        ctx['company_name'] = post.get('company_name')
         ctx['phone'] =  post.get('phone')
         ctx['customer_email'] =  post.get('customer_email')
+        ctx['country_id'] = post.get('country_id')
         send_mail = customerObj.sudo().with_context(ctx).send_mail(order.id)
         request.env['mail.mail'].sudo().browse(send_mail).send()
 
