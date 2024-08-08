@@ -47,5 +47,6 @@ publicWidget.registry.UniFooterWidget = publicWidget.Widget.extend({
         $('.uni-download').click(function() {
             $('.uni-download-menu').toggle();
         });
+        $('.o_mega_menu').eq(0).addClass('o_mega_menu_container_size')
     },
 });
