@@ -60,12 +60,12 @@
                                                 <br/>
                                             </li>
                                             <li>
-                                                <img src="/web/image/764-b894030c/iconamoon_home-light.svg"
+                                                <img src="/uniross_theme_extend/static/src/img/iconamoon_home-light.svg"
                                                      alt=""
                                                      class="me-2 img img-fluid o_we_custom_image"
                                                      data-mimetype="image/svg+xml"
                                                      data-original-id="764"
-                                                     data-original-src="/web/image/764-b894030c/iconamoon_home-light.svg"
+                                                     data-original-src="/uniross_theme_extend/static/src/img/iconamoon_home-light.svg"
                                                      data-mimetype-before-conversion="image/svg+xml"
                                                      loading="lazy"/>
                                                 <span class="o_force_ltr">Uniross Europe </span>
@@ -83,7 +83,7 @@
                                         </p>
                                         <ul class="list-unstyled mb-0 ps-2 mt16">
                                             <li>
-                                                <img src="/web/image/766-fba04382/Vector.svg"
+                                                <img src="/uniross_theme_extend/static/src/img/Vector_msg.svg"
                                                      alt=""
                                                      class="me-2 img img-fluid o_we_custom_image"
                                                      loading="lazy"/>
@@ -238,7 +238,7 @@
                                                                class="btn btn-primary s_website_form_send"
                                                                data-bs-original-title=""
                                                                title="">
-                                                                <img src="/web/image/768-8fb5dbe2/iconamoon_send.svg"
+                                                                <img src="/uniross_theme_extend/static/src/img/iconamoon_send.svg"
                                                                      alt=""
                                                                      class="img img-fluid o_we_custom_image"
                                                                      loading="lazy"/>
