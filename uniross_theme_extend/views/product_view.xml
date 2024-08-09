@@ -17,6 +17,8 @@
             <xpath expr="//group[@name='description']" position="after">
                 <group string="Uniross Sales Description" name="uni_description">
                     <field colspan="2" name="uni_product_description" nolabel="1" />
+                    <field name="download_product_technical_sheet" />
+                    <field name="download_product_image" />
                 </group>
             </xpath>
         </field>

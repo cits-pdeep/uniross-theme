@@ -445,16 +445,24 @@
                             <i class="fa fa-download" contenteditable="false" style="margin-right: 3px;"/> Download Details
                         </a>
                         <div class="dropdown-menu uni-download-menu" aria-labelledby="dropdownMenuLink" style="overflow: hidden;">
-                            <a class="dropdown-item" href="#" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Spec Sheet</a>
-                            <a class="dropdown-item" href="#" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Images</a>
+                            <a class="dropdown-item" t-attf-href="#{product.download_product_technical_sheet or ''}" download="Test" target="Technical Sheet" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Product Technical Sheet</a>
+                            <a class="dropdown-item" t-attf-href="#{product.download_product_image or ''}" target="new"  download="Product Image" style="font-size: 14px;font-weight: 700;margin-right: 8px;">Download Product Images</a>
                         </div>
                     </div>
                     <a  data-animation-selector=".o_wsale_product_images" role="button" class="btn btn-outline-primary flex-grow-1 flex-grow-1" href="/shop/cart" >
                         View Quote
                     </a>
-                    <a data-animation-selector=".o_wsale_product_images" role="button" t-attf-class="btn btn-light flex-grow-1" href="#" class="btn btn-outline-primary flex-grow-1 flex-grow-1" style="float:right">
+                    <a data-animation-selector=".o_wsale_product_images" role="button" href="#" class="btn btn-light btn-outline-primary flex-grow-1 flex-grow-1 uni-share-button" style="float:right">
                         <i class="fa fa-share-alt" contenteditable="false" style="margin-right: 3px;"/>Share
                     </a>
+                </div>
+                <div class="h4 mt-3 mb-0 d-flex justify-content-end flex-shrink-0 uni-share-links" contenteditable="false" style="display:none !important">
+                    <t t-snippet-call="website.s_share">
+                        <t t-set="_exclude_share_links" t-value="['whatsapp', 'linkedin']"/>
+                        <t t-set="_no_title" t-value="True"/>
+                        <t t-set="_classes" t-valuef="text-lg-end"/>
+                        <t t-set="_link_classes" t-valuef="mx-1 my-0"/>
+                    </t>
                 </div>
             </div>
         </xpath>
@@ -463,7 +471,7 @@
                 <div class="container s_allow_columns">
                     <div class="row">
                         <div class="col-lg-6 o_colored_level" style="padding: 60px;">
-                            <t t-esc="product.uni_product_description"/>
+                            <t t-esc="product.get_uni_product_description()"/>
                             <!--<div class="o_text_columns">
                                 <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px !important;">Product Details</div>
                                 <div class="row" style="margin-bottom: 10px !important;">

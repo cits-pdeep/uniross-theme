@@ -47,6 +47,15 @@ publicWidget.registry.UniFooterWidget = publicWidget.Widget.extend({
         $('.uni-download').click(function() {
             $('.uni-download-menu').toggle();
         });
-        $('.o_mega_menu').eq(0).addClass('o_mega_menu_container_size')
+        console.log($('.uni-share-links').length);
+        $('.o_mega_menu').eq(0).addClass('o_mega_menu_container_size');
+
+        $('.uni-share-button').click(function(){
+            if($('.uni-share-links').is(':visible')){
+                $('.uni-share-links').attr('style','display: none !important');
+            } else {
+                $('.uni-share-links').removeAttr('style');
+            }
+        });
     },
 });
