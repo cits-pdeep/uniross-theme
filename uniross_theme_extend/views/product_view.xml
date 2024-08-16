@@ -5,7 +5,7 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+            <!--<xpath expr="//group[@name='group_lots_and_weight']" position="inside">
                 <field name="dimension_type"/>
                 <field name="product_volts"/>
                 <field name="product_diameter"/>
@@ -13,7 +13,7 @@
                 <field name="product_width"/>
                 <field name="product_depth"/>
                 <field name="lifespan"/>
-            </xpath>
+            </xpath>-->
             <xpath expr="//group[@name='description']" position="after">
                 <group string="Uniross Sales Description" name="uni_description">
                     <field colspan="2" name="uni_product_description" nolabel="1" />

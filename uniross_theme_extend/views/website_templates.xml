@@ -469,10 +469,11 @@
         <xpath expr="//div[@id='product_full_description']" position="before">
             <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;" t-nocache="No Cache">
                 <div class="container s_allow_columns">
-                    <div class="row">
+                    <t t-esc="product.get_uni_product_description()"/>
+                    <!--<div class="row">
                         <div class="col-lg-6 o_colored_level" style="padding: 60px;">
                             <t t-esc="product.get_uni_product_description()"/>
-                            <!--<div class="o_text_columns">
+                            <div class="o_text_columns">
                                 <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px !important;">Product Details</div>
                                 <div class="row" style="margin-bottom: 10px !important;">
                                     <div class="col-lg-10 col-md-10 o_colored_level product_details_content">
@@ -501,7 +502,7 @@
                                         <p><img src="/uniross_theme_extend/static/img/protection 2.png" alt="" class="img img-fluid o_we_custom_image" loading="lazy" style=""/><br/></p>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                         <div class="col-lg-6 o_colored_level" style="background: linear-gradient(91.77deg, #2C2C2C -7.9%, #676767 93.8%);border-radius: 15px;color: #ffffff;padding: 60px;">
                             <div class="row" style="font-size: 35px;font-weight: 400;margin-bottom: 40px;">Technical Details</div>
@@ -538,7 +539,7 @@
                                 <div class="col-6 o_colored_level2"><t t-esc="product.lifespan"/></div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </section>
         </xpath>

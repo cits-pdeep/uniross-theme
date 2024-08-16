@@ -294,3 +294,8 @@ div#o_cart_summary {
     display: none;
 }
 /*Checkout Page/Process End*/
+/*Search Start*/
+.o_searchbar_form .text-nowrap, .o_search_result_item .text-nowrap{
+    display: none !important;
+}
+/*Search End*/
